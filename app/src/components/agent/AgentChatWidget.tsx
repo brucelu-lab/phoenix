@@ -1,6 +1,7 @@
 import { css, keyframes } from "@emotion/react";
 import { AnimatePresence, motion } from "motion/react";
 import { createPortal } from "react-dom";
+import { useMatches } from "react-router";
 
 import { useTheme } from "@phoenix/contexts";
 import { useAgentContext } from "@phoenix/contexts/AgentContext";
@@ -8,6 +9,10 @@ import { useHasOpenModal } from "@phoenix/hooks/useHasOpenModal";
 
 import { PxiGlyph, type PxiGlyphAnimation } from "./PxiGlyph";
 import { useAssistantAgentEnabled } from "./useAssistantAgentEnabled";
+
+type AgentChatWidgetRouteHandle = {
+  hideAgentChatWidget?: boolean;
+};
 
 const thinkingBorderWipe = keyframes`
   0% {
@@ -397,11 +402,17 @@ export function AgentChatWidgetButton({
 }
 
 export function AgentChatWidget() {
+  const matches = useMatches();
   const isAssistantAgentEnabled = useAssistantAgentEnabled();
   const isOpen = useAgentContext((state) => state.isOpen);
   const toggleOpen = useAgentContext((state) => state.toggleOpen);
   const activeSessionId = useAgentContext((state) => state.activeSessionId);
   const hasOpenModal = useHasOpenModal();
+  const shouldHideForRoute = matches.some(
+    (match) =>
+      (match.handle as AgentChatWidgetRouteHandle | undefined)
+        ?.hideAgentChatWidget
+  );
   const isStreaming = useAgentContext((state) =>
     activeSessionId
       ? state.chatStatusBySessionId[activeSessionId] === "streaming"
@@ -410,7 +421,12 @@ export function AgentChatWidget() {
 
   // Use contextual entrypoints inside modals (e.g. trace slideover header)
   // instead of letting the global FAB compete with overlay hit-testing.
-  if (!isAssistantAgentEnabled || isOpen || hasOpenModal) {
+  if (
+    !isAssistantAgentEnabled ||
+    isOpen ||
+    hasOpenModal ||
+    shouldHideForRoute
+  ) {
     return null;
   }
 

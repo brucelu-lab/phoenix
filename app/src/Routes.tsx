@@ -202,6 +202,10 @@ const router = createBrowserRouter(
                     element={<SessionPage />}
                     loader={sessionLoader}
                     shouldRevalidate={revalidateOnPathChange}
+                    handle={{
+                      // Hide PXI FAB until PXI is usable in the session drawer.
+                      hideAgentChatWidget: true,
+                    }}
                   />
                 </Route>
                 <Route path="config" element={<ProjectConfigPage />} />
