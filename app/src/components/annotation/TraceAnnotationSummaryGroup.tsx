@@ -123,7 +123,6 @@ type TraceAnnotationSummaryGroupProps = {
   trace: TraceAnnotationSummaryGroup$key;
   showFilterActions?: boolean;
   renderEmptyState?: () => React.ReactNode;
-  wrapTokens?: boolean;
 };
 
 const annotationLabelCSS = css`
@@ -137,7 +136,6 @@ export const TraceAnnotationSummaryGroupTokens = ({
   trace,
   showFilterActions = false,
   renderEmptyState,
-  wrapTokens = true,
 }: TraceAnnotationSummaryGroupProps) => {
   const {
     sortedSummariesByName,
@@ -186,10 +184,6 @@ export const TraceAnnotationSummaryGroupTokens = ({
       </AnnotationSummaryPopover>
     );
   });
-
-  if (!wrapTokens) {
-    return <>{tokens}</>;
-  }
 
   return (
     <Flex direction="row" gap="size-50" wrap="wrap">
