@@ -44,6 +44,10 @@ function contextLabel(context: AgentContext): string {
       }
       return `Span: ${truncateId(spanId)}`;
     }
+    case "code_evaluator":
+      return context.evaluatorNodeId
+        ? `Code Evaluator: ${truncateId(context.evaluatorNodeId)}`
+        : "Code Evaluator: new";
   }
 }
 
