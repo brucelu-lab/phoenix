@@ -12,7 +12,10 @@ from phoenix.server.agents.capabilities.tools.external import (
     ask_user,
     bash,
     clone_prompt_instance,
+    create_code_evaluator,
+    edit_code_evaluator_draft,
     edit_prompt_instance,
+    read_code_evaluator_draft,
     read_prompt_instance,
     render_generative_ui,
     set_spans_filter,
@@ -23,8 +26,17 @@ from phoenix.server.agents.capabilities.tools.external.bash import BashCapabilit
 from phoenix.server.agents.capabilities.tools.external.clone_prompt_instance import (
     ClonePromptInstanceCapability,
 )
+from phoenix.server.agents.capabilities.tools.external.create_code_evaluator import (
+    CreateCodeEvaluatorCapability,
+)
+from phoenix.server.agents.capabilities.tools.external.edit_code_evaluator_draft import (
+    EditCodeEvaluatorDraftCapability,
+)
 from phoenix.server.agents.capabilities.tools.external.edit_prompt_instance import (
     EditPromptInstanceCapability,
+)
+from phoenix.server.agents.capabilities.tools.external.read_code_evaluator_draft import (
+    ReadCodeEvaluatorDraftCapability,
 )
 from phoenix.server.agents.capabilities.tools.external.read_prompt_instance import (
     ReadPromptInstanceCapability,
@@ -47,7 +59,10 @@ _EXTERNAL_TOOL_DEFINITIONS_BY_NAME: dict[str, ToolDefinition] = {
         ask_user.TOOL_DEFINITION,
         bash.TOOL_DEFINITION,
         clone_prompt_instance.TOOL_DEFINITION,
+        create_code_evaluator.TOOL_DEFINITION,
+        edit_code_evaluator_draft.TOOL_DEFINITION,
         edit_prompt_instance.TOOL_DEFINITION,
+        read_code_evaluator_draft.TOOL_DEFINITION,
         read_prompt_instance.TOOL_DEFINITION,
         render_generative_ui.RENDER_GENERATIVE_UI_TOOL_DEFINITION,
         set_spans_filter.TOOL_DEFINITION,
@@ -80,6 +95,9 @@ def get_external_tool_capability_function(
         ReadPromptInstanceCapability(instructions=instructions.read_prompt_instance_tool),
         ClonePromptInstanceCapability(instructions=instructions.clone_prompt_instance_tool),
         EditPromptInstanceCapability(instructions=instructions.edit_prompt_instance_tool),
+        ReadCodeEvaluatorDraftCapability(instructions=instructions.read_code_evaluator_draft_tool),
+        EditCodeEvaluatorDraftCapability(instructions=instructions.edit_code_evaluator_draft_tool),
+        CreateCodeEvaluatorCapability(instructions=instructions.create_code_evaluator_tool),
     ]
 
     def _build(ctx: RunContext[AgentDependencies]) -> AbstractCapability[AgentDependencies]:
@@ -93,7 +111,10 @@ __all__ = [
     "AskUserCapability",
     "BashCapability",
     "ClonePromptInstanceCapability",
+    "CreateCodeEvaluatorCapability",
+    "EditCodeEvaluatorDraftCapability",
     "EditPromptInstanceCapability",
+    "ReadCodeEvaluatorDraftCapability",
     "ReadPromptInstanceCapability",
     "RenderGenerativeUICapability",
     "SetSpansFilterCapability",
