@@ -13,7 +13,10 @@ import {
   type AgentCapabilities,
   type AgentCapabilityKey,
 } from "@phoenix/agent/extensions/capabilities";
-import type { PendingCodeEvaluatorEdit } from "@phoenix/agent/tools/codeEvaluatorDraft";
+import type {
+  PendingCodeEvaluatorCreate,
+  PendingCodeEvaluatorEdit,
+} from "@phoenix/agent/tools/codeEvaluatorDraft";
 import type { PendingElicitation } from "@phoenix/agent/tools/elicit";
 import type { PendingPromptEdit } from "@phoenix/agent/tools/playgroundPrompt";
 import { getDefaultInvocationConfig } from "@phoenix/pages/playground/providerAdapters";
@@ -264,6 +267,30 @@ export interface AgentState extends AgentProps {
     toolCallId: string,
     edit: PendingCodeEvaluatorEdit | null
   ) => void;
+
+  // -- Code-evaluator create proposals advertised by create_code_evaluator tool calls --
+  pendingCodeEvaluatorCreatesByToolCallId: Partial<
+    Record<string, PendingCodeEvaluatorCreate>
+  >;
+  setPendingCodeEvaluatorCreate: (
+    toolCallId: string,
+    pending: PendingCodeEvaluatorCreate | null
+  ) => void;
+
+  // -- Relay connection IDs for dataset-evaluator @appendNode (ephemeral) --
+  // Dataset surfaces that own a `DatasetEvaluatorEdge` connection register
+  // their connection ID here under a per-mount UUID; the create commit
+  // handler snapshots the union of registered IDs at propose time so the
+  // chained `createDatasetCodeEvaluator` mutation can append-node uniformly
+  // across surfaces. Runtime-only — never persisted.
+  datasetEvaluatorConnectionIds: Record<
+    string,
+    { datasetEvaluatorConnectionId: string }
+  >;
+  setDatasetEvaluatorConnectionId: (
+    mountId: string,
+    value: { datasetEvaluatorConnectionId: string } | null
+  ) => void;
 }
 
 /**
@@ -366,6 +393,8 @@ export const createAgentStore = (initialProps?: Partial<AgentProps>) => {
     mountedContexts: {},
     pendingPromptEditsByToolCallId: {},
     pendingCodeEvaluatorEditsByToolCallId: {},
+    pendingCodeEvaluatorCreatesByToolCallId: {},
+    datasetEvaluatorConnectionIds: {},
     setIsOpen: (isOpen) => {
       set({ isOpen }, false, { type: "setIsOpen" });
     },
@@ -786,6 +815,38 @@ export const createAgentStore = (initialProps?: Partial<AgentProps>) => {
       );
     },
 
+    setPendingCodeEvaluatorCreate: (toolCallId, pending) => {
+      set(
+        (state) => {
+          const next = { ...state.pendingCodeEvaluatorCreatesByToolCallId };
+          if (pending) {
+            next[toolCallId] = pending;
+          } else {
+            delete next[toolCallId];
+          }
+          return { pendingCodeEvaluatorCreatesByToolCallId: next };
+        },
+        false,
+        { type: "setPendingCodeEvaluatorCreate" }
+      );
+    },
+
+    setDatasetEvaluatorConnectionId: (mountId, value) => {
+      set(
+        (state) => {
+          const next = { ...state.datasetEvaluatorConnectionIds };
+          if (value) {
+            next[mountId] = value;
+          } else {
+            delete next[mountId];
+          }
+          return { datasetEvaluatorConnectionIds: next };
+        },
+        false,
+        { type: "setDatasetEvaluatorConnectionId" }
+      );
+    },
+
     ...initialProps,
   });
 
@@ -850,6 +911,8 @@ export const createAgentStore = (initialProps?: Partial<AgentProps>) => {
           capabilities: migratedCapabilities,
           pendingPromptEditsByToolCallId: {},
           pendingCodeEvaluatorEditsByToolCallId: {},
+          pendingCodeEvaluatorCreatesByToolCallId: {},
+          datasetEvaluatorConnectionIds: {},
         } as AgentState;
       },
       partialize: (state) => ({

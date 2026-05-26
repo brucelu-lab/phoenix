@@ -17,6 +17,8 @@ import type {
   ElicitToolOutput,
   PendingElicitation,
 } from "@phoenix/agent/tools/elicit";
+import { EDIT_CODE_EVALUATOR_DRAFT_TOOL_NAME } from "@phoenix/agent/tools/codeEvaluatorDraft";
+import { CREATE_CODE_EVALUATOR_TOOL_NAME } from "@phoenix/agent/tools/createCodeEvaluator";
 import { EDIT_PROMPT_TOOL_NAME } from "@phoenix/agent/tools/playgroundPrompt";
 import { authFetch } from "@phoenix/authFetch";
 import { useAgentChatRuntime } from "@phoenix/contexts/AgentChatRuntimeContext";
@@ -182,10 +184,18 @@ export function useAgentChat({
     const unresolvedToolCalls = getUnresolvedToolCalls(messages);
 
     unresolvedToolCalls.forEach((toolCall) => {
+      // The generic interruption output resolves the AI SDK tool call; clear
+      // the live approval state too so stale Accept/Reject actions disappear.
       if (toolCall.tool === EDIT_PROMPT_TOOL_NAME) {
-        // The generic interruption output resolves the AI SDK tool call; clear
-        // the live approval state too so stale Accept/Reject actions disappear.
         store.getState().setPendingPromptEdit(toolCall.toolCallId, null);
+      }
+      if (toolCall.tool === EDIT_CODE_EVALUATOR_DRAFT_TOOL_NAME) {
+        store.getState().setPendingCodeEvaluatorEdit(toolCall.toolCallId, null);
+      }
+      if (toolCall.tool === CREATE_CODE_EVALUATOR_TOOL_NAME) {
+        store
+          .getState()
+          .setPendingCodeEvaluatorCreate(toolCall.toolCallId, null);
       }
     });
 
