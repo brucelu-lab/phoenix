@@ -6,7 +6,7 @@ import type {
   ReactCodeMirrorProps,
 } from "@uiw/react-codemirror";
 import CodeMirror, { EditorView, keymap } from "@uiw/react-codemirror";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 
 import { useTheme } from "@phoenix/contexts";
 import { assertUnreachable } from "@phoenix/typeUtils";
@@ -59,7 +59,10 @@ export const TemplateEditor = ({
   availablePaths,
   ...props
 }: TemplateEditorProps) => {
-  const [value, setValue] = useState(() => defaultValue);
+  const [value] = useState(() => defaultValue);
+  // In readOnly mode the editor mirrors defaultValue on every change; otherwise
+  // it stays at the initial value (the editor itself is uncontrolled internally).
+  const displayValue = readOnly ? defaultValue : value;
   const { theme } = useTheme();
   const codeMirrorTheme = theme === "light" ? githubLight : githubDark;
   const extensions = useMemo(() => {
@@ -88,12 +91,6 @@ export const TemplateEditor = ({
     return ext;
   }, [templateFormat, availablePaths, readOnly]);
 
-  useEffect(() => {
-    if (readOnly) {
-      setValue(defaultValue);
-    }
-  }, [readOnly, defaultValue]);
-
   return (
     <CodeMirror
       theme={codeMirrorTheme}
@@ -101,7 +98,7 @@ export const TemplateEditor = ({
       basicSetup={basicSetupOptions}
       readOnly={readOnly}
       {...props}
-      value={value}
+      value={displayValue}
     />
   );
 };

@@ -251,6 +251,14 @@ export function SpanFilterConditionField(props: SpanFilterConditionFieldProps) {
   const { filterCondition, setFilterCondition, appendFilterCondition } =
     useSpanFilters();
   const deferredFilterCondition = useDeferredValue(filterCondition);
+  const [prevDeferredFilterCondition, setPrevDeferredFilterCondition] =
+    useState(deferredFilterCondition);
+  if (prevDeferredFilterCondition !== deferredFilterCondition) {
+    setPrevDeferredFilterCondition(deferredFilterCondition);
+    if (deferredFilterCondition.trim() !== "") {
+      setIsConditionValidState(false);
+    }
+  }
   const { theme } = useTheme();
   const codeMirrorTheme = theme === "light" ? githubLight : githubDark;
 
@@ -285,10 +293,6 @@ export function SpanFilterConditionField(props: SpanFilterConditionFieldProps) {
 
   useEffect(() => {
     let isCancelled = false;
-
-    if (deferredFilterCondition.trim() !== "") {
-      setIsConditionValidState(false);
-    }
 
     void validateSpanFilterCondition(deferredFilterCondition, projectId).then(
       (result) => {

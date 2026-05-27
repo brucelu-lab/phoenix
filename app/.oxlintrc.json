@@ -38,9 +38,12 @@
     "react/exhaustive-deps": "error",
     "react/rules-of-hooks": "error",
     "react-hooks-js/set-state-in-effect": "error",
-    "react-hooks-js/incompatible-library": "error",
+    // Disabled: TanStack Table's useReactTable is the dominant trigger here (36+ call sites)
+    // and is intentionally outside React Compiler's purview. The rule is informational
+    // ("compiler skipped this") rather than actionable. React Compiler already skips
+    // memoization for these components transparently.
+    "react-hooks-js/incompatible-library": "off",
     "react/no-unknown-property": ["error", { "ignore": ["css"] }],
-    "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "typescript/no-empty-object-type": [
       "error",

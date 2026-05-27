@@ -216,6 +216,7 @@ export const EvaluatorsTable = ({
   refetch,
 }: EvaluatorsTableProps) => {
   "use no memo";
+  "use no memo";
   const navigate = useNavigate();
   const { sort, setSort, filter } = useEvaluatorsFilterContext();
   const tableContainerRef = useRef<HTMLDivElement>(null);

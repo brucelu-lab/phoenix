@@ -54,6 +54,7 @@ export function ExamplesTable({
   dataset: examplesLoaderQuery$data["dataset"];
 }) {
   "use no memo";
+  "use no memo";
   const {
     filter,
     selectedExampleIds,
