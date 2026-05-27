@@ -192,7 +192,7 @@ export function clonePromptInstance({
       clonedInstanceId,
       clonedLabel: cloned.ok ? cloned.output.label : "",
       revision: cloned.ok ? cloned.output.revision : source.output.revision,
-      message: "Prompt instance cloned for comparison.",
+      message: "提示词实例已克隆用于对比。",
     },
   };
 }

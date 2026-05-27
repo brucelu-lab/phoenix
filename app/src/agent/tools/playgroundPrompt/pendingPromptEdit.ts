@@ -61,7 +61,7 @@ export function bindPendingPromptEditActions({
           revision: afterApply.ok
             ? afterApply.output.revision
             : pendingEdit.after.revision,
-          message: "Prompt edit applied.",
+          message: "提示词编辑已应用。",
         },
       });
     },
@@ -74,7 +74,7 @@ export function bindPendingPromptEditActions({
         output: {
           status: "rejected",
           instanceId: pendingEdit.instanceId,
-          message: "User rejected the proposed prompt edit.",
+          message: "用户拒绝了提议的提示词编辑。",
         },
       });
     },

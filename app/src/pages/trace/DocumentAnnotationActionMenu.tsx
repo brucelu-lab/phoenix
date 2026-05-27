@@ -88,7 +88,7 @@ export function DocumentAnnotationActionMenu({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Annotation deleted",
+            title: "标注已删除",
             message: `Annotation "${annotationName}" has been deleted.`,
           });
           setDeleting(false);

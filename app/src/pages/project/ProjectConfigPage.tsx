@@ -178,8 +178,8 @@ const ProjectConfigCard = ({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Project updated",
-            message: "Project settings have been saved.",
+            title: "项目已更新",
+            message: "项目设置已保存。",
           });
           setIsEditing(false);
         },

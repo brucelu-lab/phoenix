@@ -121,7 +121,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Experiment deleted",
+            title: "实验已删除",
             message: `The experiment has been deleted.`,
           });
           onExperimentDeleted?.();
@@ -284,9 +284,9 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
                 case ExperimentAction.COPY_EXPERIMENT_ID: {
                   copy(props.experimentId);
                   notifySuccess({
-                    title: "Copied",
+                    title: "已复制",
                     message:
-                      "The experiment ID has been copied to your clipboard",
+                      "实验 ID 已复制到剪贴板",
                   });
                   break;
                 }
@@ -301,8 +301,8 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
                     variables: { experimentId: props.experimentId },
                     onCompleted: () => {
                       notify({
-                        title: "Experiment stopped",
-                        message: "The experiment has been stopped.",
+                        title: "实验已停止",
+                        message: "实验已停止。",
                       });
                     },
                     onError: (error) => {
@@ -323,8 +323,8 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
                     },
                     onCompleted: () => {
                       notifySuccess({
-                        title: "Experiment resumed",
-                        message: "The experiment has been resumed.",
+                        title: "实验已恢复",
+                        message: "实验已恢复。",
                       });
                     },
                     onError: (error) => {

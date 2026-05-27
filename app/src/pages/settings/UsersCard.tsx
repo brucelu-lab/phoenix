@@ -64,7 +64,7 @@ export function UsersCard() {
                 onNewUserCreated={(username) => {
                   setDialog(null);
                   notifySuccess({
-                    title: "User added",
+                    title: "用户已添加",
                     message: `User ${username} has been added.`,
                   });
                   setFetchKey((prev) => prev + 1);

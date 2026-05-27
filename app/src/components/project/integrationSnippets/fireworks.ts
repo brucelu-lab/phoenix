@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "accounts/fireworks/models/deepseek-v3p1",
-  messages: [{ role: "user", content: "What are the key principles of distributed computing?" }],
+  messages: [{ role: "user", content: "分布式计算的核心原则是什么？" }],
 });
 
 // Flush pending traces before the process exits

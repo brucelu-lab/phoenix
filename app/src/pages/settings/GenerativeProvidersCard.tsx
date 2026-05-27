@@ -530,7 +530,7 @@ function ServerCredentials({
         onCompleted: () => {
           setFetchKey((k) => k + 1);
           notifySuccess({
-            title: "Secrets updated",
+            title: "密钥已更新",
             message: `${secretsToUpsert.length} secret(s) updated`,
           });
         },
@@ -570,7 +570,7 @@ function ServerCredentials({
         });
         reset(emptyValues);
         notifySuccess({
-          title: "Secrets deleted",
+          title: "密钥已删除",
           message: `${existingSecretKeys.length} secret(s) removed`,
         });
       },

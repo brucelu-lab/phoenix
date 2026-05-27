@@ -100,17 +100,17 @@ export function SpanToDatasetExampleDialog({
       setSubmitError(null);
       if (!isJSONObjectString(newExample?.input)) {
         return setError("input", {
-          message: "Input must be a valid JSON object",
+          message: "输入必须是有效 JSON 对象",
         });
       }
       if (!isJSONObjectString(newExample?.output)) {
         return setError("output", {
-          message: "Output must be a valid JSON object",
+          message: "输出必须是有效 JSON 对象",
         });
       }
       if (!isJSONObjectString(newExample?.metadata)) {
         return setError("metadata", {
-          message: "Metadata must be a valid JSON object",
+          message: "元数据必须是有效 JSON 对象",
         });
       }
       commit({

@@ -72,7 +72,7 @@ export function ExperimentSelectionToolbar(
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Experiments Deleted",
+          title: "实验已删除",
           message: `${selectedExperiments.length} experiment${isPlural ? "s" : ""} have been deleted.`,
         });
         // Clear the selection

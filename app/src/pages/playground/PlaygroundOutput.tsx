@@ -276,7 +276,7 @@ export function PlaygroundOutput(props: PlaygroundOutputProps) {
           "finished"
         );
         setRepetitionError(instanceId, chatCompletion.repetitionNumber, {
-          title: "Chat completion failed",
+          title: "对话补全失败",
           message: chatCompletion.message,
         });
       }

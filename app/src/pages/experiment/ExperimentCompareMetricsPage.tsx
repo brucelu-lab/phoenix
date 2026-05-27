@@ -198,7 +198,7 @@ export function ExperimentCompareMetricsPage({
     const comparisons = data.experimentRunMetricComparisons;
     const latencyMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.ClockOutline />} />,
-      title: "Latency",
+      title: "延迟",
       baseExperimentValue: baseExperiment.averageRunLatencyMs,
       comparison: {
         numImprovements: comparisons?.latency.numRunsImproved ?? 0,
@@ -211,7 +211,7 @@ export function ExperimentCompareMetricsPage({
     };
     const totalTokensMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.TokensOutline />} />,
-      title: "Total Tokens",
+      title: "总 Token 数",
       baseExperimentValue: baseExperiment.costSummary.total.tokens,
       comparison: {
         numImprovements: comparisons?.totalTokenCount.numRunsImproved ?? 0,
@@ -223,7 +223,7 @@ export function ExperimentCompareMetricsPage({
     };
     const promptTokensMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.TokensOutline />} />,
-      title: "Prompt Tokens",
+      title: "提示词 Token",
       baseExperimentValue: baseExperiment.costSummary.prompt.tokens,
       comparison: {
         numImprovements: comparisons?.promptTokenCount.numRunsImproved ?? 0,
@@ -235,7 +235,7 @@ export function ExperimentCompareMetricsPage({
     };
     const completionTokensMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.TokensOutline />} />,
-      title: "Completion Tokens",
+      title: "补全 Token",
       baseExperimentValue: baseExperiment.costSummary.completion.tokens,
       comparison: {
         numImprovements: comparisons?.completionTokenCount.numRunsImproved ?? 0,
@@ -247,7 +247,7 @@ export function ExperimentCompareMetricsPage({
     };
     const totalCostMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.PriceTagsOutline />} />,
-      title: "Total Cost",
+      title: "总成本",
       baseExperimentValue: baseExperiment.costSummary.total.cost,
       comparison: {
         numImprovements: comparisons?.totalCost.numRunsImproved ?? 0,
@@ -260,7 +260,7 @@ export function ExperimentCompareMetricsPage({
     };
     const promptCostMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.PriceTagsOutline />} />,
-      title: "Prompt Cost",
+      title: "提示词成本",
       baseExperimentValue: baseExperiment.costSummary.prompt.cost,
       comparison: {
         numImprovements: comparisons?.promptCost.numRunsImproved ?? 0,
@@ -273,7 +273,7 @@ export function ExperimentCompareMetricsPage({
     };
     const completionCostMetric: MetricCardProps = {
       icon: <Icon svg={<Icons.PriceTagsOutline />} />,
-      title: "Completion Cost",
+      title: "补全成本",
       baseExperimentValue: baseExperiment.costSummary.completion.cost,
       comparison: {
         numImprovements: comparisons?.completionCost.numRunsImproved ?? 0,

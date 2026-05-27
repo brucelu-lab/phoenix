@@ -29,7 +29,7 @@ export const spanAttributesWithInputMessages = {
     output_messages: [
       {
         message: {
-          content: "This is an AI Answer",
+          content: "这是一条 AI 回答",
           role: "assistant",
         },
       },
@@ -39,7 +39,7 @@ export const spanAttributesWithInputMessages = {
     input_messages: [
       {
         message: {
-          content: "You are a chatbot",
+          content: "你是一个聊天机器人",
           role: "system",
         },
       },
@@ -128,7 +128,7 @@ export const testSpanOpenAITool: SpanTool = {
 
 export const testSpanAnthropicToolDefinition: AnthropicToolDefinition = {
   name: "get_weather",
-  description: "This is a test tool",
+  description: "这是一个测试工具",
   input_schema: {
     type: "object",
     properties: {
@@ -161,7 +161,7 @@ export const testSpanOpenAIToolCanonical: CanonicalToolDefinition = {
 // Canonical (CanonicalToolDefinition) form of the Anthropic span tool
 export const testSpanAnthropicToolCanonical: CanonicalToolDefinition = {
   name: "get_weather",
-  description: "This is a test tool",
+  description: "这是一个测试工具",
   parameters: {
     type: "object",
     properties: {

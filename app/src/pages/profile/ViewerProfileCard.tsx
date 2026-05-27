@@ -58,8 +58,8 @@ export function ViewerProfileCard() {
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Profile updated",
-            message: "Your profile has been updated",
+            title: "个人资料已更新",
+            message: "你的个人资料已更新",
           });
           reset({ username: data.username });
           refetchViewer();

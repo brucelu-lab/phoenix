@@ -116,7 +116,7 @@ export function TimeRangeForm(props: TimeRangeFormProps) {
       const end = endDate ? endDate.toDate(timeZone) : null;
       if (start && end && start > end) {
         setError("endDate", {
-          message: "End must be after the start date",
+          message: "结束时间必须在开始时间之后",
         });
         return;
       }

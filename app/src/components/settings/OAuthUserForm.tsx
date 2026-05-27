@@ -85,7 +85,7 @@ export function OAuthUserForm({
                 required: "Email is required",
                 pattern: {
                   value: /^[^@\s]+@[^@\s]+[.][^@\s]+$/,
-                  message: "Invalid email format",
+                  message: "邮箱格式无效",
                 },
               }}
               render={({

@@ -103,8 +103,8 @@ export function EditPromptButton(props: { prompt: EditPromptButton_data$key }) {
         onCompleted: () => {
           setIsOpen(false);
           notifySuccess({
-            title: "Prompt updated",
-            message: "The prompt has been updated successfully",
+            title: "提示词已更新",
+            message: "提示词更新成功",
           });
         },
         onError: (error) => {

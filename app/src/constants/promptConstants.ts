@@ -1,14 +1,14 @@
 export const DEFAULT_PROMPT_VERSION_TAGS = [
   {
     name: "production",
-    description: "The version deployed to production",
+    description: "部署到生产环境的版本",
   },
   {
     name: "staging",
-    description: "The version deployed to staging",
+    description: "部署到 staging 环境的版本",
   },
   {
     name: "development",
-    description: "The version deployed for development",
+    description: "部署到开发环境的版本",
   },
 ];

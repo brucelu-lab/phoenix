@@ -43,7 +43,7 @@ const FIELD_CONFIG: {
     field: "input",
     label: "input",
     description:
-      "From the dataset example. This is the input that will be passed to your task.",
+      "来自数据集样本。这是传递给任务的输入。",
     tooltip:
       "This value comes from the selected dataset example's input field. When running experiments, your task will receive inputs like this.",
   },
@@ -59,7 +59,7 @@ const FIELD_CONFIG: {
     field: "reference",
     label: "reference",
     description:
-      "From the dataset example. An optional reference point for comparison.",
+      "来自数据集样本。用于对比的可选参考。",
     tooltip:
       "This value comes from the selected dataset example's output field. It can be used as a reference point for comparison, but is not always present or required.",
   },

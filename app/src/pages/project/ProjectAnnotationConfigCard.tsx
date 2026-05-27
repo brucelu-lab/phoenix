@@ -257,8 +257,8 @@ const ProjectAnnotationConfigCardContent = (
               [annotationConfigId]: false,
             }));
             notifySuccess({
-              title: "Annotation config added",
-              message: "The annotation config has been added to the project.",
+              title: "标注配置已添加",
+              message: "该标注配置已添加到项目。",
             });
           },
           onError: (error) => {
@@ -289,8 +289,8 @@ const ProjectAnnotationConfigCardContent = (
             [annotationConfigId]: false,
           }));
           notifySuccess({
-            title: "Annotation config removed",
-            message: "The annotation config has been removed from the project.",
+            title: "标注配置已移除",
+            message: "该标注配置已从项目移除。",
           });
         },
         onError: (error) => {

@@ -143,7 +143,7 @@ const stringToInvocationParametersSchema = z
     if (!isObject(json)) {
       ctx.addIssue({
         code: "custom",
-        message: "The invocation parameters must be a valid JSON object",
+        message: "调用参数必须是有效 JSON 对象",
       });
       return z.NEVER;
     }
@@ -152,7 +152,7 @@ const stringToInvocationParametersSchema = z
     if (!success) {
       ctx.addIssue({
         code: "custom",
-        message: "The invocation parameters must be a valid JSON object",
+        message: "调用参数必须是有效 JSON 对象",
       });
       return z.NEVER;
     }
@@ -198,7 +198,7 @@ export const toolJSONSchemaSchema = z.string().transform((s, ctx) => {
   if (json == null || !isObject(json)) {
     ctx.addIssue({
       code: "custom",
-      message: "The tool JSON schema must be a valid JSON object",
+      message: "工具 JSON schema 必须是有效 JSON 对象",
     });
     return z.NEVER;
   }
@@ -289,7 +289,7 @@ const promptTemplateVariablesSchema = z.string().transform((s, ctx) => {
   if (!isStringKeyedObject(json)) {
     ctx.addIssue({
       code: "custom",
-      message: "The prompt template variables must be a valid JSON object",
+      message: "提示词模板变量必须是有效 JSON 对象",
     });
     return z.NEVER;
   }

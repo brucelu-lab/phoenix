@@ -63,8 +63,8 @@ export function APIKeysTable({ query }: { query: APIKeysTableFragment$key }) {
         },
         onCompleted: () => {
           notifySuccess({
-            title: "API key deleted",
-            message: "The key has been deleted and is no longer active.",
+            title: "API 密钥已删除",
+            message: "该密钥已删除且不再有效。",
           });
           startTransition(() => {
             refetch(

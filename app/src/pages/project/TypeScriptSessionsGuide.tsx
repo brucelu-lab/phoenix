@@ -57,7 +57,7 @@ const res = await assistant({
   sessionId: sessionId,
 });
 
-messages = [res, { role: "assistant", content: "What is my name?" }];
+messages = [res, { role: "assistant", content: "我叫什么名字？" }];
 
 await assistant({
   messages,

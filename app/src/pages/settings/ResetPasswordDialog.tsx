@@ -71,8 +71,8 @@ export function ResetPasswordDialog({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Password reset",
-            message: "Users password has been reset.",
+            title: "密码已重置",
+            message: "用户密码已重置。",
           });
           onClose();
         },

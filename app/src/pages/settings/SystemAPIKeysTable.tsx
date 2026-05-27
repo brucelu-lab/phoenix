@@ -67,8 +67,8 @@ export function SystemAPIKeysTable({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "System key deleted",
-            message: "The system key has been deleted and is no longer active.",
+            title: "系统密钥已删除",
+            message: "系统密钥已删除且不再有效。",
           });
           startTransition(() => {
             refetch(

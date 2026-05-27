@@ -79,7 +79,7 @@ export function DeleteDatasetEvaluatorDialog({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Evaluator deleted",
+            title: "评测器已删除",
             message: `Evaluator "${evaluatorName}" has been deleted.`,
           });
           onDeleted?.();

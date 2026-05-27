@@ -70,17 +70,17 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
       setSubmitError(null);
       if (!isJSONObjectString(updatedExample?.input)) {
         return setError("input", {
-          message: "Input must be a valid JSON object",
+          message: "输入必须是有效 JSON 对象",
         });
       }
       if (!isJSONObjectString(updatedExample?.output)) {
         return setError("output", {
-          message: "Output must be a valid JSON object",
+          message: "输出必须是有效 JSON 对象",
         });
       }
       if (!isJSONObjectString(updatedExample?.metadata)) {
         return setError("metadata", {
-          message: "Metadata must be a valid JSON object",
+          message: "元数据必须是有效 JSON 对象",
         });
       }
 

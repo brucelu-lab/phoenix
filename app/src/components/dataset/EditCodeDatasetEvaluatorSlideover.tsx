@@ -411,7 +411,7 @@ function EditCodeDatasetEvaluatorSlideoverContent({
                 connectionIds: updateConnectionIds ?? [],
               },
               onCompleted: () => {
-                notifySuccess({ title: "Evaluator updated" });
+                notifySuccess({ title: "评测器已更新" });
                 onDirtyChange?.(false);
                 onClose();
                 onUpdate?.();

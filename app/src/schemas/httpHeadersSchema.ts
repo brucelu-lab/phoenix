@@ -134,7 +134,7 @@ export const stringToHttpHeadersSchema = z.string().transform((input, ctx) => {
     if (!isObject(parsed)) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: "Must be a valid JSON object",
+        message: "必须是有效 JSON 对象",
       });
       return z.NEVER;
     }
@@ -162,7 +162,7 @@ export const stringToHttpHeadersSchema = z.string().transform((input, ctx) => {
   } catch (_error) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
-      message: "Invalid JSON format",
+      message: "JSON 格式无效",
     });
     return z.NEVER;
   }

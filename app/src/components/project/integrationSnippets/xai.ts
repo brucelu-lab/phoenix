@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "grok-4.1-mini",
-  messages: [{ role: "user", content: "What is the significance of the Turing test in AI?" }],
+  messages: [{ role: "user", content: "图灵测试在 AI 中的意义是什么？" }],
 });
 
 // Flush pending traces before the process exits

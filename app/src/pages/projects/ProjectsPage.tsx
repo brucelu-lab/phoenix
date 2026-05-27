@@ -271,7 +271,7 @@ export function ProjectsPageContent({
         refetch({
           onComplete: () => {
             notifySuccess({
-              title: "Project Deleted",
+              title: "项目已删除",
               message: `Project ${projectName} has been deleted.`,
             });
           },
@@ -287,7 +287,7 @@ export function ProjectsPageContent({
         refetch({
           onComplete: () => {
             notifySuccess({
-              title: "Project Cleared",
+              title: "项目已清除",
               message: `Project ${projectName} has been cleared of traces.`,
             });
           },
@@ -303,7 +303,7 @@ export function ProjectsPageContent({
         refetch({
           onComplete: () => {
             notifySuccess({
-              title: "Project Data Removed",
+              title: "项目数据已移除",
               message: `Old data from project ${projectName} have been removed.`,
             });
           },

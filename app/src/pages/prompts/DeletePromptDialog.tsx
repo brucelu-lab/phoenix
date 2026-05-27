@@ -47,8 +47,8 @@ export function DeletePromptDialog({
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Delete Successful",
-          message: "Prompt has been deleted.",
+          title: "删除成功",
+          message: "提示词已删除。",
         });
         onDeleted();
       },

@@ -59,8 +59,8 @@ export function UserRoleChangeDialog({
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Role Changed",
-          message: "Users role has been changed.",
+          title: "角色已变更",
+          message: "用户角色已变更。",
         });
         onClose();
       },

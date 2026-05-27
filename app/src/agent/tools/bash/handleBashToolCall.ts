@@ -66,7 +66,7 @@ export async function handleBashToolCall({
       errorText:
         error instanceof Error
           ? error.message
-          : "Failed to execute bash command",
+          : "执行 bash 命令失败",
     });
   }
 }

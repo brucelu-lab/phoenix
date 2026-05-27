@@ -87,11 +87,11 @@ export const useNotify = () => {
  * @returns A callback that triggers a notification. The callback returns a key that can be later used to programmatically dismiss the notification.
  * @example // Timed dismissal after 5 seconds
  * const notifySuccess = useNotifySuccess();
- * notifySuccess({ title: "Success", message: "Operation completed successfully.", expireMs: 5000 });
+ * notifySuccess({ title: "成功", message: "操作完成。", expireMs: 5000 });
  * @example // Programmatic dismissal
  * const queue = useNotificationQueue();
  * const notifySuccess = useNotifySuccess();
- * const key = notifySuccess({ title: "Success", message: "Operation completed successfully." });
+ * const key = notifySuccess({ title: "成功", message: "操作完成。" });
  * // later on...
  * queue.dismiss(key);
  */

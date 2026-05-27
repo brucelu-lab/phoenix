@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "deepseek-ai/DeepSeek-V3.1",
-  messages: [{ role: "user", content: "Describe the main concepts behind transformer architecture." }],
+  messages: [{ role: "user", content: "描述 Transformer 架构背后的核心概念。" }],
 });
 
 // Flush pending traces before the process exits

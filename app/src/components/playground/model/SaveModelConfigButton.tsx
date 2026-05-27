@@ -62,7 +62,7 @@ export function SaveModelConfigButton({
     });
 
     notifySuccess({
-      title: "Model Configuration Saved",
+      title: "模型配置已保存",
       message: `${ModelProviders[instance.model.provider]} model configuration saved as default for later use.`,
       expireMs: 3000,
     });

@@ -44,7 +44,7 @@ lcInstrumentation.manuallyInstrument(CallbackManagerModule);
 const model = new ChatOpenAI({ model: "gpt-4o-mini" });
 const agent = createReactAgent({ llm: model, tools: [] });
 const result = await agent.invoke(
-  { messages: [{ role: "user", content: "Explain the theory of relativity in simple terms." }] }
+  { messages: [{ role: "user", content: "用简单术语解释相对论。" }] }
 );
 
 // Flush pending traces before the process exits

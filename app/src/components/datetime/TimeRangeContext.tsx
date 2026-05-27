@@ -162,7 +162,7 @@ function useRegisterSetTimeRangeClientAction({
       } catch (error) {
         return {
           ok: false,
-          error: error instanceof Error ? error.message : "Invalid time range.",
+          error: error instanceof Error ? error.message : "时间范围无效。",
         };
       }
     }

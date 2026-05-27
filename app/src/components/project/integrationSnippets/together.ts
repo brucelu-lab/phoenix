@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-  messages: [{ role: "user", content: "Explain how neural networks learn from data." }],
+  messages: [{ role: "user", content: "解释神经网络如何从数据中学习。" }],
 });
 
 // Flush pending traces before the process exits

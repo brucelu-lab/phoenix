@@ -36,7 +36,7 @@ const TEMPLATE_VARIABLES_PATH_OPTIONS = [
   {
     id: "metadata",
     label: "metadata",
-    description: "Variables resolve from metadata",
+    description: "变量从元数据解析",
   },
 ];
 

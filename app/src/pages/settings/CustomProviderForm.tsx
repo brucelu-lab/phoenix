@@ -1374,7 +1374,7 @@ function TestConnectionButton({
         type: "set_result",
         payload: {
           status: "error",
-          errorMessage: err instanceof Error ? err.message : "Test failed",
+          errorMessage: err instanceof Error ? err.message : "测试失败",
           testedValuesSignature,
         },
       });

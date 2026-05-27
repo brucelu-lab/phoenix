@@ -188,8 +188,8 @@ export function DocumentAnnotationForm({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Annotation updated",
-            message: "Document annotation saved successfully.",
+            title: "标注已更新",
+            message: "文档标注保存成功。",
           });
           onSaved?.();
         },
@@ -217,8 +217,8 @@ export function DocumentAnnotationForm({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Annotation created",
-            message: "Document annotation saved successfully.",
+            title: "标注已创建",
+            message: "文档标注保存成功。",
           });
           onSaved?.();
         },

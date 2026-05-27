@@ -72,7 +72,7 @@ export function CreateDatasetButton({
         message = joined.charAt(0).toUpperCase() + joined.slice(1);
       }
       notifySuccess({
-        title: "Dataset created",
+        title: "数据集已创建",
         message,
         action: {
           text: "Go to Dataset",
@@ -90,7 +90,7 @@ export function CreateDatasetButton({
   const handleDatasetCreatedFromScratch = useCallback(
     (newDataset: { id: string; name: string }) => {
       notifySuccess({
-        title: "Dataset created",
+        title: "数据集已创建",
         message: `${newDataset.name} has been successfully created.`,
         action: {
           text: "Go to Dataset",

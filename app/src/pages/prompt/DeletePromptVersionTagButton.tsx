@@ -93,8 +93,8 @@ export function DeletePromptVersionTagButton({
                       },
                       onCompleted: () => {
                         notifySuccess({
-                          title: "Tag Deleted",
-                          message: "The tag has been deleted",
+                          title: "标签已删除",
+                          message: "标签已删除",
                         });
                       },
                     })

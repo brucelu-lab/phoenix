@@ -44,7 +44,7 @@ const urlFieldSchema = z
         return false;
       }
     },
-    { message: "Must be a valid URL" }
+    { message: "必须是有效 URL" }
   );
 
 // Base schema shared by all providers
@@ -78,7 +78,7 @@ const azureEndpointSchema = z
         return false;
       }
     },
-    { message: "Must be a valid URL" }
+    { message: "必须是有效 URL" }
   );
 
 const azureOpenAISchema = baseProviderSchema.extend({
@@ -144,7 +144,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
         if (!data.azure_api_key || data.azure_api_key.length === 0) {
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
-            message: "API key is required when using API key authentication",
+            message: "使用 API 密钥认证时需要 API 密钥",
             path: ["azure_api_key"],
           });
         }
@@ -154,7 +154,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
             message:
-              "Tenant ID is required for AD Token Provider authentication",
+              "AD Token Provider 认证需要 Tenant ID",
             path: ["azure_tenant_id"],
           });
         }
@@ -162,7 +162,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
             message:
-              "Client ID is required for AD Token Provider authentication",
+              "AD Token Provider 认证需要 Client ID",
             path: ["azure_client_id"],
           });
         }
@@ -173,7 +173,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
             message:
-              "Client Secret is required for AD Token Provider authentication",
+              "AD Token Provider 认证需要 Client Secret",
             path: ["azure_client_secret"],
           });
         }
@@ -189,7 +189,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
             message:
-              "Access Key ID is required when using Access Keys authentication",
+              "使用 Access Keys 认证时需要 Access Key ID",
             path: ["aws_access_key_id"],
           });
         }
@@ -200,7 +200,7 @@ export const providerFormSchema = baseProviderFormSchema.superRefine(
           ctx.addIssue({
             code: z.ZodIssueCode.custom,
             message:
-              "Secret Access Key is required when using Access Keys authentication",
+              "使用 Access Keys 认证时需要 Secret Access Key",
             path: ["aws_secret_access_key"],
           });
         }

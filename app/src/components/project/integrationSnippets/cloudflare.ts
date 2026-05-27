@@ -48,7 +48,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "@cf/meta/llama-3.1-8b-instruct",
-  messages: [{ role: "user", content: "What are the benefits of edge computing for AI applications?" }],
+  messages: [{ role: "user", content: "边缘计算对 AI 应用有哪些好处？" }],
 });
 
 // Flush pending traces before the process exits

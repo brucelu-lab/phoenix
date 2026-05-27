@@ -83,7 +83,7 @@ export function ExampleSelectionToolbar(props: ExampleSelectionToolbarProps) {
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Examples Deleted",
+          title: "样本已删除",
           message: `${selectedExamples.length} example${isPlural ? "s" : ""} have been deleted.`,
         });
         // Clear the selection

@@ -207,7 +207,7 @@ function EditCustomProviderDialogContent({
         onCompleted: () => {
           onClose();
           notifySuccess({
-            title: "Provider updated",
+            title: "提供商已更新",
             message: `${providerName} has been updated successfully.`,
           });
         },

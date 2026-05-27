@@ -101,7 +101,7 @@ export function DeleteSecretButton({
                         onCompleted: () => {
                           setIsOpen(false);
                           notifySuccess({
-                            title: "Secret deleted",
+                            title: "密钥已删除",
                             message: `${secretKey} has been removed.`,
                           });
                         },

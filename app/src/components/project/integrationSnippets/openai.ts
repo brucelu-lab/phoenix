@@ -39,7 +39,7 @@ instrumentation.manuallyInstrument(OpenAI);
 const openai = new OpenAI();
 const response = await openai.chat.completions.create({
   model: "gpt-4o-mini",
-  messages: [{ role: "user", content: "Explain the theory of relativity in simple terms." }],
+  messages: [{ role: "user", content: "用简单术语解释相对论。" }],
 });
 
 // Flush pending traces before the process exits

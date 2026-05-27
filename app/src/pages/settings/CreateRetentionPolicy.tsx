@@ -86,9 +86,9 @@ export function CreateRetentionPolicy(props: { onCreate: () => void }) {
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Retention policy created successfully",
+          title: "保留策略创建成功",
           message:
-            "The retention policy has been created. You can now add this policy to projects.",
+            "保留策略已创建。你可以把该策略添加到项目。",
         });
         props.onCreate();
       },

@@ -306,7 +306,7 @@ export function DatasetsTable(props: DatasetsTableProps) {
                 datasetMetadata={row.original.metadata}
                 onDatasetEdit={() => {
                   notifySuccess({
-                    title: "Dataset updated",
+                    title: "数据集已更新",
                     message: `${row.original.name} has been successfully updated.`,
                   });
                   refetch(
@@ -327,7 +327,7 @@ export function DatasetsTable(props: DatasetsTableProps) {
                 }}
                 onDatasetDelete={() => {
                   notifySuccess({
-                    title: "Dataset deleted",
+                    title: "数据集已删除",
                     message: `${row.original.name} has been successfully deleted.`,
                   });
                   refetch(

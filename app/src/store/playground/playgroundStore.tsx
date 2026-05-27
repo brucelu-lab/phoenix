@@ -91,7 +91,7 @@ export const generateChatCompletionTemplate = (): PlaygroundChatTemplate => ({
     {
       id: generateMessageId(),
       role: "system",
-      content: "You are a chatbot",
+      content: "你是一个聊天机器人",
     },
     {
       id: generateMessageId(),

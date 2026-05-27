@@ -114,7 +114,7 @@ export const useDatasetSplitMutations = ({
           },
           onCompleted: () => {
             notifySuccess({
-              title: "Split created",
+              title: "切分已创建",
               message: `Created split "${trimmedSplitName}"`,
             });
             onCompleted?.();

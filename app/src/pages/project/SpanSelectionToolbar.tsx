@@ -93,7 +93,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
         },
         onCompleted: () => {
           notifySuccess({
-            title: "Examples added to dataset",
+            title: "样本已添加到数据集",
             message: `${selectedSpans.length} example${isPlural ? "s have" : " has"} been added to the dataset.`,
             action: {
               text: "View dataset",
@@ -131,7 +131,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Traces deleted",
+          title: "追踪已删除",
           message: `${traceIds.length} trace${traceIds.length !== 1 ? "s have" : " has"} been deleted.`,
         });
         onClearSelection();
@@ -214,7 +214,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
             currentProjectId={projectId}
             onSuccess={({ projectName }) => {
               notifySuccess({
-                title: "Transfer Success",
+                title: "迁移成功",
                 message: `The traces have been moved to project: ${projectName}`,
               });
               onClearSelection();
@@ -257,7 +257,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
                       onDatasetCreated={(dataset) => {
                         setIsCreatingDataset(false);
                         notifySuccess({
-                          title: "Dataset created",
+                          title: "数据集已创建",
                           message: `${dataset.name} has been successfully created.`,
                         });
                         setIsDatasetPopoverOpen(true);

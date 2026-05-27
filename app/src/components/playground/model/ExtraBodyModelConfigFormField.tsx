@@ -35,7 +35,7 @@ const extraBodyCodec: JSONObjectFieldCodec<Record<string, unknown>> = {
     try {
       const parsed = JSON.parse(raw);
       if (!isObject(parsed) || Array.isArray(parsed)) {
-        return { success: false, message: "Extra Body must be a JSON object" };
+        return { success: false, message: "Extra Body 必须是 JSON 对象" };
       }
       return {
         success: true,
@@ -45,7 +45,7 @@ const extraBodyCodec: JSONObjectFieldCodec<Record<string, unknown>> = {
             : undefined,
       };
     } catch {
-      return { success: false, message: "Invalid JSON format" };
+      return { success: false, message: "JSON 格式无效" };
     }
   },
 };

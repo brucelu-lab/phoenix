@@ -206,7 +206,7 @@ export async function parseJSONLFile(
     if (previewRows.length === 0) {
       return {
         success: false,
-        error: { line: 0, message: "JSONL file is empty" },
+        error: { line: 0, message: "JSONL 文件为空" },
       };
     }
 

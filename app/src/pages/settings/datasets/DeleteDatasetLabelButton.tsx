@@ -89,8 +89,8 @@ export function DeleteDatasetLabelButton(props: DeleteDatasetLabelButtonProps) {
                             },
                             onCompleted: () => {
                               notifySuccess({
-                                title: "Label Deleted",
-                                message: "Successfully deleted dataset label",
+                                title: "标签已删除",
+                                message: "成功删除数据集标签",
                               });
                               setIsOpen(false);
                             },

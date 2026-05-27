@@ -72,7 +72,7 @@ export function NewSecretButton({ connectionId }: { connectionId: string }) {
                     onCompleted: () => {
                       setIsOpen(false);
                       notifySuccess({
-                        title: "Secret created",
+                        title: "密钥已创建",
                         message: `${key.trim()} is now stored on the server.`,
                       });
                     },

@@ -471,8 +471,8 @@ function AddSpanToDatasetButton({
               spanId={span.id}
               onCompleted={(datasetId) => {
                 notifySuccess({
-                  title: "Span Added to Dataset",
-                  message: "Successfully added span to dataset",
+                  title: "跨度已添加到数据集",
+                  message: "成功添加跨度到数据集",
                   action: {
                     text: "View Dataset",
                     onClick: () => {

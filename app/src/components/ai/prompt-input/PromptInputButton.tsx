@@ -30,7 +30,7 @@ function resolveTooltip(tooltip: PromptInputButtonTooltip) {
  *   <Icon svg={<Icons.PlusOutline />} />
  * </PromptInputButton>
  *
- * <PromptInputButton tooltip={{ content: "Search", shortcut: "⌘K" }}>
+ * <PromptInputButton tooltip={{ content: "搜索", shortcut: "⌘K" }}>
  *   <Icon svg={<Icons.SearchOutline />} />
  * </PromptInputButton>
  * ```

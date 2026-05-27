@@ -116,8 +116,8 @@ export function EditRetentionPolicy(props: EditRetentionPolicyProps) {
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Retention policy updated successfully",
-          message: "The retention policy has been updated successfully.",
+          title: "保留策略更新成功",
+          message: "保留策略更新成功。",
         });
         props.onEditCompleted();
       },

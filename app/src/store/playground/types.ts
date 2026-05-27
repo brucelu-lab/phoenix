@@ -45,7 +45,7 @@ import type { PartialOutputToolCall } from "@phoenix/pages/playground/Playground
 
 /**
  * A chat message with a role and content
- * @example { role: "user", content: "What is the weather in San Francisco?" }
+ * @example { role: "user", content: "旧金山的天气怎么样？" }
  * @example
  * ```typescript
  * {

@@ -81,7 +81,7 @@ export function SpanAnnotationActionMenu(props: SpanAnnotationActionMenuProps) {
         },
         onCompleted: () => {
           onSpanAnnotationActionSuccess({
-            title: "Annotation Deleted",
+            title: "标注已删除",
             message: `Annotation ${annotationName} has been deleted.`,
           });
           setDeleting(false);

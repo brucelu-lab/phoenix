@@ -76,7 +76,7 @@ export const ClonePromptDialog = ({
           metadata = JSON.parse(data.metadata);
         } catch (_error) {
           setError("metadata", {
-            message: "Failed to parse metadata as JSON",
+            message: "解析元数据为 JSON 失败",
           });
           return;
         }
@@ -92,7 +92,7 @@ export const ClonePromptDialog = ({
         },
         onCompleted: (data) => {
           notifySuccess({
-            title: "Prompt cloned successfully",
+            title: "提示词克隆成功",
             action: {
               text: "View Prompt",
               onClick: () => {

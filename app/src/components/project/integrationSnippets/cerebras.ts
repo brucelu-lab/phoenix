@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "llama3.1-8b",
-  messages: [{ role: "user", content: "What makes large language models effective at understanding context?" }],
+  messages: [{ role: "user", content: "是什么让大语言模型擅长理解上下文？" }],
 });
 
 // Flush pending traces before the process exits

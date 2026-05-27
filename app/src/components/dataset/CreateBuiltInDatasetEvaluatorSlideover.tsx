@@ -225,8 +225,8 @@ function CreateBuiltInDatasetEvaluatorSlideoverContent({
         const createdId = response.createDatasetBuiltinEvaluator.evaluator.id;
         onEvaluatorCreated?.(createdId);
         notifySuccess({
-          title: "Evaluator created",
-          message: "The evaluator has been added to the dataset.",
+          title: "评测器已创建",
+          message: "评测器已添加到数据集。",
         });
         onClose();
       },

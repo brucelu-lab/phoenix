@@ -131,7 +131,7 @@ function NewProjectDialog({
         onCompleted: (response) => {
           const createdProject = response.createProject.project;
           notifySuccess({
-            title: "Project created",
+            title: "项目已创建",
             message: `Project "${createdProject.name}" has been successfully created.`,
           });
           onProjectCreated();
@@ -174,7 +174,7 @@ function NewProjectDialog({
                       pattern: {
                         value: URI_SAFE_PATTERN,
                         message:
-                          "Use only letters, numbers, hyphens, underscores, and dots.",
+                          "仅允许使用字母、数字、连字符、下划线和点号。",
                       },
                       maxLength: {
                         value: 100,

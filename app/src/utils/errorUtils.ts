@@ -93,7 +93,7 @@ const isErrorsArray = (errors: unknown): errors is { message: string }[] => {
  * {
  *  // Other error properties
  *  source: {
- *      errors: [{ message: "Actual Error Message" }]
+ *      errors: [{ message: "实际错误信息" }]
  *  }
  * }
  * ```

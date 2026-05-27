@@ -173,13 +173,13 @@ export const RetentionPoliciesTable = ({
               )}
               onPolicyEdit={() => {
                 notifySuccess({
-                  title: "Policy Updated",
+                  title: "策略已更新",
                   message: `Policy "${row.original.name}" was updated and will take effect shortly.`,
                 });
               }}
               onPolicyDelete={() => {
                 notifySuccess({
-                  title: "Policy deleted",
+                  title: "策略已删除",
                   message: `Policy "${row.original.name}" was deleted`,
                 });
               }}

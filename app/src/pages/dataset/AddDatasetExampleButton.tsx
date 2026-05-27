@@ -61,9 +61,9 @@ export function AddDatasetExampleButton(props: AddDatasetExampleButtonProps) {
 
   const handleManualExampleAdded = useCallback(() => {
     notifySuccess({
-      title: "Dataset Updated",
+      title: "数据集已更新",
       message:
-        "The example has been added successfully and the version has been updated.",
+        "样本已成功添加，版本已更新。",
     });
     onAddExampleCompleted();
   }, [notifySuccess, onAddExampleCompleted]);

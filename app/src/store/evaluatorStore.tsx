@@ -176,7 +176,7 @@ export const EVALUATOR_MAPPING_SOURCE_DEFAULT: EvaluatorMappingSource = {
             properties: {
               param: {
                 type: "string",
-                description: "Example parameter",
+                description: "示例参数",
               },
             },
             required: ["param"],

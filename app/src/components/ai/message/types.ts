@@ -70,7 +70,7 @@ export interface MessageActionsProps
  * @example
  * ```tsx
  * tooltip="复制到剪贴板"
- * tooltip={{ content: "Regenerate", position: "bottom" }}
+ * tooltip={{ content: "重新生成", position: "bottom" }}
  * ```
  */
 export type MessageActionTooltip =

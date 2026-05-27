@@ -127,7 +127,7 @@ export function ProjectActionMenu({
                 case ProjectAction.COPY_NAME: {
                   navigator.clipboard.writeText(projectName);
                   notifySuccess({
-                    title: "Project name copied to clipboard",
+                    title: "项目名称已复制到剪贴板",
                   });
                   return;
                 }

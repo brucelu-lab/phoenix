@@ -98,9 +98,9 @@ export const ProjectRetentionPolicyCard = ({
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Project retention policy updated",
+          title: "项目保留策略已更新",
           message:
-            "The new policy will take effect at the configured schedule.",
+            "新策略将在配置的计划时间生效。",
         });
       },
       onError: () => {

@@ -271,7 +271,7 @@ function EditBuiltInDatasetEvaluatorSlideoverContent({
       },
       onCompleted: () => {
         notifySuccess({
-          title: "Evaluator updated",
+          title: "评测器已更新",
         });
         onClose();
         if (onUpdate) {

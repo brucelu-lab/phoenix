@@ -78,7 +78,7 @@ function NewProviderDialogContent({ onClose }: { onClose: () => void }) {
           // Close modal only after successful completion
           onClose();
           notifySuccess({
-            title: "Provider created",
+            title: "提供商已创建",
             message: `${providerName} has been created successfully.`,
           });
         },

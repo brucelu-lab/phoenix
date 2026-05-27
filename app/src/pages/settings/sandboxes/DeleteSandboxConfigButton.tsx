@@ -54,7 +54,7 @@ export function DeleteSandboxConfigButton({
       onCompleted: () => {
         setIsOpen(false);
         notifySuccess({
-          title: "Config deleted",
+          title: "配置已删除",
           message: `${config.name} was deleted.`,
         });
       },

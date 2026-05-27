@@ -91,8 +91,8 @@ export function DeletePromptLabelButton(props: DeletePromptLabelButtonProps) {
                             },
                             onCompleted: () => {
                               notifySuccess({
-                                title: "Label Deleted",
-                                message: "Successfully deleted prompt label",
+                                title: "标签已删除",
+                                message: "成功删除提示词标签",
                               });
                               setIsOpen(false);
                             },

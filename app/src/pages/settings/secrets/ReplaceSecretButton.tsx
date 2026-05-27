@@ -48,7 +48,7 @@ export function ReplaceSecretButton({
       onCompleted: () => {
         setIsOpen(false);
         notifySuccess({
-          title: "Secret updated",
+          title: "密钥已更新",
           message: `${secretKey} has been replaced.`,
         });
       },

@@ -334,7 +334,7 @@ const EditEvaluatorDialog = ({
         onCompleted: () => {
           onClose();
           notifySuccess({
-            title: "Evaluator updated",
+            title: "评测器已更新",
           });
           if (onUpdate) {
             onUpdate();

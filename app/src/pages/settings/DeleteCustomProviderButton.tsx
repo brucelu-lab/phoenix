@@ -70,7 +70,7 @@ function DeleteProviderDialogContent({
         // Close modal and notify on success
         onClose();
         notifySuccess({
-          title: "Provider deleted",
+          title: "提供商已删除",
           message: `${providerName} has been deleted successfully.`,
         });
       },

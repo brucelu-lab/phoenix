@@ -168,7 +168,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
                   } catch (error) {
                     return error instanceof Error
                       ? error.message
-                      : "Invalid cron expression";
+                      : "Cron 表达式无效";
                   }
                 },
               }}

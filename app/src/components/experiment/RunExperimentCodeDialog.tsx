@@ -71,7 +71,7 @@ const task = async (example: Example) => {
   const response = await openai.chat.completions.create({
     model: "gpt-4o",
     messages: [
-      { role: "system", content: "You are a helpful assistant." },
+      { role: "system", content: "你是一个有用的助手。" },
       { role: "user", content: JSON.stringify(example.input, null, 2) },
     ],
   });

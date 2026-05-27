@@ -52,8 +52,8 @@ export function DeleteUserDialog({
       },
       onCompleted: () => {
         notifySuccess({
-          title: "User deleted",
-          message: "User has been deleted.",
+          title: "用户已删除",
+          message: "用户已删除。",
         });
         onDeleted();
         onClose();

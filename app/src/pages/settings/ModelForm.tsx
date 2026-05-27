@@ -227,7 +227,7 @@ export function ModelForm({
               required: "Model name is required",
               minLength: {
                 value: 1,
-                message: "Name must not be empty",
+                message: "名称不能为空",
               },
             }}
             render={({

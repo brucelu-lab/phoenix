@@ -477,7 +477,7 @@ export function DatasetFromFileForm(props: DatasetFromFileFormProps) {
           setPreviewRows([]);
           setTotalRowCount(null);
           setErrorMessage(
-            error instanceof Error ? error.message : "Failed to parse file"
+            error instanceof Error ? error.message : "解析文件失败"
           );
         } finally {
           if (generation === parseGeneration.current) {

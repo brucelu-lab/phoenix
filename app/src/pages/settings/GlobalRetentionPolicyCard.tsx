@@ -107,7 +107,7 @@ export const GlobalRetentionPolicyCard = () => {
           }
           if (maxDays === 0) {
             notifySuccess({
-              title: "Default retention policy disabled",
+              title: "默认保留策略已禁用",
               expireMs: 5000,
             });
           } else {

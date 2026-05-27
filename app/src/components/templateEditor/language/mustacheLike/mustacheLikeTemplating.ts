@@ -150,7 +150,7 @@ export const validateMustacheSections = (
     return { errors: [], warnings: [] };
   } catch (parseError) {
     const message =
-      parseError instanceof Error ? parseError.message : "Invalid template";
+      parseError instanceof Error ? parseError.message : "模板无效";
     return {
       errors: [message],
       warnings: [],

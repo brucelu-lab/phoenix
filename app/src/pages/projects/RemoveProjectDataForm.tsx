@@ -71,7 +71,7 @@ export function RemoveProjectDataForm(props: RemoveProjectDataFormProps) {
       const parsedDate = params.endDate.toDate(getLocalTimeZone());
       if (!dateIsValid(parsedDate)) {
         return setError("endDate", {
-          message: "Date is not in a valid format",
+          message: "日期格式无效",
         });
       }
 

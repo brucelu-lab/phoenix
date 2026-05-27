@@ -14,7 +14,7 @@ const provider = register({
 
 const stream = chat({
   adapter: openaiText("gpt-4o-mini"),
-  messages: [{ role: "user", content: "What is OpenInference?" }],
+  messages: [{ role: "user", content: "OpenInference 是什么？" }],
   middleware: [openInferenceMiddleware()],
 });
 

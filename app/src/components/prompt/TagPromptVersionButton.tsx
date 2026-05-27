@@ -62,7 +62,7 @@ export function TagPromptVersionButton({
                 onTagSet={(tagName) => {
                   setFetchKey((prev) => prev + 1);
                   notifySuccess({
-                    title: "Tag Set",
+                    title: "标签已设置",
                     message: `The tag ${tagName} has been set on the version`,
                   });
                 }}
@@ -98,7 +98,7 @@ export function TagPromptVersionButton({
           onNewTagCreated={(newTag) => {
             setFetchKey((prev) => prev + 1);
             notifySuccess({
-              title: "Tag Created",
+              title: "标签已创建",
               message: `The tag ${newTag.name} has been created and set on the prompt version`,
             });
           }}

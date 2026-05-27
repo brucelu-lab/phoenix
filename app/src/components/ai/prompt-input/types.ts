@@ -226,8 +226,8 @@ export interface PromptInputSubmitProps {
  * @example
  * ```tsx
  * tooltip="附加文件"
- * tooltip={{ content: "Search the web", shortcut: "⌘K" }}
- * tooltip={{ content: "Voice input", shortcut: "⌘M", position: "bottom" }}
+ * tooltip={{ content: "搜索网页", shortcut: "⌘K" }}
+ * tooltip={{ content: "语音输入", shortcut: "⌘M", position: "bottom" }}
  * ```
  */
 export type PromptInputButtonTooltip =
@@ -255,7 +255,7 @@ export type PromptInputButtonTooltip =
  *   <Icon svg={<Icons.PlusOutline />} />
  * </PromptInputButton>
  *
- * <PromptInputButton tooltip={{ content: "Search", shortcut: "⌘K" }}>
+ * <PromptInputButton tooltip={{ content: "搜索", shortcut: "⌘K" }}>
  *   <Icon svg={<Icons.SearchOutline />} />
  * </PromptInputButton>
  * ```

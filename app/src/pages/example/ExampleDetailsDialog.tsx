@@ -271,7 +271,7 @@ function ExampleDetailsDialogContent({
             currentRevision={revision}
             onCompleted={() => {
               notifySuccess({
-                title: "Example updated",
+                title: "样本已更新",
                 message: `Example ${exampleId} has been updated.`,
               });
               setFetchKey((key) => key + 1);

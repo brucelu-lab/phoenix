@@ -109,7 +109,7 @@ export const renderGenerativeUISpecSchema = z
     elements: z.record(z.string(), generativeUIElementSchema),
   })
   .refine((spec) => spec.root in spec.elements, {
-    message: "Generative UI root must reference an element.",
+    message: "生成式 UI 的根必须引用一个元素。",
     path: ["root"],
   })
   .refine(
@@ -118,7 +118,7 @@ export const renderGenerativeUISpecSchema = z
         (element.children ?? []).every((childId) => childId in spec.elements)
       ),
     {
-      message: "Generative UI children must reference existing elements.",
+      message: "生成式 UI 的子元素必须引用已存在的元素。",
       path: ["elements"],
     }
   );
@@ -137,12 +137,12 @@ export const generativeUICatalog = defineCatalog(schema, {
     StackedBarChart: {
       props: stackedBarChartPropsSchema,
       description:
-        "Horizontal stacked bar chart for comparing segment totals across categories.",
+        "水平堆叠柱状图，用于跨分类比较各段总和。",
     },
     LineChart: {
       props: lineChartPropsSchema,
       description:
-        "Compact multi-line trend chart with optional series labels and x-axis labels.",
+        "紧凑型多线趋势图，含可选系列标签与 x 轴标签。",
     },
   },
   actions: {},

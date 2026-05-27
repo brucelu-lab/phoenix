@@ -207,7 +207,7 @@ const CreateEvaluatorDialog = ({
           onEvaluatorCreated?.(createdId);
           onClose();
           notifySuccess({
-            title: "Evaluator created",
+            title: "评测器已创建",
           });
         },
         onError: (error) => {

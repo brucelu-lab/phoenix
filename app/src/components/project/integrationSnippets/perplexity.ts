@@ -46,7 +46,7 @@ const openai = new OpenAI({
 });
 const response = await openai.chat.completions.create({
   model: "sonar",
-  messages: [{ role: "user", content: "What are the latest developments in renewable energy?" }],
+  messages: [{ role: "user", content: "可再生能源领域有哪些最新进展？" }],
 });
 
 // Flush pending traces before the process exits

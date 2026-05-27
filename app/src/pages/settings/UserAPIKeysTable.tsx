@@ -69,8 +69,8 @@ export function UserAPIKeysTable({
         },
         onCompleted: () => {
           notifySuccess({
-            title: "User key deleted",
-            message: "The user key has been deleted and is no longer active.",
+            title: "用户密钥已删除",
+            message: "用户密钥已删除且不再有效。",
           });
           startTransition(() => {
             refetch(
