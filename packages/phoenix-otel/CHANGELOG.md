@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.2](https://github.com/Arize-ai/phoenix/compare/arize-phoenix-otel-v0.16.1...arize-phoenix-otel-v0.16.2) (2026-05-27)
+
+
+### Bug Fixes
+
+* **otel:** remove dead importlib_metadata fallback ([#13437](https://github.com/Arize-ai/phoenix/issues/13437)) ([008a7a1](https://github.com/Arize-ai/phoenix/commit/008a7a1dd562e51bafa605a895e56d5c7cf7d405))
+
 ## [0.16.1](https://github.com/Arize-ai/phoenix/compare/arize-phoenix-otel-v0.16.0...arize-phoenix-otel-v0.16.1) (2026-05-03)
 
 
