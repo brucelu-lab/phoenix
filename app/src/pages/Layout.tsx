@@ -171,7 +171,7 @@ function SideNav() {
           <li>
             <NavLink
               to="/projects"
-              text="Tracing"
+              text="追踪"
               leadingVisual={<Icon svg={<Icons.Trace />} />}
               trailingVisual={
                 loaderData?.projectCount != null ? (
@@ -184,7 +184,7 @@ function SideNav() {
           <li key="dashboards">
             <NavLink
               to="/dashboards"
-              text="Dashboards"
+              text="仪表盘"
               leadingVisual={<Icon svg={<Icons.GridOutline />} />}
               isExpanded={isSideNavExpanded}
             />
@@ -205,7 +205,7 @@ function SideNav() {
           <li key="playground">
             <NavLink
               to="/playground"
-              text="Playground"
+              text="实验台"
               leadingVisual={<Icon svg={<Icons.PlayCircleOutline />} />}
               isExpanded={isSideNavExpanded}
             />
@@ -213,7 +213,7 @@ function SideNav() {
           <li key="evaluators">
             <NavLink
               to="/evaluators"
-              text="Evaluators"
+              text="评测器"
               leadingVisual={<Icon svg={<Icons.Scale />} />}
               trailingVisual={
                 loaderData?.evaluatorCount != null ? (
@@ -226,7 +226,7 @@ function SideNav() {
           <li key="prompts">
             <NavLink
               to="/prompts"
-              text="Prompts"
+              text="提示词"
               leadingVisual={<Icon svg={<Icons.MessageSquareOutline />} />}
               trailingVisual={
                 loaderData?.promptCount != null ? (
@@ -260,7 +260,7 @@ function SideNav() {
           <li key="settings">
             <NavLink
               to="/settings/general"
-              text="Settings"
+              text="设置"
               leadingVisual={<Icon svg={<Icons.SettingsOutline />} />}
               isExpanded={isSideNavExpanded}
             />
@@ -271,7 +271,7 @@ function SideNav() {
           <li key="support">
             <NavLink
               to="/support"
-              text="Support"
+              text="支持"
               leadingVisual={<Icon svg={<Icons.LifeBuoy />} />}
               isExpanded={isSideNavExpanded}
             />
@@ -282,7 +282,7 @@ function SideNav() {
           <li key="profile">
             <NavLink
               to="/profile"
-              text="Profile"
+              text="个人资料"
               leadingVisual={<Icon svg={<Icons.PersonOutline />} />}
               isExpanded={isSideNavExpanded}
             />
@@ -294,7 +294,7 @@ function SideNav() {
               </Suspense>
               <li key="logout">
                 <NavButton
-                  text="Log Out"
+                  text="退出登录"
                   leadingVisual={<Icon svg={<Icons.LogOut />} />}
                   onClick={onLogout}
                 />

@@ -177,7 +177,7 @@ export type ChatTemplateMessageProps = PropsWithChildren<{
  *
  * @example
  * <ChatTemplateMessageCard role="system">
- *   <ChatTemplateMessageTextPart text="Hello, world!" templateFormat={TemplateFormats.NONE} />
+ *   <ChatTemplateMessageTextPart text="你好，世界！" templateFormat={TemplateFormats.NONE} />
  *   <ChatTemplateMessageToolCallPart toolCall={toolCall} provider={provider} />
  *   <ChatTemplateMessageToolResultPart toolResult={toolResult} />
  * </ChatTemplateMessageCard>

@@ -162,7 +162,7 @@ export function DocsLink({ isExpanded }: { isExpanded: boolean }) {
     <ExternalLink
       href="https://arize.com/docs/phoenix"
       leadingVisual={<Icon svg={<Icons.BookOutline />} />}
-      text="Documentation"
+      text="文档"
       isExpanded={isExpanded}
     />
   );
@@ -174,7 +174,7 @@ export function GitHubLink({ isExpanded }: { isExpanded: boolean }) {
       href="https://github.com/Arize-ai/phoenix"
       leadingVisual={<Icon svg={<Icons.GitHub />} />}
       trailingVisual={<GitHubStarCount />}
-      text="Star on GitHub"
+      text="在 GitHub 上 Star"
       isExpanded={isExpanded}
     />
   );
@@ -348,7 +348,7 @@ export const ManagementLink = ({ isExpanded }: { isExpanded: boolean }) => {
         <ExternalLink
           href={window.Config.managementUrl}
           leadingVisual={<Icon svg={<Icons.Server />} />}
-          text="Management Console"
+          text="管理控制台"
           replaceTab
           isExpanded={isExpanded}
         />
