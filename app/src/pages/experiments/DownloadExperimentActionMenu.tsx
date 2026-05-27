@@ -40,8 +40,8 @@ export function DownloadExperimentActionMenu({
               }
             }}
           >
-            <MenuItem id="csv">Download CSV</MenuItem>
-            <MenuItem id="json">Download JSON</MenuItem>
+            <MenuItem id="csv">下载 CSV</MenuItem>
+            <MenuItem id="json">下载 JSON</MenuItem>
           </Menu>
         </Popover>
       </MenuTrigger>

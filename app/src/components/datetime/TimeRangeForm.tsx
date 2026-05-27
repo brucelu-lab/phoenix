@@ -147,7 +147,7 @@ export function TimeRangeForm(props: TimeRangeFormProps) {
               hideTimeZone
               css={dateFieldCSS}
             >
-              <Label>Start Date</Label>
+              <Label>开始日期</Label>
               <DateInput>
                 {(segment) => <DateSegment segment={segment} />}
               </DateInput>
@@ -158,7 +158,7 @@ export function TimeRangeForm(props: TimeRangeFormProps) {
           size="S"
           excludeFromTabOrder
           onPress={onStartClear}
-          aria-label="Clear start date and time"
+          aria-label="清除开始日期时间"
           leadingVisual={<Icon svg={<Icons.Refresh />} />}
         />
       </div>
@@ -180,7 +180,7 @@ export function TimeRangeForm(props: TimeRangeFormProps) {
                 hideTimeZone
                 css={dateFieldCSS}
               >
-                <Label>End Date</Label>
+                <Label>结束日期</Label>
                 <DateInput>
                   {(segment) => <DateSegment segment={segment} />}
                 </DateInput>
@@ -193,7 +193,7 @@ export function TimeRangeForm(props: TimeRangeFormProps) {
           size="S"
           excludeFromTabOrder
           onPress={onEndClear}
-          aria-label="Clear end date and time"
+          aria-label="清除结束日期时间"
           leadingVisual={<Icon svg={<Icons.Refresh />} />}
         />
       </div>

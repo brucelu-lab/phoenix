@@ -133,7 +133,7 @@ export function SpanNotesEditor(props: SpanNotesEditorProps) {
         <FocusHotkey hotkey={NOTE_HOTKEY} />
         <MessageBar
           onSendMessage={onAddNote}
-          placeholder="Add a note"
+          placeholder="添加备注"
           isSending={isAddingNote}
         />
       </FocusScope>
@@ -150,7 +150,7 @@ export function SpanNotesEditorSkeleton() {
           <MessageBubbleSkeleton isOutgoing={true} height={40} />
         </Flex>
       </View>
-      <MessageBar onSendMessage={() => {}} placeholder="Add a note" />
+      <MessageBar onSendMessage={() => {}} placeholder="添加备注" />
     </Flex>
   );
 }

@@ -32,10 +32,10 @@ export const EvaluatorExampleSelect = (props: EvaluatorExampleSelectProps) => {
       selectionMode="single"
       value={selectedExampleId}
       onChange={(value) => onSelectExampleId(value as string | null)}
-      aria-label="Select an example"
-      placeholder="Select an example"
+      aria-label="选择样本"
+      placeholder="选择样本"
     >
-      <Label>Example</Label>
+      <Label>样本</Label>
       <Button
         trailingVisual={<SelectChevronUpDownIcon />}
         size="S"

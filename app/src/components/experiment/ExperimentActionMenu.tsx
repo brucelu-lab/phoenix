@@ -150,7 +150,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
         alignItems="center"
       >
         <Icon svg={<Icons.Trace />} />
-        <Text>View run traces</Text>
+        <Text>查看运行追踪</Text>
       </Flex>
     </MenuItem>,
     <MenuItem
@@ -164,7 +164,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
         alignItems="center"
       >
         <Icon svg={<Icons.InfoOutline />} />
-        <Text>View details</Text>
+        <Text>查看详情</Text>
       </Flex>
     </MenuItem>,
     <MenuItem
@@ -178,7 +178,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
         alignItems="center"
       >
         <Icon svg={<Icons.DuplicateOutline />} />
-        <Text>Copy experiment ID</Text>
+        <Text>复制实验 ID</Text>
       </Flex>
     </MenuItem>,
   ];
@@ -195,7 +195,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
           alignItems="center"
         >
           <Icon svg={<Icons.PlayCircleOutline />} />
-          <Text>Open in Playground</Text>
+          <Text>在实验台中打开</Text>
         </Flex>
       </MenuItem>
     );
@@ -213,7 +213,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
           alignItems="center"
         >
           <Icon svg={<Icons.StopCircleOutline />} />
-          <Text>Stop</Text>
+          <Text>停止</Text>
         </Flex>
       </MenuItem>
     );
@@ -230,7 +230,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
           alignItems="center"
         >
           <Icon svg={<Icons.PlayCircleOutline />} />
-          <Text>Resume</Text>
+          <Text>继续</Text>
         </Flex>
       </MenuItem>
     );
@@ -259,7 +259,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
       <MenuTrigger>
         <Button
           size={props.size}
-          aria-label="Experiment action menu"
+          aria-label="实验操作菜单"
           leadingVisual={<Icon svg={<Icons.MoreHorizontalOutline />} />}
         />
         <Popover>
@@ -363,7 +363,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Experiment</DialogTitle>
+                <DialogTitle>删除实验</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>
@@ -419,7 +419,7 @@ export function ExperimentActionMenu(props: ExperimentActionMenuProps) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Metadata</DialogTitle>
+                <DialogTitle>元数据</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

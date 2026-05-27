@@ -21,7 +21,7 @@ export function PromptLabelsSettingsCard({
   );
 
   return (
-    <Card title="Prompt Labels" extra={<NewPromptLabelButton />}>
+    <Card title="提示词标签" extra={<NewPromptLabelButton />}>
       <PromptLabelsTable query={data} />
     </Card>
   );

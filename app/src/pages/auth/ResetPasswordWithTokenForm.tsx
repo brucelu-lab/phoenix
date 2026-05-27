@@ -28,7 +28,7 @@ interface ResetPasswordWithTokenFormProps {
   resetToken: string;
 }
 
-const DEFAULT_ERROR_MESSAGE = "An error occurred. Please try resetting again.";
+const DEFAULT_ERROR_MESSAGE = "发生错误。请重试。";
 
 export function ResetPasswordWithTokenForm({
   resetToken,
@@ -108,7 +108,7 @@ export function ResetPasswordWithTokenForm({
               onBlur={onBlur}
               defaultValue={value}
             >
-              <Label>New Password</Label>
+              <Label>新密码</Label>
 
               <Input />
               {error ? (
@@ -146,12 +146,12 @@ export function ResetPasswordWithTokenForm({
               onBlur={onBlur}
               defaultValue={value}
             >
-              <Label>Confirm Password</Label>
+              <Label>确认密码</Label>
               <Input />
               {error ? (
                 <FieldError>{error?.message}</FieldError>
               ) : (
-                <Text slot="description">Confirm the new password</Text>
+                <Text slot="description">确认新密码</Text>
               )}
             </TextField>
           )}

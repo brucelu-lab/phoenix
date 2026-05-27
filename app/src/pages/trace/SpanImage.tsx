@@ -67,7 +67,7 @@ export function SpanImage(props: SpanImageProps) {
   if (isRedacted) {
     content = <RedactedImageSVG />;
   } else {
-    content = <img src={props.url} alt="Span image" />;
+    content = <img src={props.url} alt="跨度图像" />;
   }
   return (
     <div

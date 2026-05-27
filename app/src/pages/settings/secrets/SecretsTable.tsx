@@ -64,7 +64,7 @@ export function SecretsTable({
                     <span
                       role="img"
                       tabIndex={0}
-                      aria-label="Secret could not be decrypted"
+                      aria-label="密钥解密失败"
                     >
                       <Icon
                         svg={<Icons.AlertTriangleOutline />}
@@ -97,7 +97,7 @@ export function SecretsTable({
         cell: ({ row }) => {
           const user = row.original.user;
           if (!user) {
-            return <Text color="text-700">System</Text>;
+            return <Text color="text-700">系统</Text>;
           }
           return (
             <Flex direction="row" gap="size-50" alignItems="center">
@@ -166,7 +166,7 @@ export function SecretsTable({
 
   return (
     <Card
-      title="Secrets"
+      title="密钥列表"
       extra={<NewSecretButton connectionId={connectionId} />}
     >
       <table css={tableCSS}>
@@ -210,7 +210,7 @@ export function SecretsTable({
           ))}
         </thead>
         {isEmpty ? (
-          <TableEmpty message="No Secrets" />
+          <TableEmpty message="无密钥" />
         ) : (
           <tbody>
             {rows.map((row) => (

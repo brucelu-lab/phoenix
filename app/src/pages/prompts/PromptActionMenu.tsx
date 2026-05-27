@@ -42,7 +42,7 @@ export function PromptActionMenu({
         />
         <Popover>
           <Menu
-            aria-label="Prompt action menu"
+            aria-label="提示词操作菜单"
             onAction={(action) => {
               switch (action) {
                 case PromptAction.DELETE:
@@ -59,7 +59,7 @@ export function PromptActionMenu({
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.TrashOutline />} />
-                <>Delete</>
+                <>删除</>
               </Flex>
             </MenuItem>
           </Menu>

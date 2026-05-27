@@ -200,7 +200,7 @@ export function UserAPIKeysTable({
           ))}
         </thead>
         {isEmpty ? (
-          <TableEmpty message="No Keys" />
+          <TableEmpty message="无密钥" />
         ) : (
           <tbody>
             {rows.map((row) => {

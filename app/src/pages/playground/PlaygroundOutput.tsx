@@ -355,7 +355,7 @@ export function PlaygroundOutput(props: PlaygroundOutputProps) {
 
   return (
     <Card
-      title={<TitleWithAlphabeticIndex index={index} title="Output" />}
+      title={<TitleWithAlphabeticIndex index={index} title="输出" />}
       extra={
         <Flex direction="row" gap="size-150" alignItems="center">
           {numInstanceRepetitions > 1 && numRepetitionErrors > 0 && (

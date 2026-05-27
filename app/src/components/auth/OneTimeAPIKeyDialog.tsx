@@ -30,7 +30,7 @@ export function OneTimeAPIKeyDialog(props: { jwt: string }) {
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>New API Key Created</DialogTitle>
+          <DialogTitle>已创建新的 API 密钥</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>
@@ -41,7 +41,7 @@ export function OneTimeAPIKeyDialog(props: { jwt: string }) {
         </Alert>
         <View padding="size-200">
           <CopyField value={jwt}>
-            <Label>API Key</Label>
+            <Label>API 密钥</Label>
             <CopyInput />
           </CopyField>
         </View>

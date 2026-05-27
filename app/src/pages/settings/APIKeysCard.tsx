@@ -44,8 +44,8 @@ function APIKeysCardContent({ fetchKey }: { fetchKey: number }) {
   return (
     <Tabs>
       <TabList>
-        <Tab id="system">System Keys</Tab>
-        <Tab id="user">User Keys</Tab>
+        <Tab id="system">系统密钥</Tab>
+        <Tab id="user">用户密钥</Tab>
       </TabList>
       <LazyTabPanel id="system">
         <SystemAPIKeysTable query={query} />
@@ -111,7 +111,7 @@ export function APIKeysCard() {
     <div>
       <Card
         titleSeparator={false}
-        title="API Keys"
+        title="API 密钥"
         extra={
           <DialogTrigger
             isOpen={showCreateAPIKeyDialog}

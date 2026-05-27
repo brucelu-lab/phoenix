@@ -94,13 +94,13 @@ export function IntegrationSelectButtonGroup({
   return (
     <div css={integrationSelectorCSS}>
       <DebouncedSearch
-        aria-label="Search integrations"
-        placeholder="Search integrations"
+        aria-label="搜索集成"
+        placeholder="搜索集成"
         size="M"
         onChange={setSearchQuery}
       />
       <ToggleButtonGroup
-        aria-label="Integration"
+        aria-label="集成"
         selectedKeys={[selectedIntegration.id]}
         disallowEmptySelection
         selectionMode="single"

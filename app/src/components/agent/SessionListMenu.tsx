@@ -83,7 +83,7 @@ export function SessionListMenu({
       <Button
         variant="quiet"
         size="S"
-        aria-label="Sessions"
+        aria-label="会话"
         leadingVisual={<Icon svg={<Icons.HistoryOutline />} />}
       />
       <MenuContainer placement="bottom end" minHeight="auto" maxHeight={400}>
@@ -102,7 +102,7 @@ export function SessionListMenu({
             />
           ))}
         </Menu>
-        {sessions.length === 0 && <MenuEmpty>No sessions yet</MenuEmpty>}
+        {sessions.length === 0 && <MenuEmpty>暂无会话</MenuEmpty>}
       </MenuContainer>
     </MenuTrigger>
   );

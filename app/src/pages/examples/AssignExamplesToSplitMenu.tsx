@@ -190,9 +190,9 @@ const SplitApplyMenu = ({
         >
           Assign to splits
         </MenuHeaderTitle>
-        <SearchField aria-label="Search" variant="quiet" autoFocus size="L">
+        <SearchField aria-label="搜索" variant="quiet" autoFocus size="L">
           <SearchIcon />
-          <Input placeholder="Search splits" />
+          <Input placeholder="搜索切分" />
         </SearchField>
       </MenuHeader>
       <SplitMenuApplyContent
@@ -293,7 +293,7 @@ const SplitMenuApplyContent = ({
   return (
     <Menu
       items={splits}
-      renderEmptyState={() => <MenuEmpty>No splits found</MenuEmpty>}
+      renderEmptyState={() => <MenuEmpty>未找到切分</MenuEmpty>}
       // NOTE: Menu is no longer multi-select, so we track the menu open state manually
       selectionMode="none"
       // ensure that menu items are re-rendered when splitStates changes

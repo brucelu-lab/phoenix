@@ -42,15 +42,15 @@ export function SettingsModelsPage() {
     <Flex direction="column" gap="size-200">
       <Flex gap="size-200" alignItems="center" justifyContent="space-between">
         <DebouncedSearch
-          aria-label="Search models"
-          placeholder="Search models"
+          aria-label="搜索模型"
+          placeholder="搜索模型"
           onChange={(value) => {
             setSearch(value);
           }}
           defaultValue={search}
         />
         <Select
-          aria-label="Model kind filter"
+          aria-label="模型类型筛选"
           value={kindFilter}
           onChange={(value) => {
             startTransition(() => {
@@ -75,7 +75,7 @@ export function SettingsModelsPage() {
         </Select>
       </Flex>
       <Card
-        title="Models"
+        title="模型"
         extra={
           <Flex direction="row" gap="size-200" alignItems="center">
             <Text color="text-500" size="S">

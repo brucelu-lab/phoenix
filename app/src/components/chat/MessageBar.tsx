@@ -86,7 +86,7 @@ export function MessageBar({
           value={message}
           onChange={setMessage}
           onKeyDown={handleKeyDown}
-          aria-label="Message input"
+          aria-label="消息输入"
           isDisabled={isSending}
         >
           <Input placeholder={placeholder} />

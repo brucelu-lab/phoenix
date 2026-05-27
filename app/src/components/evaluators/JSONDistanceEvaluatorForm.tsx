@@ -80,8 +80,8 @@ export const JSONDistanceEvaluatorForm = () => {
       <Flex direction="column" gap="size-100">
         <SwitchableEvaluatorInput
           fieldName="expected"
-          label="Expected"
-          description="The expected JSON string."
+          label="预期"
+          description="期望的 JSON 字符串。"
           defaultMode={expectedDefaultMode}
           control={control}
           setValue={setValue}
@@ -94,8 +94,8 @@ export const JSONDistanceEvaluatorForm = () => {
         />
         <SwitchableEvaluatorInput
           fieldName="actual"
-          label="Actual"
-          description="The actual JSON string to compare."
+          label="实际"
+          description="用于对比的实际 JSON 字符串。"
           defaultMode={actualDefaultMode}
           control={control}
           setValue={setValue}
@@ -123,7 +123,7 @@ export const JSONDistanceEvaluatorForm = () => {
                     : true
               )}
             >
-              <Label>Parse strings as JSON</Label>
+              <Label>将字符串解析为 JSON</Label>
               <Text slot="description">
                 When enabled, string inputs are parsed as JSON before
                 comparison. When disabled, inputs are compared as-is.

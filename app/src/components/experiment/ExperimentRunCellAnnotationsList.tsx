@@ -299,7 +299,7 @@ export function ExperimentRunCellAnnotationsList(
             {renderFilters && (
               <DialogTrigger>
                 <TooltipTrigger>
-                  <IconButton size="S" aria-label="Filter by annotation">
+                  <IconButton size="S" aria-label="按标注筛选">
                     <Icon svg={<Icons.FunnelOutline />} />
                   </IconButton>
                   <Tooltip>
@@ -380,7 +380,7 @@ function AnnotationPlaceholder({
         </Flex>
       </div>
       {executionState !== "idle" && (
-        <IconButton size="S" isDisabled aria-label="View evaluation trace">
+        <IconButton size="S" isDisabled aria-label="查看评测追踪">
           <Icon svg={<Icons.Trace />} />
         </IconButton>
       )}
@@ -445,7 +445,7 @@ function AnnotationErrorItem({
               });
             }
           }}
-          aria-label="View evaluation trace"
+          aria-label="查看评测追踪"
         >
           <Icon svg={<Icons.Trace />} />
         </IconButton>

@@ -50,7 +50,7 @@ export function SandboxConfigsCard({
   );
   return (
     <Card
-      title="Sandbox Configurations"
+      title="沙箱配置"
       titleExtra={
         <ContextualHelp variant="info">
           Reusable sandbox configurations for code evaluators.
@@ -67,10 +67,10 @@ export function SandboxConfigsCard({
         <table css={sandboxesTableCSS}>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Provider</th>
-              <th>Language</th>
-              <th>Settings</th>
+              <th>名称</th>
+              <th>提供商</th>
+              <th>语言</th>
+              <th>设置</th>
               <th />
             </tr>
           </thead>
@@ -123,7 +123,7 @@ export function SandboxConfigsCard({
                             </Flex>
                           ))
                         ) : (
-                          <Text color="text-700">No custom settings</Text>
+                          <Text color="text-700">无自定义设置</Text>
                         )}
                       </Flex>
                     </td>
@@ -157,7 +157,7 @@ export function SandboxConfigsCard({
               })}
             </tbody>
           ) : (
-            <TableEmpty message="No sandbox configs" />
+            <TableEmpty message="无沙箱配置" />
           )}
         </table>
       </div>

@@ -144,12 +144,12 @@ export function NewUserDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Add User</DialogTitle>
+              <DialogTitle>添加用户</DialogTitle>
               <DialogCloseButton />
             </DialogHeader>
             <Tabs defaultSelectedKey={defaultTab}>
               <TabList>
-                {showLocalTab && <Tab id="local">Local</Tab>}
+                {showLocalTab && <Tab id="local">本地</Tab>}
                 {showOAuth2Tab && <Tab id="oauth2">OAuth2</Tab>}
                 {showLDAPTab && <Tab id="ldap">LDAP</Tab>}
               </TabList>

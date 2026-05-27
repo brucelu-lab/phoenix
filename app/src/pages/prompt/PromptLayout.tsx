@@ -134,7 +134,7 @@ export function PromptLayout() {
               leadingVisual={<Icon svg={<Icons.PlayCircleOutline />} />}
               to={`/playground?promptId=${encodeURIComponent(data.id)}`}
               size="M"
-              aria-label="Open this Prompt in Playground"
+              aria-label="在实验台中打开该提示词"
             >
               Playground
             </LinkButton>
@@ -156,11 +156,11 @@ export function PromptLayout() {
         }}
       >
         <TabList>
-          <Tab id="prompt">Prompt</Tab>
+          <Tab id="prompt">提示词</Tab>
           <Tab id="versions">
             Versions <Counter>{data.promptVersions.edges.length}</Counter>
           </Tab>
-          <Tab id="config">Config</Tab>
+          <Tab id="config">配置</Tab>
         </TabList>
         <LazyTabPanel id="prompt">
           <Outlet />

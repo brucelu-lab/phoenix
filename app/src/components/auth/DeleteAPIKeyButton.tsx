@@ -29,7 +29,7 @@ export function DeleteAPIKeyButton({
         variant="danger"
         size="S"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-        aria-label="Delete System Key"
+        aria-label="删除系统密钥"
       />
       <ModalOverlay isDismissable>
         <Modal>
@@ -37,7 +37,7 @@ export function DeleteAPIKeyButton({
             {({ close }) => (
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Delete API Key</DialogTitle>
+                  <DialogTitle>删除 API 密钥</DialogTitle>
                   <DialogTitleExtra>
                     <DialogCloseButton slot="close" />
                   </DialogTitleExtra>

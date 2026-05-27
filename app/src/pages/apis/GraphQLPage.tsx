@@ -18,7 +18,7 @@ export function GraphQLPage() {
         These APIs are under active development and are subject to change.
       </Alert>
       <iframe
-        title="GraphQL API documentation"
+        title="GraphQL API 文档"
         src={`${basename}/graphql`}
         style={{
           width: "100%",

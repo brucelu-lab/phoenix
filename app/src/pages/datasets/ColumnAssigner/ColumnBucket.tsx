@@ -206,7 +206,7 @@ export function ColumnBucket({
         ref={tagsContainerRef}
       >
         {columns.length === 0 && !isSource ? (
-          <div css={emptyStateCSS}>Drag columns here</div>
+          <div css={emptyStateCSS}>拖拽列到此处</div>
         ) : (
           columns.map((column, index) => (
             <ColumnTag

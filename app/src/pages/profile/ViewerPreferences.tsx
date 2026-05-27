@@ -90,13 +90,13 @@ export function ViewerPreferences() {
 
   const selectedTimezone = displayTimezone ?? "local";
   return (
-    <Card title="Preferences">
+    <Card title="偏好">
       <View padding="size-200">
         <Flex direction="column" gap="size-200">
           <ComboBox
-            aria-label="Theme"
-            label="Theme"
-            description="Choose the color theme for the application"
+            aria-label="主题"
+            label="主题"
+            description="选择应用的颜色主题"
             selectedKey={themeMode}
             onSelectionChange={(value) => {
               if (value && isProviderThemeMode(value)) {
@@ -118,10 +118,10 @@ export function ViewerPreferences() {
             ))}
           </ComboBox>
           <ComboBox
-            aria-label="Display Time Zone"
-            label="Timezone"
-            description="Choose how timestamps are displayed throughout the application"
-            placeholder="Search timezones..."
+            aria-label="显示时区"
+            label="时区"
+            description="选择整个应用中时间戳的显示方式"
+            placeholder="搜索时区..."
             selectedKey={selectedTimezone}
             onSelectionChange={(value) => {
               if (value === "local") {
@@ -144,9 +144,9 @@ export function ViewerPreferences() {
             ))}
           </ComboBox>
           <ComboBox
-            aria-label="Programming Language"
-            label="Programming Language"
-            description="Choose the default language for code snippets"
+            aria-label="编程语言"
+            label="编程语言"
+            description="选择代码片段的默认语言"
             selectedKey={programmingLanguage}
             onSelectionChange={(value) => {
               if (value && isProgrammingLanguage(value)) {
@@ -161,9 +161,9 @@ export function ViewerPreferences() {
             ))}
           </ComboBox>
           <ComboBox
-            aria-label="Python Package Manager"
-            label="Python Package Manager"
-            description="Choose the default package manager for Python install commands"
+            aria-label="Python 包管理器"
+            label="Python 包管理器"
+            description="选择 Python 安装命令的默认包管理器"
             selectedKey={pythonPackageManager}
             onSelectionChange={(value) => {
               if (value && isPythonPackageManager(value)) {
@@ -178,9 +178,9 @@ export function ViewerPreferences() {
             ))}
           </ComboBox>
           <ComboBox
-            aria-label="TypeScript Package Manager"
-            label="TypeScript Package Manager"
-            description="Choose the default package manager for TypeScript install commands"
+            aria-label="TypeScript 包管理器"
+            label="TypeScript 包管理器"
+            description="选择 TypeScript 安装命令的默认包管理器"
             selectedKey={typescriptPackageManager}
             onSelectionChange={(value) => {
               if (value && isTypescriptPackageManager(value)) {

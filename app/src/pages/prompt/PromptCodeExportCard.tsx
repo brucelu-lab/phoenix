@@ -143,7 +143,7 @@ export function PromptCodeExportCard({
   }, [dataForSnippets, programmingLanguage]);
   return (
     <Card
-      title="Code"
+      title="代码"
       extra={
         <Flex gap="size-100" alignItems="center">
           <CodeLanguageRadioGroup
@@ -164,7 +164,7 @@ export function PromptCodeExportCard({
               gap="size-100"
               width="100%"
             >
-              <Text>SDK Inline</Text>
+              <Text>SDK 内嵌</Text>
               {sdkSnippet ? <CopyToClipboardButton text={sdkSnippet} /> : null}
             </Flex>
           </DisclosureTrigger>
@@ -189,7 +189,7 @@ export function PromptCodeExportCard({
               width="100%"
               gap="size-100"
             >
-              <Text>Using the Client</Text>
+              <Text>使用客户端</Text>
               {clientSnippet ? (
                 <CopyToClipboardButton text={clientSnippet} />
               ) : null}

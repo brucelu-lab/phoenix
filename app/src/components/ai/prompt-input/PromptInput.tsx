@@ -15,7 +15,7 @@ import type { PromptInputProps } from "./types";
  * ```tsx
  * <PromptInput onSubmit={(text) => sendMessage({ text })} status={status}>
  *   <PromptInputBody>
- *     <PromptInputTextarea placeholder="Send a message..." />
+ *     <PromptInputTextarea placeholder="发送消息..." />
  *   </PromptInputBody>
  *   <PromptInputFooter>
  *     <PromptInputTools>

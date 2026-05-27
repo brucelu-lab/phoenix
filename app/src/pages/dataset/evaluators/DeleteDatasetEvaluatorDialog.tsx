@@ -119,7 +119,7 @@ export function DeleteDatasetEvaluatorDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Delete Evaluator</DialogTitle>
+              <DialogTitle>删除评测器</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton />
               </DialogTitleExtra>
@@ -135,7 +135,7 @@ export function DeleteDatasetEvaluatorDialog({
                     isSelected={deleteAssociatedPrompt}
                     onChange={setDeleteAssociatedPrompt}
                   >
-                    <Text>Delete associated prompt</Text>
+                    <Text>删除关联的提示词</Text>
                   </Checkbox>
                 )}
               </Flex>

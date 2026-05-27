@@ -56,12 +56,12 @@ export function AWSRegionConfigFormField({
   return (
     <ComboBox
       size="L"
-      label="Region"
+      label="区域"
       data-testid="bedrock-region-combobox"
       selectedKey={instance.model.region ?? "us-east-1"}
       aria-label="region picker"
       isRequired
-      placeholder="Select an Amazon Region"
+      placeholder="选择 Amazon 区域"
       inputValue={instance.model.region ?? "us-east-1"}
       onInputChange={handleRegionChange}
       onSelectionChange={(key) => {

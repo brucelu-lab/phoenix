@@ -82,7 +82,7 @@ export function DeleteDatasetDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Delete Dataset</DialogTitle>
+              <DialogTitle>删除数据集</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton />
               </DialogTitleExtra>

@@ -27,7 +27,7 @@ import { StopPropagation } from "@phoenix/components/StopPropagation";
 
 import { EditRetentionPolicy } from "./EditRetentionPolicy";
 
-const DEFAULT_POLICY_NAME = "Default";
+const DEFAULT_POLICY_NAME = "默认";
 
 enum RetentionPolicyAction {
   EDIT = "editPolicy",
@@ -104,7 +104,7 @@ export const RetentionPolicyActionMenu = ({
                 alignItems="center"
               >
                 <Icon svg={<Icons.EditOutline />} />
-                <Text>Edit</Text>
+                <Text>编辑</Text>
               </Flex>
             </MenuItem>
             <MenuItem
@@ -118,7 +118,7 @@ export const RetentionPolicyActionMenu = ({
                 alignItems="center"
               >
                 <Icon svg={<Icons.TrashOutline />} />
-                <Text>Delete</Text>
+                <Text>删除</Text>
               </Flex>
             </MenuItem>
           </Menu>
@@ -131,7 +131,7 @@ export const RetentionPolicyActionMenu = ({
             <Dialog>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Edit Retention Policy</DialogTitle>
+                  <DialogTitle>编辑保留策略</DialogTitle>
                   <DialogTitleExtra>
                     <DialogCloseButton
                       onPress={() => setShowEditDialog(false)}
@@ -167,7 +167,7 @@ export const RetentionPolicyActionMenu = ({
             <Dialog>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>Delete Retention Policy</DialogTitle>
+                  <DialogTitle>删除保留策略</DialogTitle>
                   <DialogTitleExtra>
                     <DialogCloseButton slot="close" />
                   </DialogTitleExtra>

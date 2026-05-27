@@ -109,7 +109,7 @@ function FeatureFlagsControls(props: PropsWithChildren) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Feature Flags</DialogTitle>
+                <DialogTitle>功能开关</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

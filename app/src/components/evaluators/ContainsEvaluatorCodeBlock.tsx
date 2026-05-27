@@ -46,7 +46,7 @@ export const ContainsEvaluatorCodeBlock = () => {
   );
   return (
     <Card
-      title="Code"
+      title="代码"
       extra={
         <Flex gap="size-100" alignItems="center">
           <CodeLanguageRadioGroup

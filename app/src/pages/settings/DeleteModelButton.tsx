@@ -145,7 +145,7 @@ export function DeleteModelButton({
       <Button
         variant="danger"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-        aria-label="Delete model"
+        aria-label="删除模型"
         onPress={handleOpen}
         size="S"
       />
@@ -154,7 +154,7 @@ export function DeleteModelButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Model</DialogTitle>
+                <DialogTitle>删除模型</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

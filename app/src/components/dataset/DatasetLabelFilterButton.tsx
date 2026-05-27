@@ -107,9 +107,9 @@ function DatasetLabelFilterContent({
     <>
       <Autocomplete filter={contains}>
         <MenuHeader>
-          <SearchField aria-label="Search labels" variant="quiet" autoFocus>
+          <SearchField aria-label="搜索标签" variant="quiet" autoFocus>
             <SearchIcon />
-            <Input placeholder="Search labels..." />
+            <Input placeholder="搜索标签..." />
           </SearchField>
         </MenuHeader>
         <Menu
@@ -118,7 +118,7 @@ function DatasetLabelFilterContent({
           selectionMode="multiple"
           selectedKeys={selectedLabelIds}
           onSelectionChange={handleSelectionChange}
-          renderEmptyState={() => <MenuEmpty>No labels found</MenuEmpty>}
+          renderEmptyState={() => <MenuEmpty>未找到标签</MenuEmpty>}
         >
           {({ id, name, color }) => (
             <MenuItem

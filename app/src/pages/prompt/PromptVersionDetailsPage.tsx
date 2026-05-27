@@ -62,7 +62,7 @@ function PromptVersionDetailsPageContent({
         >
           <Flex direction="row" justifyContent="space-between">
             <Flex direction="row" gap="size-100" alignItems="center">
-              <TitleWithID title="Version" id={promptVersion.id} />
+              <TitleWithID title="版本" id={promptVersion.id} />
               <PromptVersionTagsList promptVersion={promptVersion} />
             </Flex>
             <Flex direction="row" gap="size-100">
@@ -78,7 +78,7 @@ function PromptVersionDetailsPageContent({
                     to={`/playground?promptId=${encodeURIComponent(promptId)}&promptVersionId=${encodeURIComponent(promptVersion.id)}`}
                     size="S"
                     data-testid="open-prompt-version-in-playground-button"
-                    aria-label="Open this Prompt version in Playground"
+                    aria-label="在实验台中打开该提示词版本"
                   >
                     Playground
                   </LinkButton>
@@ -91,7 +91,7 @@ function PromptVersionDetailsPageContent({
             </Flex>
           </Flex>
           <Card
-            title="Prompt"
+            title="提示词"
             collapsible
             data-testid="prompt-chat-messages-card"
             extra={

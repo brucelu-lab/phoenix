@@ -121,7 +121,7 @@ export const ClonePromptDialog = ({
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Clone Prompt</DialogTitle>
+            <DialogTitle>克隆提示词</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton slot="close" />
             </DialogTitleExtra>
@@ -149,7 +149,7 @@ export const ClonePromptDialog = ({
                       fieldState: { error },
                     }) => (
                       <TextField isInvalid={!!error?.message}>
-                        <Label>Name</Label>
+                        <Label>名称</Label>
                         <Input
                           name="name"
                           type="text"
@@ -181,7 +181,7 @@ export const ClonePromptDialog = ({
                         onChange={onChange}
                         onBlur={onBlur}
                       >
-                        <Label>Description</Label>
+                        <Label>描述</Label>
                         <TextArea name="description" />
                         {!error && (
                           <Text slot="description">
@@ -212,7 +212,7 @@ export const ClonePromptDialog = ({
                       fieldState: { error },
                     }) => (
                       <CodeEditorFieldWrapper
-                        label="Metadata"
+                        label="元数据"
                         errorMessage={error?.message}
                         description="A JSON object containing metadata for the prompt"
                       >

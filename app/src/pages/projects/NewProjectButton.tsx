@@ -152,7 +152,7 @@ function NewProjectDialog({
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>New project</DialogTitle>
+            <DialogTitle>新项目</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton close={close} />
             </DialogTitleExtra>
@@ -193,7 +193,7 @@ function NewProjectDialog({
                         value={value}
                         autoFocus
                       >
-                        <Label>Name</Label>
+                        <Label>名称</Label>
                         <Input placeholder="e.g. customer-feedback" />
                         {fieldError?.message ? (
                           <FieldError>{fieldError.message}</FieldError>
@@ -215,9 +215,9 @@ function NewProjectDialog({
                         <Select
                           value={value}
                           onChange={onChange}
-                          aria-label="Project color"
+                          aria-label="项目颜色"
                         >
-                          <Label>Project color</Label>
+                          <Label>项目颜色</Label>
                           <Button>
                             <SelectValue />
                             <SelectChevronUpDownIcon />
@@ -268,7 +268,7 @@ function NewProjectDialog({
                     onBlur={onBlur}
                     value={value}
                   >
-                    <Label>Description</Label>
+                    <Label>描述</Label>
                     <TextArea
                       placeholder="e.g. support agent in production"
                       rows={2}

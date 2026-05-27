@@ -42,7 +42,7 @@ export function PromptResponseFormat({
   if (!formattedResponseFormat) {
     return (
       <Disclosure id="response-format">
-        <DisclosureTrigger>Response Format</DisclosureTrigger>
+        <DisclosureTrigger>响应格式</DisclosureTrigger>
         <DisclosurePanel>
           <View padding="size-200">
             <Flex justifyContent="center" alignItems="center">
@@ -58,7 +58,7 @@ export function PromptResponseFormat({
 
   return (
     <Disclosure id="response-format">
-      <DisclosureTrigger>Response Format</DisclosureTrigger>
+      <DisclosureTrigger>响应格式</DisclosureTrigger>
       <DisclosurePanel>
         <JSONBlock value={formattedResponseFormat} />
       </DisclosurePanel>

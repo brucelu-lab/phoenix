@@ -260,7 +260,7 @@ export const EvaluatorsTable = ({
             <TableExpandButton
               isExpanded={table.getIsAllRowsExpanded()}
               onClick={table.getToggleAllRowsExpandedHandler()}
-              aria-label="Expand all rows"
+              aria-label="展开全部行"
             />
             name
           </Flex>
@@ -276,7 +276,7 @@ export const EvaluatorsTable = ({
                   <TableExpandButton
                     isExpanded={row.getIsExpanded()}
                     onClick={row.getToggleExpandedHandler()}
-                    aria-label="Expand row"
+                    aria-label="展开行"
                   />
                 ) : null}
                 {row.original.rowType === "datasetEvaluator" ? (

@@ -21,7 +21,7 @@ export function DatasetHistoryButton(props: { datasetId: string }) {
         <Button
           size="S"
           leadingVisual={<Icon svg={<Icons.ClockOutline />} />}
-          aria-label="Version History"
+          aria-label="版本历史"
           onPress={() => setIsOpen(true)}
         />
         <Tooltip>

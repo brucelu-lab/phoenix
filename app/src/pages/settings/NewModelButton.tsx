@@ -71,7 +71,7 @@ export function NewModelButton({
         variant="primary"
         size="S"
         leadingVisual={<Icon svg={<Icons.PlusCircleOutline />} />}
-        aria-label="Create a new model"
+        aria-label="新建模型"
         onPress={() => {
           setError(null);
           setIsOpen(true);
@@ -85,7 +85,7 @@ export function NewModelButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Create New Model</DialogTitle>
+                <DialogTitle>新建模型</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

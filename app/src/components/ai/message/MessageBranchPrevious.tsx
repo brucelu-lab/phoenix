@@ -19,7 +19,7 @@ export function MessageBranchPrevious({
     <Button
       ref={ref}
       css={messageActionCSS}
-      aria-label="Previous version"
+      aria-label="上一版本"
       isDisabled={activeBranch <= 0}
       onPress={() => setActiveBranch(activeBranch - 1)}
       {...restProps}

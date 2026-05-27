@@ -56,10 +56,10 @@ export function AgentExperimentalSettings() {
 
   return (
     <details css={detailsCSS}>
-      <summary>Experimental Features</summary>
+      <summary>实验性功能</summary>
       <View paddingTop="size-150">
         <Flex direction="column" gap="size-200">
-          <Alert variant="warning" title="Experimental">
+          <Alert variant="warning" title="实验性">
             These features are under active development and may change or be
             removed at any time.
           </Alert>

@@ -94,7 +94,7 @@ function EditModelDialogContent({
   const modelData = data?.node;
 
   if (!modelData) {
-    return <Alert variant="danger">Model not found</Alert>;
+    return <Alert variant="danger">未找到模型</Alert>;
   }
 
   return (
@@ -185,7 +185,7 @@ export function EditModelButton({
       <Button
         variant="default"
         leadingVisual={<Icon svg={<Icons.EditOutline />} />}
-        aria-label="Edit model"
+        aria-label="编辑模型"
         onPress={handleOpen}
         size="S"
       />
@@ -194,7 +194,7 @@ export function EditModelButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Edit Model</DialogTitle>
+                <DialogTitle>编辑模型</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

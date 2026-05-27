@@ -97,7 +97,7 @@ export function SpansTableAside(props: { filterCondition?: string | null }) {
   return (
     <Group orientation="vertical">
       <TitledPanel
-        title="Project Info"
+        title="项目信息"
         panelProps={{
           defaultSize: "0%",
           minSize: 240,
@@ -106,7 +106,7 @@ export function SpansTableAside(props: { filterCondition?: string | null }) {
         <View padding="size-200" overflow="auto" height="100%">
           <Flex direction="column" gap="size-100" minWidth="size-3400">
             <CopyField value={project?.name ?? ""}>
-              <Label>Name</Label>
+              <Label>名称</Label>
               <CopyInput />
             </CopyField>
             <CopyField value={projectId}>
@@ -114,13 +114,13 @@ export function SpansTableAside(props: { filterCondition?: string | null }) {
               <CopyInput />
             </CopyField>
             <CopyField value={project?.description ?? ""}>
-              <Label>Description</Label>
+              <Label>描述</Label>
               <CopyInput />
             </CopyField>
           </Flex>
         </View>
       </TitledPanel>
-      <TitledPanel resizable title="Stats" panelProps={{ minSize: "10%" }}>
+      <TitledPanel resizable title="统计" panelProps={{ minSize: "10%" }}>
         <View padding="size-200" overflow="auto" height="100%">
           <Flex
             direction="column"

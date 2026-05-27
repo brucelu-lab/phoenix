@@ -217,7 +217,7 @@ export function ThemeSelector({ isExpanded }: { isExpanded: boolean }) {
         <Popover placement="right top">
           <PopoverArrow />
           <Menu
-            aria-label="Theme selection"
+            aria-label="主题选择"
             selectedKeys={new Set([themeMode])}
             selectionMode="single"
             onSelectionChange={(keys) => {
@@ -247,7 +247,7 @@ export function ThemeSelector({ isExpanded }: { isExpanded: boolean }) {
                 alignItems="center"
               >
                 <Icon svg={<Icons.MoonOutline />} />
-                <Text>Dark</Text>
+                <Text>深色</Text>
               </Flex>
             </MenuItem>
             <MenuItem id="light">
@@ -258,7 +258,7 @@ export function ThemeSelector({ isExpanded }: { isExpanded: boolean }) {
                 alignItems="center"
               >
                 <Icon svg={<Icons.SunOutline />} />
-                <Text>Light</Text>
+                <Text>浅色</Text>
               </Flex>
             </MenuItem>
           </Menu>

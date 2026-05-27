@@ -93,11 +93,11 @@ export function PromptTools({
   if (items.length === 0) {
     return (
       <Disclosure id="tools">
-        <DisclosureTrigger>Tools</DisclosureTrigger>
+        <DisclosureTrigger>工具</DisclosureTrigger>
         <DisclosurePanel>
           <View padding="size-200">
             <Flex justifyContent="center" alignItems="center">
-              <Text color="text-300">No tools specified for this prompt</Text>
+              <Text color="text-300">该提示词未指定工具</Text>
             </Flex>
           </View>
         </DisclosurePanel>
@@ -107,7 +107,7 @@ export function PromptTools({
 
   return (
     <Flex direction="column">
-      <SectionHeading bordered={false}>Tools</SectionHeading>
+      <SectionHeading bordered={false}>工具</SectionHeading>
       <DisclosureGroup
         css={css`
           & {

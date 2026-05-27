@@ -10,7 +10,7 @@ import type { MessageProps } from "./types";
  * @example
  * ```tsx
  * <Message from="user">
- *   <MessageContent>Hello!</MessageContent>
+ *   <MessageContent>你好！</MessageContent>
  * </Message>
  *
  * <Message from="assistant">

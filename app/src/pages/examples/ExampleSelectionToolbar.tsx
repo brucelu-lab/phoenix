@@ -121,11 +121,11 @@ export function ExampleSelectionToolbar(props: ExampleSelectionToolbarProps) {
               <IconButton
                 size="M"
                 onPress={onClearSelection}
-                aria-label="Clear selection"
+                aria-label="清除选择"
               >
                 <Icon svg={<Icons.CloseOutline />} />
               </IconButton>
-              <Tooltip>Clear selection</Tooltip>
+              <Tooltip>清除选择</Tooltip>
             </TooltipTrigger>
             <Text>{`${selectedExamples.length} example${isPlural ? "s" : ""} selected`}</Text>
           </Flex>
@@ -151,7 +151,7 @@ export function ExampleSelectionToolbar(props: ExampleSelectionToolbarProps) {
           }
           isDisabled={isDeletingExamples}
           onPress={() => setIsDeleteConfirmationDialogOpen(true)}
-          aria-label="Delete Examples"
+          aria-label="删除样本"
         >
           {isDeletingExamples ? "Deleting..." : "Delete"}
         </Button>
@@ -168,7 +168,7 @@ export function ExampleSelectionToolbar(props: ExampleSelectionToolbarProps) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Examples</DialogTitle>
+                <DialogTitle>删除样本</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>

@@ -52,7 +52,7 @@ export function UsersCard() {
 
   return (
     <Card
-      title="Users"
+      title="用户"
       extra={
         <Button
           onPress={() => {

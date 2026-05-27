@@ -109,7 +109,7 @@ function CloneModelDialogContent({
   const modelData = data?.node;
 
   if (!modelData) {
-    return <Alert variant="danger">Model not found</Alert>;
+    return <Alert variant="danger">未找到模型</Alert>;
   }
 
   return (
@@ -200,7 +200,7 @@ export function CloneModelButton({
       <Button
         variant="default"
         leadingVisual={<Icon svg={<Icons.GitBranchOutline />} />}
-        aria-label="Clone model"
+        aria-label="克隆模型"
         onPress={handleOpen}
         size="S"
       />
@@ -209,7 +209,7 @@ export function CloneModelButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Clone Model</DialogTitle>
+                <DialogTitle>克隆模型</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

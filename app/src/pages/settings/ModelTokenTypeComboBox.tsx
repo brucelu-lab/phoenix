@@ -71,8 +71,8 @@ export function ModelTokenTypeComboBox<
   const selectedOption = options.find((option) => option.tokenType === value);
   return (
     <ComboBox
-      aria-label="Token type"
-      placeholder="Choose or enter a token type"
+      aria-label="Token 类型"
+      placeholder="选择或输入 Token 类型"
       selectedKey={selectedOption?.tokenType ?? ""}
       inputValue={value ?? ""}
       onSelectionChange={(tokenType) => {

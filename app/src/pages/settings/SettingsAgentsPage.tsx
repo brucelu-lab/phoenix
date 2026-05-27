@@ -74,11 +74,11 @@ function AssistantTraceCollectionInfo() {
     <Flex direction="column" gap="size-200">
       <AgentObservabilitySettings />
       <details css={traceDetailsCSS}>
-        <summary>Tracing Details</summary>
+        <summary>追踪详情</summary>
         <View paddingTop="size-150">
           <Flex direction="column" gap="size-200">
             <CopyField value={assistantProjectName}>
-              <Label>Assistant Project Name</Label>
+              <Label>助手项目名称</Label>
               <CopyInput />
               <Text slot="description">
                 {projectRedirectUrl ? (
@@ -94,7 +94,7 @@ function AssistantTraceCollectionInfo() {
               </Text>
             </CopyField>
             <CopyField value={collectorEndpoint ?? ""}>
-              <Label>Collector Endpoint</Label>
+              <Label>采集器端点</Label>
               <CopyInput />
               <Text slot="description">
                 {collectorEndpoint
@@ -115,7 +115,7 @@ export function SettingsAgentsPage() {
   );
   return (
     <Card
-      title="Assistant"
+      title="助手"
       collapsible
       defaultOpen={isAssistantAgentEnabled}
       extra={<AssistantAgentEnabledSwitch />}

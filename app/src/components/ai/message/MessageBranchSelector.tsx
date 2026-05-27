@@ -34,7 +34,7 @@ export function MessageBranchSelector({
       ref={ref}
       css={messageBranchSelectorCSS}
       role="group"
-      aria-label="Version navigation"
+      aria-label="版本导航"
       {...restProps}
     >
       {children}

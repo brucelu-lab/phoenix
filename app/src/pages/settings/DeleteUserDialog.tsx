@@ -69,7 +69,7 @@ export function DeleteUserDialog({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete User</DialogTitle>
+          <DialogTitle>删除用户</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton onPress={onClose} slot="close" />
           </DialogTitleExtra>

@@ -149,14 +149,14 @@ export function ToolChoiceSelector({
   return (
     <Select
       value={currentId}
-      aria-label="Tool Choice for an LLM"
+      aria-label="LLM 工具选择"
       onChange={(id) => {
         if (typeof id === "string") {
           onChange(idToCanonical(id));
         }
       }}
     >
-      <Label>Tool Choice</Label>
+      <Label>工具选择</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />
@@ -164,11 +164,11 @@ export function ToolChoiceSelector({
       <Popover>
         <ListBox>
           <SelectItem id="ZERO_OR_MORE" textValue="auto">
-            <OptionLabel label="Tools auto-selected by LLM" apiToken="auto" />
+            <OptionLabel label="LLM 自动选择的工具" apiToken="auto" />
           </SelectItem>
           <SelectItem id="ONE_OR_MORE" textValue={config.oneOrMoreToken}>
             <OptionLabel
-              label="Use at least one tool"
+              label="至少使用一个工具"
               apiToken={config.oneOrMoreToken}
             />
           </SelectItem>

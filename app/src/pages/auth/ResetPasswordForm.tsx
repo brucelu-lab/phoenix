@@ -93,7 +93,7 @@ export function ResetPasswordForm(props: {
             isReadOnly
             value={data.viewer.email}
           >
-            <Label>Email</Label>
+            <Label>邮箱</Label>
             <Input />
           </TextField>
         </VisuallyHidden>
@@ -119,12 +119,12 @@ export function ResetPasswordForm(props: {
             id="current-password"
             autoComplete="current-password"
           >
-            <Label>Old Password</Label>
+            <Label>旧密码</Label>
             <Input />
             {error ? (
               <FieldError>{error?.message}</FieldError>
             ) : (
-              <Text slot="description">The current password</Text>
+              <Text slot="description">当前密码</Text>
             )}
           </TextField>
         )}
@@ -157,7 +157,7 @@ export function ResetPasswordForm(props: {
             id="new-password"
             autoComplete="new-password"
           >
-            <Label>New Password</Label>
+            <Label>新密码</Label>
             <Input />
             {error ? (
               <FieldError>{error?.message}</FieldError>
@@ -195,12 +195,12 @@ export function ResetPasswordForm(props: {
             defaultValue={value}
             autoComplete="new-password"
           >
-            <Label>Confirm Password</Label>
+            <Label>确认密码</Label>
             <Input />
             {error ? (
               <FieldError>{error?.message}</FieldError>
             ) : (
-              <Text slot="description">Confirm the new password</Text>
+              <Text slot="description">确认新密码</Text>
             )}
           </TextField>
         )}

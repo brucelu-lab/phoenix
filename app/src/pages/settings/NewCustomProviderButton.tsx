@@ -104,7 +104,7 @@ function NewProviderDialogContent({ onClose }: { onClose: () => void }) {
           banner
           dismissable
           onDismissClick={() => setError(null)}
-          title="Failed to create provider"
+          title="创建提供商失败"
         >
           {error}
         </Alert>
@@ -130,7 +130,7 @@ export function NewCustomProviderButton() {
         variant="primary"
         size="S"
         leadingVisual={<Icon svg={<Icons.PlusOutline />} />}
-        aria-label="Create a new provider"
+        aria-label="新建提供商"
       >
         New Provider
       </Button>
@@ -139,7 +139,7 @@ export function NewCustomProviderButton() {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Create Custom Provider</DialogTitle>
+                <DialogTitle>创建自定义提供商</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

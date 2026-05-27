@@ -63,7 +63,7 @@ function SpanEventsListContent({ events }: { events: readonly SpanEvent[] }) {
   if (events.length === 0) {
     return (
       <View padding="size-200">
-        <Text color="text-700">No events</Text>
+        <Text color="text-700">无事件</Text>
       </View>
     );
   }

@@ -124,7 +124,7 @@ export function TypeScriptProjectGuide(props: PythonProjectGuideProps) {
         </Heading>
       </View>
       <View paddingBottom="size-100">
-        <Text>Use the register function to set up tracing</Text>
+        <Text>使用 register 函数设置追踪</Text>
       </View>
       <CodeWrap>
         <TypeScriptBlockWithCopy
@@ -137,13 +137,13 @@ export function TypeScriptProjectGuide(props: PythonProjectGuideProps) {
             fallback={
               <Text>
                 Your personal API keys can be created and managed on your{" "}
-                <ExternalLink href="/profile">Profile</ExternalLink>
+                <ExternalLink href="/profile">个人资料</ExternalLink>
               </Text>
             }
           >
             <Text>
               System API keys can be created and managed in{" "}
-              <ExternalLink href="/settings/general">Settings</ExternalLink>
+              <ExternalLink href="/settings/general">设置</ExternalLink>
             </Text>
           </IsAdmin>
         </View>
@@ -191,7 +191,7 @@ export function TypeScriptProjectGuide(props: PythonProjectGuideProps) {
       <View borderColor="default" borderWidth="thin" borderRadius="medium">
         <Tabs>
           <TabList>
-            <Tab id="integrations">Integrations</Tab>
+            <Tab id="integrations">集成</Tab>
             <Tab id="commonjs">CommonJS</Tab>
             <Tab id="esm">ESM</Tab>
           </TabList>

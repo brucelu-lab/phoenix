@@ -143,7 +143,7 @@ export const AddEvaluatorMenuContents = ({
 }) => {
   return (
     <Menu
-      aria-label="Add evaluator"
+      aria-label="添加评测器"
       onAction={(action) => {
         switch (action) {
           case "createEvaluator":
@@ -156,7 +156,7 @@ export const AddEvaluatorMenuContents = ({
       }}
     >
       <MenuSection>
-        <MenuSectionTitle title="New LLM evaluator" />
+        <MenuSectionTitle title="新建 LLM 评测器" />
         <MenuItem
           leadingContent={<Icon svg={<Icons.PlusOutline />} />}
           id="createEvaluator"
@@ -173,7 +173,7 @@ export const AddEvaluatorMenuContents = ({
         </LLMEvaluatorTemplateSubmenu>
       </MenuSection>
       <MenuSection>
-        <MenuSectionTitle title="New code evaluator" />
+        <MenuSectionTitle title="新建代码评测器" />
         <MenuItem
           leadingContent={<Icon svg={<Icons.PlusOutline />} />}
           id="createCodeEvaluator"

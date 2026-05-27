@@ -287,7 +287,7 @@ export function CodeDatasetEvaluatorVersions({
   if (versions.length === 0) {
     return (
       <Flex flex={1} alignItems="center" justifyContent="center">
-        <Empty message="This code evaluator has no versions yet." />
+        <Empty message="该代码评测器尚无版本。" />
       </Flex>
     );
   }

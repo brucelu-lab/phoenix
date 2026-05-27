@@ -403,7 +403,7 @@ export function ChatView({
               <PromptInputBody>
                 <PromptInputTextarea
                   ref={textareaRef}
-                  placeholder="Send a message..."
+                  placeholder="发送消息..."
                 />
               </PromptInputBody>
               <PromptInputFooter>

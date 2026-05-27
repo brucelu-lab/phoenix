@@ -509,7 +509,7 @@ export function SpansTable(props: SpansTableProps) {
             <Heading level={3} weight="heavy">
               Trace annotations
             </Heading>
-            <Text>Annotations attached to the parent trace of this span.</Text>
+            <Text>附加在该跨度父追踪上的标注。</Text>
           </ContextualHelp>
         </Flex>
       ),
@@ -865,7 +865,7 @@ export function SpansTable(props: SpansTableProps) {
               <SpanFilterConditionField onValidCondition={setFilterCondition} />
 
               <ToggleButtonGroup
-                aria-label="Toggle between root and all spans"
+                aria-label="在根跨度与全部跨度间切换"
                 selectionMode="single"
                 selectedKeys={[rootSpansOnly ? "root" : "all"]}
                 onSelectionChange={(selection) => {

@@ -53,9 +53,9 @@ export function DatasetsPageContent() {
         >
           <View flex="1 1 auto" minWidth={0}>
             <DebouncedSearch
-              aria-label="Search datasets by name"
+              aria-label="按名称搜索数据集"
               onChange={setFilter}
-              placeholder="Search datasets by name"
+              placeholder="按名称搜索数据集"
             />
           </View>
           <Flex direction="row" alignItems="center" gap="size-100" flex="none">

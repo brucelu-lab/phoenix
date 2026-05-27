@@ -231,7 +231,7 @@ export function ExperimentComparePage() {
       </View>
       {baseExperimentId == null ? (
         <View padding="size-200">
-          <Alert variant="info" title="No Experiment Selected">
+          <Alert variant="info" title="未选择实验">
             Please select an experiment.
           </Alert>
         </View>

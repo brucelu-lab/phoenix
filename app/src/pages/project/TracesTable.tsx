@@ -507,7 +507,7 @@ export function TracesTable(props: TracesTableProps) {
       {
         header: () => (
           <Flex direction="row" gap="size-50" alignItems="center">
-            <span>Annotations</span>
+            <span>标注</span>
             <ContextualHelp>
               <Heading level={3} weight="heavy">
                 Annotations
@@ -567,7 +567,7 @@ export function TracesTable(props: TracesTableProps) {
       {
         header: () => (
           <Flex direction="row" gap="size-50" alignItems="center">
-            <span>Trace annotations</span>
+            <span>追踪标注</span>
             <ContextualHelp>
               <Heading level={3} weight="heavy">
                 Trace annotations
@@ -654,7 +654,7 @@ export function TracesTable(props: TracesTableProps) {
               <TableExpandButton
                 isExpanded={table.getIsAllRowsExpanded()}
                 onClick={table.getToggleAllRowsExpandedHandler()}
-                aria-label="Expand all rows"
+                aria-label="展开全部行"
               />
               kind
             </Flex>
@@ -695,7 +695,7 @@ export function TracesTable(props: TracesTableProps) {
                   <TableExpandButton
                     isExpanded={props.row.getIsExpanded()}
                     onClick={props.row.getToggleExpandedHandler()}
-                    aria-label="Expand row"
+                    aria-label="展开行"
                   />
                 ) : null}
                 <SpanKindToken spanKind={props.getValue() as string} />

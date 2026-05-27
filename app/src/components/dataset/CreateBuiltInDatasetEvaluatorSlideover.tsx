@@ -46,7 +46,7 @@ export function CreateBuiltInDatasetEvaluatorSlideover({
   return (
     <ModalOverlay {...props}>
       <Modal variant="slideover" size="fullscreen">
-        <Dialog aria-label="Add evaluator to dataset">
+        <Dialog aria-label="添加评测器到数据集">
           {({ close }) => (
             <DialogContent
               css={css`

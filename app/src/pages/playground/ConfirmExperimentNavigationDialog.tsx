@@ -50,7 +50,7 @@ export function ConfirmExperimentNavigationDialog({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Experiment In Progress</DialogTitle>
+                <DialogTitle>实验进行中</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton close={() => blocker.reset?.()} />
                 </DialogTitleExtra>
@@ -92,7 +92,7 @@ export function ConfirmExperimentNavigationDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Leave this page?</DialogTitle>
+              <DialogTitle>离开本页面？</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton close={() => blocker.reset?.()} />
               </DialogTitleExtra>

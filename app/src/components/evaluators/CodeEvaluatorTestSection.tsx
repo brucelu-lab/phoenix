@@ -256,7 +256,7 @@ export const CodeEvaluatorTestSection = ({
       {isShowingPreview && (
         <Flex direction="column" gap="size-100" marginBottom="size-100">
           {isLoading && (
-            <Card title="Evaluator Result">
+            <Card title="评测器结果">
               <View padding="size-100">
                 <Flex direction="column" gap="size-100">
                   <Skeleton height={100} borderRadius={8} animation="wave" />
@@ -269,11 +269,11 @@ export const CodeEvaluatorTestSection = ({
             <Flex direction="column" gap="size-100" key={i} width="100%">
               {result.kind === "success" ? (
                 <Card
-                  title="Evaluator Result"
+                  title="评测器结果"
                   width="100%"
                   extra={
                     <IconButton
-                      aria-label="Dismiss evaluator result"
+                      aria-label="关闭评测器结果"
                       size="S"
                       onPress={() => setPreviewResults([])}
                     >
@@ -319,7 +319,7 @@ export const CodeEvaluatorTestSection = ({
           {error && !isLoading && previewResults.length === 0 && (
             <Alert
               variant="danger"
-              title="Error"
+              title="错误"
               dismissable
               onDismissClick={() => setError(null)}
             >

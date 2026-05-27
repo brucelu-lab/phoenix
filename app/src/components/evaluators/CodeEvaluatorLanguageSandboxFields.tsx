@@ -67,7 +67,7 @@ export const CodeEvaluatorLanguageField = ({
       isRequired={isRequired}
       onChange={(value) => onChange(value as CodeEvaluatorLanguage)}
     >
-      <Label>Language</Label>
+      <Label>语言</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />
@@ -152,7 +152,7 @@ export const CodeEvaluatorSandboxField = ({
             : "Select a sandbox..."
       }
     >
-      <Label>Sandbox</Label>
+      <Label>沙箱</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />

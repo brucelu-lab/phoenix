@@ -62,7 +62,7 @@ export function NewPromptLabelDialog(props: NewPromptLabelDialogProps) {
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>New Prompt Label</DialogTitle>
+          <DialogTitle>新建提示词标签</DialogTitle>
           <DialogCloseButton />
         </DialogHeader>
         {error ? (

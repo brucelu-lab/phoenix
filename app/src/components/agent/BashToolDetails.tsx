@@ -39,13 +39,13 @@ export function BashToolDetails({ part }: { part: ToolInvocationPart }) {
 
   return (
     <div className="tool-part__body">
-      <ToolPartLabel>Command</ToolPartLabel>
+      <ToolPartLabel>命令</ToolPartLabel>
       <ToolPartCodeBlock>{command}</ToolPartCodeBlock>
       {part.state === "output-available" ? (
         <>
           {stdout ? (
             <>
-              <ToolPartLabel>Output</ToolPartLabel>
+              <ToolPartLabel>输出</ToolPartLabel>
               <ToolPartCodeBlock>{stdout}</ToolPartCodeBlock>
             </>
           ) : null}
@@ -54,7 +54,7 @@ export function BashToolDetails({ part }: { part: ToolInvocationPart }) {
       ) : null}
       {part.state === "output-error" ? (
         <>
-          <ToolPartLabel variant="danger">Error</ToolPartLabel>
+          <ToolPartLabel variant="danger">错误</ToolPartLabel>
           <ToolPartCodeBlock>{part.errorText ?? ""}</ToolPartCodeBlock>
         </>
       ) : null}

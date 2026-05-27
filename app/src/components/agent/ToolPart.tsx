@@ -582,17 +582,17 @@ function getToolPresentation(
         statusVariant,
         details: (
           <div className="tool-part__body">
-            <ToolPartLabel>Input</ToolPartLabel>
+            <ToolPartLabel>输入</ToolPartLabel>
             <ToolPartCodeBlock>{inputStr}</ToolPartCodeBlock>
             {part.state === "output-available" ? (
               <>
-                <ToolPartLabel>Output</ToolPartLabel>
+                <ToolPartLabel>输出</ToolPartLabel>
                 <ToolPartCodeBlock>{outputStr}</ToolPartCodeBlock>
               </>
             ) : null}
             {part.state === "output-error" ? (
               <>
-                <ToolPartLabel variant="danger">Error</ToolPartLabel>
+                <ToolPartLabel variant="danger">错误</ToolPartLabel>
                 <ToolPartCodeBlock>{part.errorText ?? ""}</ToolPartCodeBlock>
               </>
             ) : null}
@@ -620,17 +620,17 @@ function getToolPresentation(
         statusVariant,
         details: (
           <div className="tool-part__body">
-            <ToolPartLabel>Input</ToolPartLabel>
+            <ToolPartLabel>输入</ToolPartLabel>
             <ToolPartCodeBlock>{inputStr}</ToolPartCodeBlock>
             {part.state === "output-available" ? (
               <>
-                <ToolPartLabel>Output</ToolPartLabel>
+                <ToolPartLabel>输出</ToolPartLabel>
                 <ToolPartCodeBlock>{outputStr}</ToolPartCodeBlock>
               </>
             ) : null}
             {part.state === "output-error" ? (
               <>
-                <ToolPartLabel variant="danger">Error</ToolPartLabel>
+                <ToolPartLabel variant="danger">错误</ToolPartLabel>
                 <ToolPartCodeBlock>{part.errorText ?? ""}</ToolPartCodeBlock>
               </>
             ) : null}

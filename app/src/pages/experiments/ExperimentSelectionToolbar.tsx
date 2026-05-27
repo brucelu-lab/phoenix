@@ -102,14 +102,14 @@ export function ExperimentSelectionToolbar(
 
   return (
     <FloatingToolbarContainer>
-      <Toolbar aria-label="Experiment selection">
-        <Group aria-label="Experiment selection">
+      <Toolbar aria-label="实验选择">
+        <Group aria-label="实验选择">
           <View paddingEnd="size-100">
             <Flex direction="row" gap="size-100" alignItems="center">
               <IconButton
                 size="S"
                 onPress={onClearSelection}
-                aria-label="Clear selection"
+                aria-label="清除选择"
               >
                 <Icon svg={<Icons.CloseOutline />} />
               </IconButton>
@@ -149,7 +149,7 @@ export function ExperimentSelectionToolbar(
             }
             isDisabled={isDeletingExperiments}
             onPress={onPressDelete}
-            aria-label="Delete Experiments"
+            aria-label="删除实验"
           />
         </Group>
       </Toolbar>
@@ -165,7 +165,7 @@ export function ExperimentSelectionToolbar(
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Experiments</DialogTitle>
+                <DialogTitle>删除实验</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

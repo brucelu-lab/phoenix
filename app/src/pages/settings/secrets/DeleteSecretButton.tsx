@@ -58,7 +58,7 @@ export function DeleteSecretButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Secret</DialogTitle>
+                <DialogTitle>删除密钥</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

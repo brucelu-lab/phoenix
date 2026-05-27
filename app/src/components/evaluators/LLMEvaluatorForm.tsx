@@ -39,7 +39,7 @@ export const LLMEvaluatorForm = () => {
                 onChange={setShowPromptPreview}
                 labelPlacement="start"
               >
-                <Label>Preview</Label>
+                <Label>预览</Label>
               </Switch>
               <TemplateFormatRadioGroup size="S" showNoneOption={false} />
             </Flex>

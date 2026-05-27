@@ -72,7 +72,7 @@ export function ModelTokenCostControlTable({
       >
         <thead>
           <tr>
-            <th>Token type</th>
+            <th>Token 类型</th>
             <th>Cost / 1M</th>
             <th />
           </tr>

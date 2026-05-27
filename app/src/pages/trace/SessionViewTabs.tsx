@@ -39,7 +39,7 @@ export function SessionViewTabs({
         }
       }}
     >
-      <TabList aria-label="Session view">
+      <TabList aria-label="会话视图">
         <Tab id="turns">
           <span css={tabLabelCSS}>
             <Icon svg={<Icons.MessagesSquareOutline />} />

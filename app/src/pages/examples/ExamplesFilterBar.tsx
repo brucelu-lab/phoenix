@@ -35,8 +35,8 @@ export const ExamplesFilterBar = () => {
         <DebouncedSearch
           defaultValue={filter}
           onChange={setFilter}
-          placeholder="Search examples by input, output, or metadata"
-          aria-label="Search examples"
+          placeholder="按输入/输出/元数据搜索样本"
+          aria-label="搜索样本"
         />
         <ExamplesSplitsMenu
           onSelectionChange={setSelectedSplitIds}

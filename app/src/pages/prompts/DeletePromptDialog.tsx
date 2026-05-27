@@ -62,7 +62,7 @@ export function DeletePromptDialog({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete Prompt</DialogTitle>
+          <DialogTitle>删除提示词</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>

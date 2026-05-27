@@ -159,7 +159,7 @@ export const EvaluatorNameInput = ({
             autoFocus
             {...props}
           >
-            <Label>Name</Label>
+            <Label>名称</Label>
             <Input ref={inputRef} placeholder={placeholder} />
             <FieldError>{displayedError}</FieldError>
           </TextField>

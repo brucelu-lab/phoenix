@@ -102,8 +102,8 @@ function ModelProviderComboBox({
 }) {
   return (
     <ComboBox
-      label="Provider"
-      placeholder="Choose or enter a provider"
+      label="提供商"
+      placeholder="选择或输入提供商"
       selectedKey={
         PROVIDER_OPTIONS.find((option) => option.value === value)?.key || ""
       }
@@ -265,7 +265,7 @@ export function ModelForm({
                 error={error?.message}
                 size="S"
                 placeholder="e.g. ^gpt-4$, ^claude-3-sonnet$"
-                description="Regular expression to match model names during trace ingestion."
+                description="追踪入库时匹配模型名称的正则表达式。"
                 label="Name pattern*"
               />
             )}
@@ -284,7 +284,7 @@ export function ModelForm({
                   onBlur={onBlur}
                   error={error?.message}
                   invalid={invalid}
-                  description="Only models with this provider will be matched by the name pattern."
+                  description="仅使用该提供商的模型会按名称匹配。"
                 />
               );
             }}
@@ -304,7 +304,7 @@ export function ModelForm({
                 granularity="day"
                 hideTimeZone
               >
-                <Label>Start date</Label>
+                <Label>开始日期</Label>
                 <DateInput
                   style={{
                     width: "100%",
@@ -325,7 +325,7 @@ export function ModelForm({
           />
 
           <ModelTokenCostControlTable
-            title="Prompt tokens"
+            title="提示词 Token"
             namePrefix="promptCosts"
             fields={promptCostFields}
             control={control}
@@ -336,7 +336,7 @@ export function ModelForm({
           />
 
           <ModelTokenCostControlTable
-            title="Completion tokens"
+            title="补全 Token"
             namePrefix="completionCosts"
             fields={completionCostFields}
             control={control}

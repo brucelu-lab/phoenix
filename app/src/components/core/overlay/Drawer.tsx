@@ -306,7 +306,7 @@ export function Drawer({
         <div
           role="complementary"
           id={drawerId}
-          aria-label="Detail drawer"
+          aria-label="详情抽屉"
           css={drawerCSS}
           data-dragging={isDragging ? "true" : undefined}
           style={style}
@@ -317,7 +317,7 @@ export function Drawer({
             tabIndex={0}
             aria-controls={drawerId}
             aria-orientation="vertical"
-            aria-label="Resize drawer"
+            aria-label="调整抽屉大小"
             aria-valuenow={Math.round(sizePercent)}
             aria-valuemin={Math.round((minPx / window.innerWidth) * 100)}
             aria-valuemax={Math.round((maxPx / window.innerWidth) * 100)}

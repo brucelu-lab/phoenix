@@ -95,12 +95,12 @@ export function DatasetForm({
               onBlur={onBlur}
               value={value.toString()}
             >
-              <Label>Dataset Name</Label>
+              <Label>数据集名称</Label>
               <Input placeholder="e.x. Golden Dataset" />
               {error?.message ? (
                 <FieldError>{error.message}</FieldError>
               ) : (
-                <Text slot="description">The name of the dataset</Text>
+                <Text slot="description">数据集名称</Text>
               )}
             </TextField>
           )}
@@ -118,12 +118,12 @@ export function DatasetForm({
               onBlur={onBlur}
               value={value.toString()}
             >
-              <Label>Description</Label>
+              <Label>描述</Label>
               <TextArea placeholder="e.x. A golden dataset for structured data extraction" />
               {error?.message ? (
                 <FieldError>{error.message}</FieldError>
               ) : (
-                <Text slot="description">The description of the dataset</Text>
+                <Text slot="description">数据集描述</Text>
               )}
             </TextField>
           )}

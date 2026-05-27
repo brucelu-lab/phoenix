@@ -71,7 +71,7 @@ export const OptimizationDirectionField = ({
   if (isReadOnly) {
     return (
       <Flex direction="column" gap="size-50">
-        <Label>Optimization direction</Label>
+        <Label>优化方向</Label>
         <Text>{getOptimizationDirectionLabel(optimizationDirection)}</Text>
       </Flex>
     );
@@ -87,13 +87,13 @@ export const OptimizationDirectionField = ({
         )
       }
       isDisabled={isDisabled}
-      aria-label="Optimization direction"
+      aria-label="优化方向"
       data-testid="optimization-direction-picker"
       css={css`
         width: 100%;
       `}
     >
-      <Label>Optimization direction</Label>
+      <Label>优化方向</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />

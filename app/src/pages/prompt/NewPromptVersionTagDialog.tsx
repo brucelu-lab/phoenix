@@ -96,7 +96,7 @@ export function NewPromptVersionDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>New Prompt Tag</DialogTitle>
+              <DialogTitle>新建提示词标签</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton onPress={onDismiss} slot="close" />
               </DialogTitleExtra>
@@ -125,7 +125,7 @@ export function NewPromptVersionDialog({
                       name={name}
                       value={value}
                     >
-                      <Label>Tag Name</Label>
+                      <Label>标签名称</Label>
                       <Input placeholder="e.x. prod" />
                       {error?.message ? (
                         <FieldError>{error.message}</FieldError>
@@ -151,7 +151,7 @@ export function NewPromptVersionDialog({
                       onBlur={onBlur}
                       value={value}
                     >
-                      <Label>Description</Label>
+                      <Label>描述</Label>
                       <TextArea placeholder="A description of the tag" />
                       {error?.message ? (
                         <FieldError>{error.message}</FieldError>

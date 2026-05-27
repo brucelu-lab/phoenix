@@ -45,21 +45,21 @@ export function SettingsGeneralPage() {
   );
   return (
     <div css={gridCSS}>
-      <Card title="Platform">
+      <Card title="平台">
         <form css={formCSS}>
           <CopyField value={BASE_URL}>
-            <Label>Hostname</Label>
+            <Label>主机名</Label>
             <CopyInput />
-            <Text slot="description">Connect to Phoenix over HTTP</Text>
+            <Text slot="description">通过 HTTP 连接 Phoenix</Text>
           </CopyField>
           <CopyField value={VERSION}>
-            <Label>Platform Version</Label>
+            <Label>平台版本</Label>
             <CopyInput />
-            <Text slot="description">The version of the Phoenix server</Text>
+            <Text slot="description">Phoenix 服务器版本</Text>
           </CopyField>
         </form>
       </Card>
-      <Card title="Database Usage">
+      <Card title="数据库使用">
         <View padding="size-200">
           <DBUsagePieChart query={data} />
         </View>

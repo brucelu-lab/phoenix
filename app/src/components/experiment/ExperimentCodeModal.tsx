@@ -20,7 +20,7 @@ export type { RunExperimentCodeDialogProps as ExperimentCodeModalProps };
  * @example
  * ```tsx
  * <DialogTrigger>
- *   <Button>Run Experiment</Button>
+ *   <Button>运行实验</Button>
  *   <ExperimentCodeModal datasetId="123" datasetName="my-dataset" />
  * </DialogTrigger>
  * ```

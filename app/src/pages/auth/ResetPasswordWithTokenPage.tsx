@@ -24,7 +24,7 @@ export function ResetPasswordWithTokenPage() {
       <ResetPasswordWithTokenForm resetToken={token} />
       <View paddingTop="size-200">
         <Flex direction="column" alignItems="center" justifyContent="center">
-          <Link to="/login">Back to Login</Link>
+          <Link to="/login">返回登录</Link>
         </Flex>
       </View>
     </AuthLayout>

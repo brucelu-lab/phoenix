@@ -131,10 +131,10 @@ export function PlaygroundEvaluatorSelect(
                 css={css`
                   max-width: 600px;
                 `}
-                aria-label="Select evaluators"
+                aria-label="选择评测器"
               >
                 <GridListSection>
-                  <GridListSectionTitle title="Evaluators" />
+                  <GridListSectionTitle title="评测器" />
                   {evaluators.map((evaluator) => (
                     <EvaluatorSelectMenuItem
                       key={evaluator.id}

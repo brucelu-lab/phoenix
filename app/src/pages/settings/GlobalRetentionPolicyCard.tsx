@@ -128,7 +128,7 @@ export const GlobalRetentionPolicyCard = () => {
   );
 
   return (
-    <Card title="Default Project Retention Policy">
+    <Card title="默认项目保留策略">
       {error && <Alert variant="danger">{error}</Alert>}
       <View padding="size-200">
         <Flex direction="row" gap="size-200" justifyContent="space-between">
@@ -167,7 +167,7 @@ export const GlobalRetentionPolicyCard = () => {
                       minValue={0}
                       isInvalid={!!fieldState.error}
                     >
-                      <Label>Maximum Trace Retention in Days</Label>
+                      <Label>最大追踪保留天数</Label>
                       <Input />
                       {fieldState.error ? (
                         <FieldError>{fieldState.error?.message}</FieldError>
@@ -200,7 +200,7 @@ export const GlobalRetentionPolicyCard = () => {
         borderColor="default"
       >
         <Flex direction="row" justifyContent="end">
-          <Link to="/settings/data">All Retention Policies</Link>
+          <Link to="/settings/data">全部保留策略</Link>
         </Flex>
       </View>
     </Card>

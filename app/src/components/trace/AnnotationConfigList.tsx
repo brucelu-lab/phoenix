@@ -250,22 +250,22 @@ export function AnnotationConfigList(props: {
     <Autocomplete filter={contains}>
       <MenuHeader>
         <SearchField
-          aria-label="Search annotation configs"
+          aria-label="搜索标注配置"
           variant="quiet"
           autoFocus
         >
           <SearchIcon />
-          <Input placeholder="Search annotation configs" />
+          <Input placeholder="搜索标注配置" />
         </SearchField>
       </MenuHeader>
       <Menu
-        aria-label="Annotation Configs"
+        aria-label="标注配置"
         items={allAnnotationConfigs}
         selectionMode="multiple"
         selectedKeys={annotationConfigIdsInProject}
         onSelectionChange={handleSelectionChange}
         renderEmptyState={() => (
-          <MenuEmpty>No annotation configs found.</MenuEmpty>
+          <MenuEmpty>未找到标注配置。</MenuEmpty>
         )}
       >
         {({ id, name, annotationType }) => (

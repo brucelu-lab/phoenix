@@ -256,11 +256,11 @@ function ProjectPageContentBody({
           selectedKey={tab}
         >
           <TabList>
-            <Tab id="spans">Spans</Tab>
-            <Tab id="traces">Traces</Tab>
-            <Tab id="sessions">Sessions</Tab>
-            <Tab id="metrics">Metrics</Tab>
-            <Tab id="config">Config</Tab>
+            <Tab id="spans">跨度（Spans）</Tab>
+            <Tab id="traces">追踪轨迹</Tab>
+            <Tab id="sessions">会话</Tab>
+            <Tab id="metrics">指标</Tab>
+            <Tab id="config">配置</Tab>
           </TabList>
           <LazyTabPanel padded={false} id="spans">
             <Outlet />

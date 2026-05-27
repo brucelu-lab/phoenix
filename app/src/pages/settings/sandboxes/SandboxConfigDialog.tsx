@@ -148,7 +148,7 @@ type SandboxConfigDialogContentProps = (
     }
 ) & { onClose: () => void };
 
-const NOT_SUPPORTED_COPY = "Not supported by the selected backend.";
+const NOT_SUPPORTED_COPY = "所选后端不支持。";
 
 // Shared flex sizing for env-var row inputs so the Name and Secret fields
 // share remaining space evenly.
@@ -465,9 +465,9 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
                         }}
                         onBlur={field.onBlur}
                         isInvalid={fieldState.invalid}
-                        placeholder="Select a language"
+                        placeholder="选择语言"
                       >
-                        <Label>Language</Label>
+                        <Label>语言</Label>
                         <Button>
                           <SelectValue />
                           <SelectChevronUpDownIcon />
@@ -512,7 +512,7 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
               })()}
             {mode === "edit" && (
               <Select selectedKey={props.config.language} isDisabled>
-                <Label>Language</Label>
+                <Label>语言</Label>
                 <Button>
                   <SelectValue />
                   <SelectChevronUpDownIcon />
@@ -551,7 +551,7 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
                     }
                     isInvalid={fieldState.invalid}
                   >
-                    <Label>Name</Label>
+                    <Label>名称</Label>
                     <Input />
                     <Text slot="description" size="S" color="text-700">
                       Lowercase letters, digits, dashes, and underscores. Must
@@ -569,8 +569,8 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
               control={form.control}
               render={({ field }) => (
                 <TextField {...field}>
-                  <Label>Description</Label>
-                  <TextArea placeholder="Optional description" />
+                  <Label>描述</Label>
+                  <TextArea placeholder="可选描述" />
                 </TextField>
               )}
             />
@@ -604,7 +604,7 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
             />
             {activeBackend?.supportsEnvVars ? (
               <Flex direction="column" gap="size-100">
-                <Text>Environment Variables</Text>
+                <Text>环境变量</Text>
                 <Alert variant="warning">
                   Anyone who can run code in this sandbox can read these values
                   (e.g. via <code>os.environ</code>). Don&apos;t store secrets
@@ -638,7 +638,7 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
               </Flex>
             ) : activeBackend != null ? (
               <Flex direction="column" gap="size-100">
-                <Text>Environment Variables</Text>
+                <Text>环境变量</Text>
                 <Text color="text-700" size="S">
                   {NOT_SUPPORTED_COPY}
                 </Text>
@@ -651,13 +651,13 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
                 control={form.control}
                 render={({ field }) => (
                   <Switch isSelected={field.value} onChange={field.onChange}>
-                    <Label>Allow Internet Access</Label>
+                    <Label>允许互联网访问</Label>
                   </Switch>
                 )}
               />
             ) : activeBackend != null ? (
               <Flex direction="column" gap="size-100">
-                <Text>Internet Access</Text>
+                <Text>互联网访问</Text>
                 <Text color="text-700" size="S">
                   {NOT_SUPPORTED_COPY}
                 </Text>
@@ -719,7 +719,7 @@ function SandboxConfigDialogContent(props: SandboxConfigDialogContentProps) {
               />
             ) : activeBackend != null ? (
               <Flex direction="column" gap="size-100">
-                <Text>Dependencies</Text>
+                <Text>依赖</Text>
                 <Text color="text-700" size="S">
                   {NOT_SUPPORTED_COPY}
                 </Text>
@@ -770,7 +770,7 @@ function EnvVarRow({
         rules={{ required: "Name is required" }}
         render={({ field, fieldState }) => (
           <TextField {...field} isInvalid={fieldState.invalid}>
-            <Label>Variable Name</Label>
+            <Label>变量名称</Label>
             <Input placeholder="MY_VAR" />
             {fieldState.error ? (
               <FieldError>{fieldState.error.message}</FieldError>
@@ -785,7 +785,7 @@ function EnvVarRow({
       <Button
         size="M"
         variant="quiet"
-        aria-label="Remove variable"
+        aria-label="移除变量"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
         onPress={onRemove}
       />
@@ -834,8 +834,8 @@ function SecretKeyInputFallback({
       control={form.control}
       render={({ field }) => (
         <TextField {...field}>
-          <Label>Secret</Label>
-          <Input placeholder="Loading..." />
+          <Label>密钥</Label>
+          <Input placeholder="加载中..." />
         </TextField>
       )}
     />
@@ -884,8 +884,8 @@ function SecretKeyComboBox({
       rules={{ required: "Secret is required" }}
       render={({ field, fieldState }) => (
         <ComboBox
-          label="Secret"
-          placeholder="Select a secret"
+          label="密钥"
+          placeholder="选择密钥"
           // Phoenix's ComboBox size scale is offset from TextField's: ComboBox
           // "L" matches TextField "M" (both → --global-input-height-m). Use "L"
           // so this picker visually aligns with the sibling Name TextField.
@@ -904,7 +904,7 @@ function SecretKeyComboBox({
           renderEmptyState={() => (
             <View padding="size-150">
               <Flex justifyContent="center" alignItems="center">
-                <Text color="gray-300">No secrets found</Text>
+                <Text color="gray-300">未找到密钥</Text>
               </Flex>
             </View>
           )}

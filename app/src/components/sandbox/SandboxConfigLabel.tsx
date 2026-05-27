@@ -115,7 +115,7 @@ function SandboxConfigLabelDetails({
   );
 
   if (data.node.__typename !== "SandboxConfig") {
-    return <Text size="S">Sandbox config not found</Text>;
+    return <Text size="S">未找到沙箱配置</Text>;
   }
   const sandboxConfig = data.node;
 

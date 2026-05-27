@@ -19,7 +19,7 @@ function resolveTooltip(tooltip: MessageActionTooltip) {
  *
  * @example
  * ```tsx
- * <MessageAction label="Copy" tooltip="Copy to clipboard" onPress={handleCopy}>
+ * <MessageAction label="复制" tooltip="复制到剪贴板" onPress={handleCopy}>
  *   <Icon svg={<Icons.DuplicateOutline />} />
  * </MessageAction>
  * ```

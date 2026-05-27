@@ -102,7 +102,7 @@ export function LDAPUserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Email</Label>
+                  <Label>邮箱</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>
@@ -132,7 +132,7 @@ export function LDAPUserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Display Name</Label>
+                  <Label>显示名称</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>

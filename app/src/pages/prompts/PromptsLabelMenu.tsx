@@ -99,15 +99,15 @@ const LabelMenuFilterContent = ({
   return (
     <Autocomplete filter={contains}>
       <MenuHeader>
-        <SearchField aria-label="Search" variant="quiet" autoFocus>
+        <SearchField aria-label="搜索" variant="quiet" autoFocus>
           <SearchIcon />
-          <Input placeholder="Search labels" />
+          <Input placeholder="搜索标签" />
         </SearchField>
       </MenuHeader>
       <Menu
         items={labels}
         selectionMode="multiple"
-        renderEmptyState={() => <MenuEmpty>No labels found</MenuEmpty>}
+        renderEmptyState={() => <MenuEmpty>未找到标签</MenuEmpty>}
         selectedKeys={selectedLabelIds}
         onSelectionChange={(keys) => {
           if (keys === "all") {

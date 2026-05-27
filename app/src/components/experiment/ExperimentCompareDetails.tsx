@@ -289,7 +289,7 @@ export function ExperimentCompareDetails({
         >
           <View overflow="hidden" padding="size-200" height="100%">
             <Card
-              title="Input"
+              title="输入"
               extra={<CopyToClipboardButton text={JSON.stringify(input)} />}
               height="100%"
               scrollBody={true}
@@ -396,7 +396,7 @@ export function ExperimentRunOutputs() {
             <Flex direction="row" gap="size-200" alignItems="center">
               <IconButton
                 size="S"
-                aria-label="Toggle side bar"
+                aria-label="切换侧边栏"
                 onPress={() => {
                   setIsSideBarOpen(!isSideBarOpen);
                   const sidebarPanel = sidebarPanelRef.current;
@@ -413,10 +413,10 @@ export function ExperimentRunOutputs() {
                   svg={isSideBarOpen ? <Icons.SlideOut /> : <Icons.SlideIn />}
                 />
               </IconButton>
-              <Heading>Experiment Runs</Heading>
+              <Heading>实验运行</Heading>
             </Flex>
           </View>
-          {noRunsSelected && <Empty message="No runs selected" />}
+          {noRunsSelected && <Empty message="未选择运行" />}
           <ul
             css={css`
               flex: 1;
@@ -563,7 +563,7 @@ function ExperimentRunOutputsSidebar() {
             onChange={(checked) => toggleAllRepetitionsSelection(checked)}
           >
             <Text>
-              <Truncate maxWidth="100%">Select all</Truncate>
+              <Truncate maxWidth="100%">全选</Truncate>
             </Text>
           </Checkbox>
           {annotationSummaries.length > 0 && (
@@ -628,7 +628,7 @@ function ExperimentRunOutputsSidebar() {
               {selectedAnnotation && (
                 <IconButton
                   size="S"
-                  aria-label="Change sort direction"
+                  aria-label="切换排序方向"
                   onPress={toggleSortDirection}
                   css={css`
                     flex: none;
@@ -705,7 +705,7 @@ function ExperimentSidebarItem({
         {includeRepetitions && (
           <IconButton
             size="S"
-            aria-label="Collapse experiment"
+            aria-label="折叠实验"
             onPress={() => setIsCollapsed(!isCollapsed)}
             css={css`
               flex: none;
@@ -908,12 +908,12 @@ function ExperimentItemHeader({
               <TooltipTrigger>
                 <IconButton
                   size="S"
-                  aria-label="View run trace"
+                  aria-label="查看运行追踪"
                   onPress={onTraceClick}
                 >
                   <Icon svg={<Icons.Trace />} />
                 </IconButton>
-                <Tooltip>View run trace</Tooltip>
+                <Tooltip>查看运行追踪</Tooltip>
               </TooltipTrigger>
             )}
             {copyText && <CopyToClipboardButton text={copyText} />}
@@ -1042,7 +1042,7 @@ export function ExperimentItem({
           )}
         </ExperimentItemHeader>
         {!experimentRepetition?.experimentRun ? (
-          <Empty message="Did not run" />
+          <Empty message="未运行" />
         ) : (
           <>
             <ExperimentItemMetadata
@@ -1338,7 +1338,7 @@ function ExperimentRunAnnotation({
         <IconButton
           size="S"
           isDisabled={!hasTrace}
-          aria-label="View evaluation trace"
+          aria-label="查看评测追踪"
           onPress={() => {
             if (!hasTrace) {
               return;
@@ -1352,7 +1352,7 @@ function ExperimentRunAnnotation({
         >
           <Icon svg={<Icons.Trace />} />
         </IconButton>
-        <Tooltip>View evaluation trace</Tooltip>
+        <Tooltip>查看评测追踪</Tooltip>
       </TooltipTrigger>
     </>
   );

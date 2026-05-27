@@ -106,5 +106,5 @@ export function ExperimentAverageRunTokenCostsDetails({
     };
   }, [data.experiment]);
 
-  return <TokenCostsDetails {...costData} label="Average" />;
+  return <TokenCostsDetails {...costData} label="平均" />;
 }

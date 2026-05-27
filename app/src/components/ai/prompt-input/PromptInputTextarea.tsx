@@ -17,7 +17,7 @@ import type { PromptInputTextareaProps } from "./types";
  * @example
  * ```tsx
  * <PromptInputBody>
- *   <PromptInputTextarea placeholder="Ask a question..." maxRows={10} />
+ *   <PromptInputTextarea placeholder="提问..." maxRows={10} />
  * </PromptInputBody>
  * ```
  */

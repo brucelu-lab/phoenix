@@ -50,7 +50,7 @@ export function SessionPage() {
                 <SessionDetailsPaginator currentId={sessionId} />
                 <DialogTitle>
                   <TitleWithID
-                    title="Session"
+                    title="会话"
                     id={loaderData.session.sessionId || ""}
                   />
                 </DialogTitle>

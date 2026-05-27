@@ -147,7 +147,7 @@ function NameCell({
           <Icon
             svg={<Icons.AlertTriangleOutline />}
             color="warning"
-            aria-label="Configuration error"
+            aria-label="配置错误"
           />
         </TriggerWrap>
         <Tooltip>
@@ -317,9 +317,9 @@ export function CustomProvidersCard({
 
   return (
     <ErrorBoundary>
-      <Card title="Custom AI Providers" extra={<NewCustomProviderButton />}>
+      <Card title="自定义 AI 提供商" extra={<NewCustomProviderButton />}>
         {isEmpty ? (
-          <Empty message="No custom AI providers configured yet." />
+          <Empty message="尚未配置自定义 AI 提供商。" />
         ) : (
           <table css={tableCSS}>
             <thead>

@@ -15,7 +15,7 @@ import type { ToolInvocationPart, ToolUIPartState } from "./toolPartTypes";
 import { formatToolState } from "./toolPartTypes";
 
 const FREEFORM_OPTION_ID = "__freeform__";
-const ASK_USER_CANCELLED_ERROR_TEXT = "User cancelled the question.";
+const ASK_USER_CANCELLED_ERROR_TEXT = "用户取消了提问。";
 
 const askUserToolDetailsCSS = css`
   .ask-user__list-block {
@@ -136,7 +136,7 @@ export function AskUserToolDetails({ part }: { part: ToolInvocationPart }) {
 
   return (
     <div className="tool-part__body" css={askUserToolDetailsCSS}>
-      <ToolPartLabel>Questions</ToolPartLabel>
+      <ToolPartLabel>问题</ToolPartLabel>
       {input ? (
         <AskUserListBlock entries={questionEntries} />
       ) : (
@@ -144,7 +144,7 @@ export function AskUserToolDetails({ part }: { part: ToolInvocationPart }) {
       )}
       {responseState ? (
         <>
-          <ToolPartLabel>Answers</ToolPartLabel>
+          <ToolPartLabel>答案</ToolPartLabel>
           <AskUserListBlock entries={answerEntries} />
         </>
       ) : null}

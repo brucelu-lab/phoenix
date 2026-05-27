@@ -50,7 +50,7 @@ export function TraceTreeToolbar() {
         gap="size-100"
         width="100%"
       >
-        <Heading level={3}>Trace</Heading>
+        <Heading level={3}>追踪</Heading>
         <Flex direction="row" gap="size-100" className="trace-tree-controls">
           <TooltipTrigger>
             <IconButton

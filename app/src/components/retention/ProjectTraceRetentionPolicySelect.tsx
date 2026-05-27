@@ -68,7 +68,7 @@ export function ProjectTraceRetentionPolicySelect({
       }}
       isDisabled={isDisabled}
     >
-      <Label>Retention Policy</Label>
+      <Label>保留策略</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />

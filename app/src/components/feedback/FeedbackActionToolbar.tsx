@@ -19,11 +19,11 @@ export function FeedbackActionToolbar({
   const isNegativeSelected = selectedFeedback === "negative";
 
   return (
-    <MessageActions aria-label="Feedback actions">
+    <MessageActions aria-label="反馈操作">
       {onAnnotate ? (
         <MessageAction
-          label="Annotate"
-          tooltip="Annotate"
+          label="标注"
+          tooltip="标注"
           onPress={() => {
             onAnnotate();
           }}
@@ -32,7 +32,7 @@ export function FeedbackActionToolbar({
         </MessageAction>
       ) : null}
       <MessageAction
-        label="Thumbs up"
+        label="赞"
         tooltip={
           isPositiveSelected
             ? "Remove positive feedback"
@@ -49,7 +49,7 @@ export function FeedbackActionToolbar({
         />
       </MessageAction>
       <MessageAction
-        label="Thumbs down"
+        label="踩"
         tooltip={
           isNegativeSelected
             ? "Remove negative feedback"

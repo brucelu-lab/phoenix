@@ -18,7 +18,7 @@ export function RestAPIPage() {
         These APIs are under active development and are subject to change.
       </Alert>
       <iframe
-        title="REST API documentation"
+        title="REST API 文档"
         src={`${basename}/docs`}
         style={{
           width: "100%",

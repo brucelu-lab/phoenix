@@ -128,7 +128,7 @@ export function EditPromptButton(props: { prompt: EditPromptButton_data$key }) {
       <Modal size="M" isDismissable>
         <Dialog>
           <DialogHeader>
-            <DialogTitle>Edit Prompt Details</DialogTitle>
+            <DialogTitle>编辑提示词详情</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton />
             </DialogTitleExtra>
@@ -146,8 +146,8 @@ export function EditPromptButton(props: { prompt: EditPromptButton_data$key }) {
                   control={control}
                   render={({ field }) => (
                     <TextField value={field.value} onChange={field.onChange}>
-                      <Label>Prompt Description</Label>
-                      <TextArea placeholder="Enter a description for the prompt" />
+                      <Label>提示词描述</Label>
+                      <TextArea placeholder="输入提示词描述" />
                       <Text slot="description">
                         A description of the prompt
                       </Text>

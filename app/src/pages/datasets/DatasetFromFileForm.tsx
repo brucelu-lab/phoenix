@@ -681,7 +681,7 @@ export function DatasetFromFileForm(props: DatasetFromFileFormProps) {
           maxFileSize={MAX_FILE_SIZE}
           onSelect={handleFileSelect}
           onSelectRejected={handleFileSelectRejected}
-          label="Drop a CSV or JSONL file here"
+          label="拖拽 CSV 或 JSONL 文件到此处"
           description="or click to browse (max 100MB)"
         />
       </div>
@@ -730,7 +730,7 @@ export function DatasetFromFileForm(props: DatasetFromFileFormProps) {
                   value={value.toString()}
                   isDisabled={isSubmitting || isParsing}
                 >
-                  <Label>Name</Label>
+                  <Label>名称</Label>
                   <Input placeholder="e.g. Golden Dataset" />
                   {error?.message && <FieldError>{error.message}</FieldError>}
                 </TextField>
@@ -770,8 +770,8 @@ export function DatasetFromFileForm(props: DatasetFromFileFormProps) {
             >
               <div css={previewTabHeaderCSS}>
                 <TabList>
-                  <Tab id="file">File Preview</Tab>
-                  <Tab id="dataset">Examples Preview</Tab>
+                  <Tab id="file">文件预览</Tab>
+                  <Tab id="dataset">样本预览</Tab>
                 </TabList>
                 <span css={rowCountCSS}>
                   {totalRowCount !== null && totalRowCount > previewRows.length
@@ -909,7 +909,7 @@ export function DatasetFromFileForm(props: DatasetFromFileFormProps) {
                     {({ close }) => (
                       <DialogContent>
                         <DialogHeader>
-                          <DialogTitle>Replace Examples</DialogTitle>
+                          <DialogTitle>替换样本</DialogTitle>
                           <DialogTitleExtra>
                             <DialogCloseButton slot="close" />
                           </DialogTitleExtra>

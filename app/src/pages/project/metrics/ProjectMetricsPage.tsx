@@ -214,28 +214,28 @@ const MetricPanels = memo(function MetricPanels({
     >
       <Flex direction="row" gap="size-200">
         <MetricPanel
-          title="Traces over time"
-          subtitle="Overall volume of traces"
+          title="追踪流量"
+          subtitle="追踪总流量"
         >
           <TraceCountTimeSeries projectId={projectId} timeRange={timeRange} />
         </MetricPanel>
         <MetricPanel
-          title="Traces with errors"
-          subtitle="Overall volume of traces with errors"
+          title="异常追踪"
+          subtitle="异常追踪总流量"
         >
           <TraceErrorsTimeSeries projectId={projectId} timeRange={timeRange} />
         </MetricPanel>
       </Flex>
       <Flex direction="row" gap="size-200">
-        <MetricPanel title="Trace Latency" subtitle="Latency percentiles">
+        <MetricPanel title="追踪延迟" subtitle="延迟分位数">
           <TraceLatencyPercentilesTimeSeries
             projectId={projectId}
             timeRange={timeRange}
           />
         </MetricPanel>
         <MetricPanel
-          title="Annotation scores"
-          subtitle="Average annotation scores"
+          title="标注分数"
+          subtitle="平均标注分数"
         >
           <SpanAnnotationScoreTimeSeries
             projectId={projectId}
@@ -244,37 +244,37 @@ const MetricPanels = memo(function MetricPanels({
         </MetricPanel>
       </Flex>
       <Flex direction="row" gap="size-200">
-        <MetricPanel title="Cost" subtitle="Estimated cost in USD">
+        <MetricPanel title="成本" subtitle="预估成本（美元）">
           <TraceTokenCostTimeSeries
             projectId={projectId}
             timeRange={timeRange}
           />
         </MetricPanel>
-        <MetricPanel title="Top models by cost">
+        <MetricPanel title="按成本排序的 Top 模型">
           <TopModelsByCost projectId={projectId} timeRange={timeRange} />
         </MetricPanel>
       </Flex>
       <Flex direction="row" gap="size-200">
         <MetricPanel
-          title="Token usage"
-          subtitle="Token usage by prompt and completion"
+          title="Token 用量"
+          subtitle="提示词与补全的 Token 用量"
         >
           <TraceTokenCountTimeSeries
             projectId={projectId}
             timeRange={timeRange}
           />
         </MetricPanel>
-        <MetricPanel title="Top models by tokens">
+        <MetricPanel title="按 Token 数排序的 Top 模型">
           <TopModelsByToken projectId={projectId} timeRange={timeRange} />
         </MetricPanel>
       </Flex>
       <Flex direction="row" gap="size-200">
-        <MetricPanel title="LLM spans" subtitle="LLM span count over time">
+        <MetricPanel title="LLM 跨度" subtitle="LLM 跨度数量">
           <LLMSpanCountTimeSeries projectId={projectId} timeRange={timeRange} />
         </MetricPanel>
         <MetricPanel
-          title="LLM spans with errors"
-          subtitle="LLM spans with errors over time"
+          title="异常 LLM 跨度"
+          subtitle="异常 LLM 跨度趋势"
         >
           <LLMSpanErrorsTimeSeries
             projectId={projectId}
@@ -283,15 +283,15 @@ const MetricPanels = memo(function MetricPanels({
         </MetricPanel>
       </Flex>
       <Flex direction="row" gap="size-200">
-        <MetricPanel title="Tool spans" subtitle="Tool span count over time">
+        <MetricPanel title="工具跨度" subtitle="工具跨度数量">
           <ToolSpanCountTimeSeries
             projectId={projectId}
             timeRange={timeRange}
           />
         </MetricPanel>
         <MetricPanel
-          title="Tool spans with errors"
-          subtitle="Tool spans with errors over time"
+          title="异常工具跨度"
+          subtitle="异常工具跨度趋势"
         >
           <ToolSpanErrorsTimeSeries
             projectId={projectId}

@@ -143,7 +143,7 @@ export function SpanToDatasetExampleDialog({
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Add Example to Dataset</DialogTitle>
+            <DialogTitle>添加样本到数据集</DialogTitle>
             <DialogTitleExtra>
               <Button
                 variant="primary"
@@ -202,7 +202,7 @@ export function SpanToDatasetExampleDialog({
                           onBlur={onBlur}
                           validationState={invalid ? "invalid" : "valid"}
                           errorMessage={error?.message}
-                          label="Dataset"
+                          label="数据集"
                           value={value}
                         />
                         <NewDatasetButton
@@ -222,7 +222,7 @@ export function SpanToDatasetExampleDialog({
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Input"
+                        title="输入"
                         subTitle="The input to the LLM, retriever, program, etc."
                         {...defaultCardProps}
                       >
@@ -247,7 +247,7 @@ export function SpanToDatasetExampleDialog({
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Output"
+                        title="输出"
                         subTitle="The output of the LLM or program to be used as an expected output"
                         {...defaultCardProps}
                         backgroundColor="green-200"
@@ -274,7 +274,7 @@ export function SpanToDatasetExampleDialog({
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Metadata"
+                        title="元数据"
                         subTitle="All data from the span to use during experimentation or evaluation"
                         {...defaultCardProps}
                       >

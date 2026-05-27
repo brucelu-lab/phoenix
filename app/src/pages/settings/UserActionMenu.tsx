@@ -50,7 +50,7 @@ export function UserActionMenu(props: UserActionMenuProps) {
           alignItems={"center"}
         >
           <Icon svg={<Icons.TrashOutline />} />
-          <>Delete</>
+          <>删除</>
         </Flex>
       </MenuItem>
     );
@@ -64,7 +64,7 @@ export function UserActionMenu(props: UserActionMenuProps) {
           alignItems={"center"}
         >
           <Icon svg={<Icons.Refresh />} />
-          <>Reset Password</>
+          <>重置密码</>
         </Flex>
       </MenuItem>
     );
@@ -85,7 +85,7 @@ export function UserActionMenu(props: UserActionMenuProps) {
         />
         <Popover>
           <Menu
-            aria-label="User Actions"
+            aria-label="用户操作"
             onAction={(action) => {
               switch (action) {
                 case UserAction.DELETE:

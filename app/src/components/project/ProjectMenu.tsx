@@ -193,7 +193,7 @@ export function ProjectMenu({
         <Autocomplete filter={contains}>
           <MenuHeader>
             <SearchField
-              aria-label="Search projects"
+              aria-label="搜索项目"
               autoFocus
               onChange={onSearchChange}
               size={size}
@@ -205,9 +205,9 @@ export function ProjectMenu({
             </SearchField>
           </MenuHeader>
           <Menu
-            aria-label="Projects"
+            aria-label="项目"
             items={projects}
-            renderEmptyState={() => <MenuEmpty>No projects found</MenuEmpty>}
+            renderEmptyState={() => <MenuEmpty>未找到项目</MenuEmpty>}
             selectedKeys={selectedProjectId ? [selectedProjectId] : []}
             selectionMode="single"
             onAction={(key) => {

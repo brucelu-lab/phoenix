@@ -86,7 +86,7 @@ export const AnnotationInputExplanation = ({
                         minWidth: "300px",
                       }}
                     >
-                      <Label>Explanation</Label>
+                      <Label>说明</Label>
                       <Input />
                       <Text slot="description">
                         Why did you give this score?

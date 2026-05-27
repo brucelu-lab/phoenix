@@ -140,7 +140,7 @@ export function AgentChatHeader({
         <Button
           variant="quiet"
           size="S"
-          aria-label="New chat"
+          aria-label="新对话"
           onPress={onCreateSession}
           leadingVisual={<Icon svg={<Icons.PlusOutline />} />}
         />
@@ -163,13 +163,13 @@ export function AgentChatHeader({
           variant="quiet"
           size="S"
           to="/settings/agents"
-          aria-label="Agent settings"
+          aria-label="智能体设置"
           leadingVisual={<Icon svg={<Icons.OptionsOutline />} />}
         />
         <Button
           variant="quiet"
           size="S"
-          aria-label="Close agent chat"
+          aria-label="关闭智能体对话"
           onPress={onClose}
           leadingVisual={<Icon svg={<Icons.CloseOutline />} />}
         />

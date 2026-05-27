@@ -165,7 +165,7 @@ export function GenerativeProvidersCard({
   const rows = table.getRowModel().rows;
 
   return (
-    <Card title="AI Providers">
+    <Card title="AI 提供商">
       <table css={tableCSS}>
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -278,7 +278,7 @@ function ProviderCredentialsDialog({
               <ToggleButtonGroup
                 selectedKeys={[credentialView]}
                 size="S"
-                aria-label="Credential Source"
+                aria-label="凭据来源"
                 onSelectionChange={(v) => {
                   if (v.size === 0) {
                     return;
@@ -289,10 +289,10 @@ function ProviderCredentialsDialog({
                   }
                 }}
               >
-                <ToggleButton aria-label="Browser" id="browser">
+                <ToggleButton aria-label="浏览器" id="browser">
                   Browser
                 </ToggleButton>
-                <ToggleButton aria-label="Secrets" id="secrets">
+                <ToggleButton aria-label="密钥列表" id="secrets">
                   Secrets
                 </ToggleButton>
               </ToggleButtonGroup>
@@ -317,7 +317,7 @@ function ProviderCredentialsDialog({
                       across all users and override environment variables.
                     </Text>
                   </View>
-                  <Suspense fallback={<Text color="text-700">Loading...</Text>}>
+                  <Suspense fallback={<Text color="text-700">加载中...</Text>}>
                     <Form>
                       <ServerCredentials provider={provider} />
                     </Form>
@@ -375,7 +375,7 @@ function BrowserCredentials({
   }
 
   if (provider.credentialRequirements.length === 0) {
-    return <Text color="text-700">Browser credentials are not required.</Text>;
+    return <Text color="text-700">无需浏览器凭据。</Text>;
   }
 
   return (

@@ -32,7 +32,7 @@ export function EditSpanAnnotationsButton({
     <DialogTrigger>
       <Button
         size={size}
-        aria-label="Edit Span Annotations"
+        aria-label="编辑跨度标注"
         leadingVisual={<Icon svg={<Icons.EditOutline />} />}
       >
         {buttonText}

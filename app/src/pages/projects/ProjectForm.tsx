@@ -176,7 +176,7 @@ export function ProjectForm({
               control={control}
               render={({ field: { onChange, value } }) => (
                 <div css={fieldBaseCSS}>
-                  <Label>Project Gradient</Label>
+                  <Label>项目渐变</Label>
                   <GradientCircleRadioGroup
                     value={value}
                     onChange={onChange}
@@ -231,7 +231,7 @@ export function ProjectForm({
                 onBlur={onBlur}
                 value={value.toString()}
               >
-                <Label>Project Name</Label>
+                <Label>项目名称</Label>
                 <Input placeholder="e.x. my-ai-project" />
                 {error?.message ? (
                   <FieldError>{error.message}</FieldError>
@@ -258,12 +258,12 @@ export function ProjectForm({
               onBlur={onBlur}
               value={value.toString()}
             >
-              <Label>Description</Label>
+              <Label>描述</Label>
               <TextArea placeholder="e.x. A project for tracking agent performance" />
               {error?.message ? (
                 <FieldError>{error.message}</FieldError>
               ) : (
-                <Text slot="description">The description of the project</Text>
+                <Text slot="description">项目描述</Text>
               )}
             </TextField>
           )}

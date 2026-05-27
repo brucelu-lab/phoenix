@@ -113,16 +113,16 @@ export function TokenCostsDetails({
         <TokenCostRow label={label} cost={total} isTotal={true} />
       )}
 
-      {prompt != null && <TokenCostRow label="Prompt" cost={prompt} />}
+      {prompt != null && <TokenCostRow label="提示词" cost={prompt} />}
 
       {completion != null && (
-        <TokenCostRow label="Completion" cost={completion} />
+        <TokenCostRow label="补全" cost={completion} />
       )}
 
       {/* Prompt details sub-section */}
       {hasPromptDetails && (
         <>
-          <SectionHeader>Prompt Details</SectionHeader>
+          <SectionHeader>提示词详情</SectionHeader>
           {promptDetails &&
             Object.entries(promptDetails).map(([key, value]) => {
               if (value != null && value > 0) {
@@ -143,7 +143,7 @@ export function TokenCostsDetails({
       {/* Completion details sub-section */}
       {hasCompletionDetails && (
         <>
-          <SectionHeader>Completion Details</SectionHeader>
+          <SectionHeader>补全详情</SectionHeader>
           {completionDetails &&
             Object.entries(completionDetails).map(([key, value]) => {
               if (value != null && value > 0) {

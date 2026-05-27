@@ -86,7 +86,7 @@ export function NewDatasetSplitForm({
               onBlur={onBlur}
               value={value.toString()}
             >
-              <Label>Split Name</Label>
+              <Label>切分名称</Label>
               <Input placeholder="e.g. test" />
               {error?.message && <FieldError>{error.message}</FieldError>}
             </TextField>
@@ -105,7 +105,7 @@ export function NewDatasetSplitForm({
               onBlur={onBlur}
               value={value.toString()}
             >
-              <Label>Description</Label>
+              <Label>描述</Label>
               <TextArea placeholder="e.g. a test split" />
               {error?.message && <FieldError>{error.message}</FieldError>}
             </TextField>
@@ -116,7 +116,7 @@ export function NewDatasetSplitForm({
           control={control}
           render={({ field: { onChange, value } }) => (
             <div css={fieldBaseCSS}>
-              <Label>Color</Label>
+              <Label>颜色</Label>
               <ColorSwatchPicker
                 value={value}
                 onChange={(newColor) => onChange(newColor.toString())}

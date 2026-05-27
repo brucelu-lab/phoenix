@@ -14,7 +14,7 @@ export function PlaygroundOperationTypeRadioGroup() {
   return (
     <ToggleButtonGroup
       defaultSelectedKeys={[operationType]}
-      aria-label="Operation Type"
+      aria-label="操作类型"
       onSelectionChange={(v) => {
         if (v.size === 0) {
           return;
@@ -25,10 +25,10 @@ export function PlaygroundOperationTypeRadioGroup() {
         }
       }}
     >
-      <ToggleButton aria-label="Chat" id={"chat"}>
+      <ToggleButton aria-label="对话" id={"chat"}>
         Chat
       </ToggleButton>
-      <ToggleButton aria-label="Completion" id={"text_completion"}>
+      <ToggleButton aria-label="补全" id={"text_completion"}>
         Completion
       </ToggleButton>
     </ToggleButtonGroup>

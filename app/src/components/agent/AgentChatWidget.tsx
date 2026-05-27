@@ -496,7 +496,7 @@ function AgentChatWidgetTooltip() {
     <Tooltip placement="top" offset={6}>
       <TooltipArrow />
       <Flex direction="row" gap="size-100" alignItems="center">
-        <span>Open assistant</span>
+        <span>打开助手</span>
         <Keyboard>
           <VisuallyHidden>{modifierKey}</VisuallyHidden>
           <span aria-hidden="true">{modifierGlyph}</span>

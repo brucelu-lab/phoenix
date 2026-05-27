@@ -78,7 +78,7 @@ export function EditPromptToolDetails({ part }: { part: ToolInvocationPart }) {
       {pendingEdit ? <PendingEditPromptDiff pendingEdit={pendingEdit} /> : null}
       {part.state === "output-available" ? (
         <>
-          <ToolPartLabel>Result</ToolPartLabel>
+          <ToolPartLabel>结果</ToolPartLabel>
           <ToolPartCodeBlock>
             {stringifyToolValue(part.output)}
           </ToolPartCodeBlock>
@@ -86,14 +86,14 @@ export function EditPromptToolDetails({ part }: { part: ToolInvocationPart }) {
       ) : null}
       {part.state === "output-error" ? (
         <>
-          <ToolPartLabel variant="danger">Error</ToolPartLabel>
+          <ToolPartLabel variant="danger">错误</ToolPartLabel>
           <ToolPartCodeBlock>{part.errorText ?? ""}</ToolPartCodeBlock>
         </>
       ) : null}
       {!pendingEdit && input && part.state === "input-available" ? (
         <>
           <ToolPartLabel>{EDIT_PROMPT_TOOL_NAME}</ToolPartLabel>
-          <ToolPartCodeBlock>Preparing prompt edit diff...</ToolPartCodeBlock>
+          <ToolPartCodeBlock>准备提示词编辑差异...</ToolPartCodeBlock>
         </>
       ) : null}
     </div>

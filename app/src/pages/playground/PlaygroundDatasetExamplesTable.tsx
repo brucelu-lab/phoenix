@@ -205,7 +205,7 @@ function CellRunStatus({
   if (isRunning) {
     return (
       <Flex direction="row" gap="size-100" alignItems="center">
-        <ProgressCircle isIndeterminate size="S" aria-label="Generating" />
+        <ProgressCircle isIndeterminate size="S" aria-label="生成中" />
         <Text color="text-500" fontStyle="italic">
           Generating...
         </Text>
@@ -223,7 +223,7 @@ function CellRunStatus({
       `}
     >
       <Icon svg={<Icons.MinusCircleOutline />} />
-      <Text color="inherit">Cancelled</Text>
+      <Text color="inherit">已取消</Text>
     </Flex>
   );
 }
@@ -285,21 +285,21 @@ function EmptyExampleOutput({
     });
   }, [targetObject, instanceVariables]);
 
-  let cellTopContent: ReactNode | null = <Text color="text-500">Ready</Text>;
+  let cellTopContent: ReactNode | null = <Text color="text-500">就绪</Text>;
   let content: ReactNode | null = (
-    <Text color="text-500">Press run to generate</Text>
+    <Text color="text-500">点击运行以生成</Text>
   );
   if (isRunning) {
     content = <ParagraphSkeleton lines={4} />;
     cellTopContent = (
       <Flex direction="row" gap="size-100" alignItems="center">
         <Icon svg={<Icons.LoaderOutline />} />
-        <Text color="text-500">Queued</Text>
+        <Text color="text-500">队列中</Text>
       </Flex>
     );
   }
   if (missingVariables.length > 0) {
-    cellTopContent = <Text color="danger">Missing variables</Text>;
+    cellTopContent = <Text color="danger">缺少变量</Text>;
     content = (
       <PlaygroundErrorWrap>
         {`Dataset is missing input for variable${missingVariables.length > 1 ? "s" : ""}: ${missingVariables.join(
@@ -381,7 +381,7 @@ function ExampleOutputContent({
         <TooltipTrigger isDisabled={!hasExperimentRun}>
           <IconButton
             size="S"
-            aria-label="View experiment run details"
+            aria-label="查看实验运行详情"
             isDisabled={!hasExperimentRun}
             onPress={onViewExperimentRunDetailsPress}
           >
@@ -395,7 +395,7 @@ function ExampleOutputContent({
         <TooltipTrigger isDisabled={!hasSpan}>
           <IconButton
             size="S"
-            aria-label="View run trace"
+            aria-label="查看运行追踪"
             isDisabled={!hasSpan}
             onPress={() => {
               if (span) {
@@ -757,7 +757,7 @@ function PlaygroundInstanceOutputColumnHeader({
       >
         <Flex direction="row" gap="size-100" alignItems="center">
           <AlphabeticIndexIcon index={index} size="XS" />
-          <span>Output</span>
+          <span>输出</span>
         </Flex>
         <PlaygroundInstanceProgressIndicator instanceId={instanceId} />
       </Flex>

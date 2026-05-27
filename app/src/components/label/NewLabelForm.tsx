@@ -82,7 +82,7 @@ export function NewLabelForm({ onSubmit, isSubmitting }: NewLabelFormProps) {
                 onBlur={onBlur}
                 value={value.toString()}
               >
-                <Label>Label Name</Label>
+                <Label>标签名称</Label>
                 <Input placeholder="e.g., classifier" />
                 {error?.message && <FieldError>{error.message}</FieldError>}
               </TextField>
@@ -101,7 +101,7 @@ export function NewLabelForm({ onSubmit, isSubmitting }: NewLabelFormProps) {
                 onBlur={onBlur}
                 value={value.toString()}
               >
-                <Label>Description</Label>
+                <Label>描述</Label>
                 <TextArea placeholder="A short description" />
                 {error?.message && <FieldError>{error.message}</FieldError>}
               </TextField>
@@ -113,7 +113,7 @@ export function NewLabelForm({ onSubmit, isSubmitting }: NewLabelFormProps) {
             render={({ field: { onChange, value } }) => {
               return (
                 <div css={fieldBaseCSS}>
-                  <Label>Color</Label>
+                  <Label>颜色</Label>
                   <ColorSwatchPicker
                     value={value}
                     onChange={(newColor) => onChange(newColor.toString())}

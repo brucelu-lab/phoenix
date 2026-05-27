@@ -170,15 +170,15 @@ function ProjectsList({
   return (
     <Autocomplete filter={contains}>
       <MenuHeader>
-        <MenuHeaderTitle>Transfer Traces to Project</MenuHeaderTitle>
+        <MenuHeaderTitle>迁移追踪到项目</MenuHeaderTitle>
         <SearchField
-          aria-label="Search projects"
+          aria-label="搜索项目"
           variant="quiet"
           autoFocus
           onChange={onSearchChange}
         >
           <SearchIcon />
-          <Input placeholder="Search projects..." />
+          <Input placeholder="搜索项目..." />
         </SearchField>
       </MenuHeader>
       <Menu
@@ -194,7 +194,7 @@ function ProjectsList({
             onProjectSelect(projectId);
           }
         }}
-        renderEmptyState={() => <MenuEmpty>No projects found</MenuEmpty>}
+        renderEmptyState={() => <MenuEmpty>未找到项目</MenuEmpty>}
       >
         {(item) => (
           <MenuItem

@@ -56,7 +56,7 @@ export function PlaygroundDatasetSelect({
     <div css={playgroundDatasetSelectCSS}>
       <DatasetSelectWithSplits
         size="S"
-        placeholder="Test over a dataset"
+        placeholder="在数据集上测试"
         isDisabled={isDisabled}
         value={
           datasetId

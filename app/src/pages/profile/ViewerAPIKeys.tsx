@@ -73,7 +73,7 @@ export function ViewerAPIKeys({
   return (
     <>
       <Card
-        title="API Keys"
+        title="API 密钥"
         extra={
           <DialogTrigger>
             <Button

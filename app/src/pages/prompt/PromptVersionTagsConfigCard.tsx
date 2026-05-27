@@ -108,7 +108,7 @@ export function PromptVersionTagsConfigCard({
   const rows = table.getRowModel().rows;
   const isEmpty = rows.length === 0;
   return (
-    <Card title="Tags">
+    <Card title="标签">
       <table css={tableCSS}>
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -151,7 +151,7 @@ export function PromptVersionTagsConfigCard({
         </thead>
 
         {isEmpty ? (
-          <TableEmpty message="No Tags" />
+          <TableEmpty message="无标签" />
         ) : (
           <tbody>
             {rows.map((row) => (

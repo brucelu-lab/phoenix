@@ -192,7 +192,7 @@ function Token({
         onRemove();
       }}
       disabled={isDisabled}
-      aria-label="Remove"
+      aria-label="移除"
     >
       <Icon svg={<Icons.CloseOutline />} />
     </button>

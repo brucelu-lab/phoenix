@@ -8,9 +8,9 @@ export const INPUT_MESSAGES_PARSING_ERROR =
 export const OUTPUT_MESSAGES_PARSING_ERROR =
   "Unable to parse span output messages, expected messages which include a role and content.";
 export const OUTPUT_VALUE_PARSING_ERROR =
-  "Unable to parse span output expected output.value to be present.";
+  "无法解析跨度输出，期望存在 output.value 字段。";
 export const SPAN_ATTRIBUTES_PARSING_ERROR =
-  "Unable to parse span attributes, attributes must be valid JSON.";
+  "无法解析跨度属性，属性必须是有效 JSON。";
 export const MODEL_CONFIG_PARSING_ERROR =
   "Unable to parse model config, expected llm.model_name to be present.";
 export const MODEL_CONFIG_WITH_INVOCATION_PARAMETERS_PARSING_ERROR =
@@ -18,7 +18,7 @@ export const MODEL_CONFIG_WITH_INVOCATION_PARAMETERS_PARSING_ERROR =
 export const MODEL_CONFIG_WITH_RESPONSE_FORMAT_PARSING_ERROR =
   "Unable to parse invocation parameters response_format, expected llm.invocation_parameters.response_format to be a well formed json object or undefined.";
 export const TOOLS_PARSING_ERROR =
-  "Unable to parse tools, expected tools to be an array of valid tools.";
+  "无法解析工具，预期 tools 是有效工具数组。";
 export const PROMPT_TEMPLATE_VARIABLES_PARSING_ERROR =
   "Unable to parse prompt template variables, expected prompt template variables to be a valid JSON object string.";
 

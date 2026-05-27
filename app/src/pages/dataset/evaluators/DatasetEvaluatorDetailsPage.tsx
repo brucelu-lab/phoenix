@@ -116,13 +116,13 @@ function DatasetEvaluatorDetailsPageContent({
       />
       <Tabs defaultSelectedKey="configuration">
         <TabList>
-          <Tab id="configuration">Configuration</Tab>
+          <Tab id="configuration">配置</Tab>
           {isCodeEvaluator && (
             <Tab id="versions">
               Versions <Counter>{versionsCount}</Counter>
             </Tab>
           )}
-          <Tab id="spans">Spans</Tab>
+          <Tab id="spans">跨度（Spans）</Tab>
         </TabList>
         <LazyTabPanel id="configuration">
           <View width="100%" overflow="auto" height="100%">

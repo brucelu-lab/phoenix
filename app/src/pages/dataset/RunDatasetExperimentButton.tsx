@@ -76,7 +76,7 @@ export function RunDatasetExperimentButton(
             >
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.Code />} />
-                <Text>Run via SDK</Text>
+                <Text>通过 SDK 运行</Text>
               </Flex>
             </MenuItem>
             <MenuItem
@@ -85,7 +85,7 @@ export function RunDatasetExperimentButton(
             >
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.PlayCircleOutline />} />
-                <Text>Run in Playground</Text>
+                <Text>在实验台运行</Text>
               </Flex>
             </MenuItem>
           </Menu>

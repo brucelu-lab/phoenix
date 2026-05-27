@@ -440,7 +440,7 @@ function SessionTurnList({
   }));
   return (
     <ListBox
-      aria-label="Session turns"
+      aria-label="会话轮次"
       items={indexedRows}
       selectionMode="single"
       disallowEmptySelection

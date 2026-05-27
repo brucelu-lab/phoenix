@@ -78,7 +78,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
                   value={field.value}
                   isInvalid={invalid}
                 >
-                  <Label>Name</Label>
+                  <Label>名称</Label>
                   <Input />
                   {!error ? (
                     <Text slot="description">
@@ -103,7 +103,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
               }}
               render={({ field, fieldState: { invalid, error } }) => (
                 <NumberField step={1} size="S" {...field} isInvalid={invalid}>
-                  <Label>Number of Days</Label>
+                  <Label>天数</Label>
                   <Input />
                   {!error ? (
                     <Text slot="description">
@@ -133,7 +133,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
                   onBlur={field.onBlur}
                   isInvalid={invalid}
                 >
-                  <Label>Number of Traces</Label>
+                  <Label>追踪数量</Label>
                   <Input />
                   {!error ? (
                     <Text slot="description">
@@ -174,7 +174,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
               }}
               render={({ field, fieldState }) => (
                 <TextField size="S" {...field} isInvalid={!!fieldState.error}>
-                  <Label>Schedule</Label>
+                  <Label>计划</Label>
                   <Input />
                   {fieldState.error ? (
                     <FieldError>{fieldState.error.message}</FieldError>
@@ -188,7 +188,7 @@ export function RetentionPolicyForm(props: RetentionPolicyFormProps) {
             />
           </View>
           <View width="300px" paddingX="size-200">
-            <Heading level={2}>Retention Policy</Heading>
+            <Heading level={2}>保留策略</Heading>
             <br />
             <Text color="text-700">
               {createPolicyDeletionSummaryText({

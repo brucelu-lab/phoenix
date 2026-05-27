@@ -79,8 +79,8 @@ export const ExactMatchEvaluatorForm = () => {
       <Flex direction="column" gap="size-100">
         <SwitchableEvaluatorInput
           fieldName="expected"
-          label="Expected"
-          description="The expected text to compare against."
+          label="预期"
+          description="用于对比的期望文本。"
           defaultMode={expectedDefaultMode}
           control={control}
           setValue={setValue}
@@ -93,8 +93,8 @@ export const ExactMatchEvaluatorForm = () => {
         />
         <SwitchableEvaluatorInput
           fieldName="actual"
-          label="Actual"
-          description="The actual text to compare."
+          label="实际"
+          description="用于对比的实际文本。"
           defaultMode={actualDefaultMode}
           control={control}
           setValue={setValue}
@@ -122,7 +122,7 @@ export const ExactMatchEvaluatorForm = () => {
                     : true
               )}
             >
-              <Label>Case sensitive</Label>
+              <Label>区分大小写</Label>
               <Text slot="description">
                 Whether comparison is case-sensitive.
               </Text>

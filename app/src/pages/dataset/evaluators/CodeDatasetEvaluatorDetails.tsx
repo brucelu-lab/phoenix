@@ -248,37 +248,37 @@ function OutputConfigBlock({ config }: { config: OutputConfig }) {
 
   return (
     <div css={annotationGridCSS}>
-      <AnnotationCell label="Name" value={config.name} />
+      <AnnotationCell label="名称" value={config.name} />
       {isCategorical && (
         <>
-          <AnnotationCell label="Type" value="Categorical" />
-          <AnnotationCell label="Optimization Direction" value={direction} />
+          <AnnotationCell label="类型" value="Categorical" />
+          <AnnotationCell label="优化方向" value={direction} />
           <AnnotationCell
-            label="Values"
+            label="值列表"
             value={formatCategoricalValues(config.values)}
           />
         </>
       )}
       {isContinuous && (
         <>
-          <AnnotationCell label="Type" value="Continuous" />
-          <AnnotationCell label="Optimization Direction" value={direction} />
+          <AnnotationCell label="类型" value="Continuous" />
+          <AnnotationCell label="优化方向" value={direction} />
           <AnnotationCell
-            label="Lower bound"
+            label="下界"
             value={formatBound(config.lowerBound)}
           />
           <AnnotationCell
-            label="Upper bound"
+            label="上界"
             value={formatBound(config.upperBound)}
           />
         </>
       )}
       {isFreeform && (
         <>
-          <AnnotationCell label="Type" value="Freeform" />
-          <AnnotationCell label="Optimization Direction" value={direction} />
+          <AnnotationCell label="类型" value="Freeform" />
+          <AnnotationCell label="优化方向" value={direction} />
           <AnnotationCell
-            label="Threshold"
+            label="阈值"
             value={config.threshold != null ? String(config.threshold) : "—"}
           />
         </>
@@ -516,7 +516,7 @@ export function CodeDatasetEvaluatorDetails({
   if (!currentVersion || !currentVersion.sourceCode) {
     return (
       <Flex flex={1} alignItems="center" justifyContent="center">
-        <Empty message="This code evaluator has no current version yet." />
+        <Empty message="该代码评测器尚无当前版本。" />
       </Flex>
     );
   }
@@ -526,7 +526,7 @@ export function CodeDatasetEvaluatorDetails({
     <div css={splitLayoutCSS}>
       <Flex direction="column" gap="size-200" minWidth={0}>
         <Card
-          title="Source Code"
+          title="源代码"
           extra={<LanguageWithIcon language={evaluator.language} />}
         >
           <CodeEvaluatorSourceCodeBlock
@@ -540,7 +540,7 @@ export function CodeDatasetEvaluatorDetails({
           title={
             <Flex direction="row" gap="size-100" alignItems="center">
               <Icon svg={<Icons.HardDriveOutline />} />
-              <span>Sandbox</span>
+              <span>沙箱</span>
             </Flex>
           }
           extra={
@@ -548,7 +548,7 @@ export function CodeDatasetEvaluatorDetails({
               <LinkButton
                 size="S"
                 to="/settings/sandboxes"
-                aria-label="Configure sandboxes"
+                aria-label="配置沙箱"
                 leadingVisual={<Icon svg={<Icons.SettingsOutline />} />}
               />
             ) : undefined
@@ -556,13 +556,13 @@ export function CodeDatasetEvaluatorDetails({
         >
           {sandboxConfig == null ? (
             <View padding="size-200">
-              <Text color="text-700">No sandbox configuration selected.</Text>
+              <Text color="text-700">未选择沙箱配置。</Text>
             </View>
           ) : (
             <List size="M">
               <ListItem>
                 <SandboxRow
-                  label="Config"
+                  label="配置"
                   value={
                     <Text size="S" fontFamily="mono">
                       {sandboxConfig.name}
@@ -573,14 +573,14 @@ export function CodeDatasetEvaluatorDetails({
               {sandboxConfig.description ? (
                 <ListItem>
                   <SandboxRow
-                    label="Description"
+                    label="描述"
                     value={sandboxConfig.description}
                   />
                 </ListItem>
               ) : null}
               <ListItem>
                 <SandboxRow
-                  label="Provider"
+                  label="提供商"
                   labelExtra={
                     <ProviderCapabilitiesHelp sandboxBackend={sandboxBackend} />
                   }
@@ -600,7 +600,7 @@ export function CodeDatasetEvaluatorDetails({
               </ListItem>
               <ListItem>
                 <SandboxRow
-                  label="Timeout"
+                  label="超时"
                   value={`${sandboxConfig.timeout} seconds`}
                 />
               </ListItem>
@@ -638,19 +638,19 @@ export function CodeDatasetEvaluatorDetails({
             </Flex>
           </View>
         </Card>
-        <Card title="Input Mapping">
+        <Card title="输入映射">
           <View padding="size-200">
             <div css={mapGridCSS}>
               <MappingTile
-                title="Path mapping"
-                description="Map function args to fields on the example"
+                title="路径映射"
+                description="将函数参数映射到样本字段"
                 entries={pathMappingEntries}
                 emptyLabel="No paths set"
                 formatValue={formatPathMappingValue}
               />
               <MappingTile
-                title="Literal mapping"
-                description="Pass fixed literal values to function args"
+                title="字面映射"
+                description="向函数参数传入固定字面值"
                 entries={literalMappingEntries}
                 emptyLabel="No literals set"
                 formatValue={formatLiteral}

@@ -21,7 +21,7 @@ export function DatasetLabelsSettingsCard({
   );
   return (
     <Card
-      title="Dataset Labels"
+      title="数据集标签"
       extra={
         <NewDatasetLabelButton
           updateConnectionIds={[

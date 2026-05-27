@@ -110,7 +110,7 @@ export function AnnotationSummaryPopover({
                         </TriggerWrap>
                         <Tooltip placement="top">
                           <TooltipArrow />
-                          <Text>Mean Score</Text>
+                          <Text>平均分数</Text>
                         </Tooltip>
                       </TooltipTrigger>
                     </Flex>

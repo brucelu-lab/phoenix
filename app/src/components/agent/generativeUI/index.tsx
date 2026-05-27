@@ -75,7 +75,7 @@ function GenerativeUIRenderer({ parts }: { parts: DataPart[] }) {
 function GenerativeUIErrorFallback() {
   return (
     <div css={generativeUICSS}>
-      <GenerativeUIPlaceholder message="Generative UI could not be rendered." />
+      <GenerativeUIPlaceholder message="生成式 UI 无法渲染。" />
     </div>
   );
 }

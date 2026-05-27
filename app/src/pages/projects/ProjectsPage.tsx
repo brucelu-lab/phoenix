@@ -341,8 +341,8 @@ export function ProjectsPageContent({
           gap="size-100"
         >
           <DebouncedSearch
-            aria-label="Search projects by name"
-            placeholder="Search projects by name"
+            aria-label="按名称搜索项目"
+            placeholder="按名称搜索项目"
             onChange={(newSearch) => {
               setFilter(newSearch);
               refetch({

@@ -24,7 +24,7 @@ export function PromptLabels({ prompt }: { prompt: PromptLabels$key }) {
   );
   const isEmpty = data.labels.length === 0;
   if (isEmpty) {
-    return <Text color="text-700">No Labels</Text>;
+    return <Text color="text-700">无标签</Text>;
   }
   return (
     <ul css={ulCSS}>

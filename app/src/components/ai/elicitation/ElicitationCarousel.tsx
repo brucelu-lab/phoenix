@@ -348,7 +348,7 @@ export function ElicitationCarousel({
                           (answers[question.id] as string[]) || []
                         ).includes(FREEFORM_OPTION_ID)}
                         type={question.type as "single" | "multi"}
-                        label="Type your own answer"
+                        label="输入你自己的答案"
                         isFreeformEntry
                         textValue={freeformTexts[question.id]}
                         onToggle={() =>

@@ -9,7 +9,7 @@ import type { MessageContentProps } from "./types";
  * @example
  * ```tsx
  * <Message from="user">
- *   <MessageContent>Plain text content</MessageContent>
+ *   <MessageContent>纯文本内容</MessageContent>
  * </Message>
  * ```
  */

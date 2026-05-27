@@ -110,7 +110,7 @@ export const JSONDistanceEvaluatorCodeBlock = ({
   const tsCode = parseStrings ? TS_CODE_PARSE : TS_CODE_DIRECT;
   return (
     <Card
-      title="Code"
+      title="代码"
       extra={
         <Flex gap="size-100" alignItems="center">
           <CodeLanguageRadioGroup

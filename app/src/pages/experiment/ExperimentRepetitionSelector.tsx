@@ -52,7 +52,7 @@ export function ExperimentRepetitionSelector({
         size="S"
         isDisabled={repetitionNumber === 1}
         onPress={() => setRepetitionNumber((prev) => prev - 1)}
-        aria-label="Previous repetition"
+        aria-label="上一次重复"
       >
         <Icon svg={<Icons.ChevronLeft />} />
       </IconButton>
@@ -60,7 +60,7 @@ export function ExperimentRepetitionSelector({
         size="S"
         isDisabled={repetitionNumber === totalRepetitions}
         onPress={() => setRepetitionNumber((prev) => prev + 1)}
-        aria-label="Next repetition"
+        aria-label="下一次重复"
       >
         <Icon svg={<Icons.ChevronRight />} />
       </IconButton>

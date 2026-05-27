@@ -602,7 +602,7 @@ export function ExperimentsTable({
                   to={`/projects/${project?.id}`}
                   leadingVisual={<Icon svg={<Icons.Trace />} />}
                   size="S"
-                  aria-label="View traces"
+                  aria-label="查看追踪"
                   isDisabled={!project?.id}
                 >
                   Traces
@@ -716,8 +716,8 @@ export function ExperimentsTable({
         <Flex direction="row" gap="size-100" width="100%" alignItems="center">
           <View flex="1 1 auto">
             <DebouncedSearch
-              placeholder="Search experiments"
-              aria-label="Search experiments"
+              placeholder="搜索实验"
+              aria-label="搜索实验"
               onChange={setSearchText}
             />
           </View>
@@ -832,7 +832,7 @@ function ExperimentJobStatusIcon({
           <ProgressCircle isIndeterminate size="S" aria-label="running" />
         </TriggerWrap>
         <RichTooltip>
-          <RichTooltipTitle>Experiment In Progress</RichTooltipTitle>
+          <RichTooltipTitle>实验进行中</RichTooltipTitle>
           <RichTooltipDescription>
             This experiment is currently running. The results may be incomplete
           </RichTooltipDescription>
@@ -851,7 +851,7 @@ function ExperimentJobStatusIcon({
           />
         </TriggerWrap>
         <RichTooltip>
-          <RichTooltipTitle>Experiment Error</RichTooltipTitle>
+          <RichTooltipTitle>实验错误</RichTooltipTitle>
           <RichTooltipDescription>
             This experiment encountered an error during execution.
           </RichTooltipDescription>

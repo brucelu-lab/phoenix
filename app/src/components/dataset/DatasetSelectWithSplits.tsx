@@ -222,16 +222,16 @@ export function DatasetSelectWithSplits(props: DatasetSelectWithSplitsProps) {
       <MenuContainer placement={props.placement} shouldFlip={props.shouldFlip}>
         <Autocomplete filter={contains}>
           <MenuHeader>
-            <SearchField aria-label="Search" variant="quiet" autoFocus>
+            <SearchField aria-label="搜索" variant="quiet" autoFocus>
               <SearchIcon />
-              <Input placeholder="Search datasets" />
+              <Input placeholder="搜索数据集" />
             </SearchField>
           </MenuHeader>
           <Menu
             selectionMode="single"
             selectedKeys={selectedDatasetKeys}
             items={datasetItems}
-            renderEmptyState={() => <MenuEmpty>No datasets found</MenuEmpty>}
+            renderEmptyState={() => <MenuEmpty>未找到数据集</MenuEmpty>}
           >
             {({
               id,
@@ -356,12 +356,12 @@ export function DatasetSelectWithSplits(props: DatasetSelectWithSplitsProps) {
                     <Autocomplete filter={contains}>
                       <MenuHeader>
                         <SearchField
-                          aria-label="Search"
+                          aria-label="搜索"
                           variant="quiet"
                           autoFocus
                         >
                           <SearchIcon />
-                          <Input placeholder="Search splits" />
+                          <Input placeholder="搜索切分" />
                         </SearchField>
                       </MenuHeader>
                       <Menu

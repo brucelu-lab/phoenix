@@ -36,7 +36,7 @@ export const PlaygroundOutputMoveButton = ({
         size="S"
         isDisabled={isDisabled}
         leadingVisual={<Icon svg={<Icons.PlusCircleOutline />} />}
-        aria-label="Move the output message to the end of the prompt"
+        aria-label="将输出消息移到提示词末尾"
         onPress={() => {
           if (instance.template.__type !== "chat") {
             return;

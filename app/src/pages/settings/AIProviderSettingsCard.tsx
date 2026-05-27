@@ -22,7 +22,7 @@ import { usePreferencesContext } from "@phoenix/contexts/PreferencesContext";
  */
 export function AIProviderSettingsCard() {
   return (
-    <Card title="AI Provider Settings">
+    <Card title="AI 提供商设置">
       <View padding="size-200">
         <Suspense fallback={<Loading size="S" />}>
           <DefaultModelField />
@@ -55,7 +55,7 @@ function DefaultModelField() {
 
   return (
     <div css={fieldBaseCSS}>
-      <Label>Default Model</Label>
+      <Label>默认模型</Label>
       <Flex direction="row" gap="size-100" alignItems="center">
         <ModelMenu
           value={value}

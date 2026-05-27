@@ -246,7 +246,7 @@ export function DocumentAnnotationForm({
               onChange={field.onChange}
               isInvalid={invalid}
             >
-              <Label>Name</Label>
+              <Label>名称</Label>
               <Input placeholder="e.g. relevance" />
               {error?.message && <FieldError>{error.message}</FieldError>}
             </TextField>
@@ -258,8 +258,8 @@ export function DocumentAnnotationForm({
             control={control}
             render={({ field }) => (
               <ComboBox
-                label="Label"
-                placeholder="Select or type a label"
+                label="标签"
+                placeholder="选择或输入标签"
                 allowsCustomValue
                 selectedKey={field.value as Key}
                 inputValue={field.value}
@@ -314,7 +314,7 @@ export function DocumentAnnotationForm({
                   min-width: 0;
                 `}
               >
-                <Label>Score</Label>
+                <Label>评分</Label>
                 <Input type="number" placeholder="e.g. 1" />
               </TextField>
             )}
@@ -336,8 +336,8 @@ export function DocumentAnnotationForm({
                 }
               `}
             >
-              <Label>Explanation</Label>
-              <TextArea rows={2} placeholder="Optional explanation" />
+              <Label>说明</Label>
+              <TextArea rows={2} placeholder="可选说明" />
             </TextField>
           )}
         />

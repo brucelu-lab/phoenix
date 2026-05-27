@@ -32,10 +32,10 @@ export const PromptsFilterBar = () => {
         gap="size-100"
       >
         <DebouncedSearch
-          aria-label="Search prompts by name"
+          aria-label="按名称搜索提示词"
           onChange={setFilter}
           defaultValue={filter}
-          placeholder="Search prompts by name"
+          placeholder="按名称搜索提示词"
         />
         <Flex direction="row" alignItems="center" gap="size-100" flex="none">
           <PromptsLabelMenu

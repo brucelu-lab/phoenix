@@ -65,7 +65,7 @@ const BAR_HEIGHTS = [
 
 export function GenerativeUISkeleton() {
   return (
-    <div css={frameCSS} aria-label="Loading generative UI">
+    <div css={frameCSS} aria-label="加载生成式 UI 中">
       <div css={titleCSS}>
         <Skeleton width={120} height={12} animation="wave" />
       </div>

@@ -94,19 +94,19 @@ function SessionDetailsHeader({
                   <View width="size-2400">
                     <Flex direction="column">
                       <Flex justifyContent="space-between">
-                        <Text>Prompt Cost</Text>
+                        <Text>提示词成本</Text>
                         <Text>
                           {costFormatter(costSummary.prompt?.cost ?? 0)}
                         </Text>
                       </Flex>
                       <Flex justifyContent="space-between">
-                        <Text>Completion Cost</Text>
+                        <Text>补全成本</Text>
                         <Text>
                           {costFormatter(costSummary.completion?.cost ?? 0)}
                         </Text>
                       </Flex>
                       <Flex justifyContent="space-between">
-                        <Text>Total Cost</Text>
+                        <Text>总成本</Text>
                         <Text>
                           {costFormatter(costSummary.total?.cost ?? 0)}
                         </Text>

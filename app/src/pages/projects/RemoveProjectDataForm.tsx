@@ -122,7 +122,7 @@ export function RemoveProjectDataForm(props: RemoveProjectDataFormProps) {
                 }
               `}
             >
-              <Label>End Date</Label>
+              <Label>结束日期</Label>
               <DateInput>
                 {(segment) => <DateSegment segment={segment} />}
               </DateInput>

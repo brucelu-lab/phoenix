@@ -172,7 +172,7 @@ export const AnnotationConfigDialog = ({
                   }}
                   render={({ field, fieldState: { error } }) => (
                     <TextField {...field} isInvalid={!!error} autoFocus>
-                      <Label>Annotation Name</Label>
+                      <Label>标注名称</Label>
                       <Input placeholder="e.g. correctness" />
                       <FieldError>{error?.message}</FieldError>
                     </TextField>
@@ -192,7 +192,7 @@ export const AnnotationConfigDialog = ({
                         }
                       `}
                     >
-                      <Label>Description</Label>
+                      <Label>描述</Label>
                       <TextArea
                         rows={2}
                         placeholder="A description of the annotation configuration"
@@ -206,11 +206,11 @@ export const AnnotationConfigDialog = ({
                   render={({ field }) => (
                     <RadioGroup
                       {...field}
-                      aria-label="Type"
+                      aria-label="类型"
                       data-testid="type-picker"
                       isReadOnly={mode === "edit"}
                     >
-                      <Label>Annotation Type</Label>
+                      <Label>标注类型</Label>
                       {types
                         .filter((type) =>
                           mode === "edit" ? type === field.value : type
@@ -241,13 +241,13 @@ export const AnnotationConfigDialog = ({
                     render={({ field }) => (
                       <RadioGroup
                         {...field}
-                        aria-label="Optimization Direction"
+                        aria-label="优化方向"
                         data-testid="optimization-direction-picker"
                         css={css`
                           height: 100%;
                         `}
                       >
-                        <Label>Optimization Direction</Label>
+                        <Label>优化方向</Label>
                         {optimizationDirections.map((direction) => (
                           <Radio key={direction} value={direction}>
                             {direction.charAt(0).toUpperCase() +
@@ -293,7 +293,7 @@ export const AnnotationConfigDialog = ({
                           value={typeof value === "number" ? value : undefined}
                           isInvalid={!!error}
                         >
-                          <Label>Min</Label>
+                          <Label>最小值</Label>
                           <Input placeholder="0" />
                           <FieldError>{error?.message}</FieldError>
                         </NumberField>
@@ -334,7 +334,7 @@ export const AnnotationConfigDialog = ({
                                 : undefined
                             }
                           >
-                            <Label>Max</Label>
+                            <Label>最大值</Label>
                             <Input placeholder="1" />
                             <FieldError>{error?.message}</FieldError>
                           </NumberField>
@@ -405,7 +405,7 @@ export const AnnotationConfigDialog = ({
                         <Button
                           type="button"
                           leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-                          aria-label="Remove category"
+                          aria-label="移除分类"
                           onPress={() => remove(index)}
                         />
                       </Flex>

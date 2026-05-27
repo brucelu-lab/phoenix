@@ -61,7 +61,7 @@ export function AgentSettingsForm({ children }: { children?: ReactNode }) {
       `}
     >
       <div css={fieldBaseCSS}>
-        <Label>Agent Model</Label>
+        <Label>智能体模型</Label>
         <Controller
           name="model"
           control={control}

@@ -12,7 +12,7 @@ import type { MessageActionsProps } from "./types";
  * ```tsx
  * <MessageToolbar>
  *   <MessageActions>
- *     <MessageAction label="Copy" tooltip="Copy" onPress={handleCopy}>
+ *     <MessageAction label="复制" tooltip="复制" onPress={handleCopy}>
  *       <Icon svg={<Icons.DuplicateOutline />} />
  *     </MessageAction>
  *   </MessageActions>

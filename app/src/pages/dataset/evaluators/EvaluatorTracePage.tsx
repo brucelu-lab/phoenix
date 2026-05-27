@@ -54,7 +54,7 @@ export function EvaluatorTracePage() {
             <DialogHeader>
               <Flex direction="row" gap="size-200" alignItems="center">
                 <DialogCloseButton close={close} />
-                <DialogTitle>Trace Details</DialogTitle>
+                <DialogTitle>追踪详情</DialogTitle>
               </Flex>
               <DialogTitleExtra>
                 <ShareLinkButton

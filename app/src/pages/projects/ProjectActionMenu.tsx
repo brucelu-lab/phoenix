@@ -121,7 +121,7 @@ export function ProjectActionMenu({
         />
         <Popover placement="bottom end">
           <Menu
-            aria-label="Project Actions Menu"
+            aria-label="项目操作菜单"
             onAction={(action) => {
               switch (action as ProjectAction) {
                 case ProjectAction.COPY_NAME: {
@@ -152,7 +152,7 @@ export function ProjectActionMenu({
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.DuplicateOutline />} />
-                <Text>Copy Name</Text>
+                <Text>复制名称</Text>
               </Flex>
             </MenuItem>
             <MenuItem id={ProjectAction.CLEAR} textValue="Clear All Traces">
@@ -163,7 +163,7 @@ export function ProjectActionMenu({
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.Refresh />} />
-                <Text>Clear All Data</Text>
+                <Text>清除所有数据</Text>
               </Flex>
             </MenuItem>
             <MenuItem id={ProjectAction.REMOVE_DATA} textValue="Remove Data">
@@ -174,7 +174,7 @@ export function ProjectActionMenu({
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.CloseCircleOutline />} />
-                <Text>Remove Data</Text>
+                <Text>移除数据</Text>
               </Flex>
             </MenuItem>
             {canDelete ? (
@@ -186,7 +186,7 @@ export function ProjectActionMenu({
                   alignItems={"center"}
                 >
                   <Icon svg={<Icons.TrashOutline />} />
-                  <Text>Delete</Text>
+                  <Text>删除</Text>
                 </Flex>
               </MenuItem>
             ) : null}
@@ -201,7 +201,7 @@ export function ProjectActionMenu({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Project</DialogTitle>
+                <DialogTitle>删除项目</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>
@@ -239,7 +239,7 @@ export function ProjectActionMenu({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Clear Project</DialogTitle>
+                <DialogTitle>清除项目</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>
@@ -280,7 +280,7 @@ export function ProjectActionMenu({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Remove Data</DialogTitle>
+                <DialogTitle>移除数据</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>

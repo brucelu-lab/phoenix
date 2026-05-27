@@ -81,7 +81,7 @@ export function EditCodeDatasetEvaluatorSlideover({
   return (
     <ModalOverlay {...props} isOpen={isOpen} onOpenChange={handleOpenChange}>
       <Modal variant="slideover" size="fullscreen">
-        <Dialog aria-label="Edit code evaluator on dataset">
+        <Dialog aria-label="编辑数据集上的代码评测器">
           {({ close }) => (
             <Suspense
               fallback={
@@ -314,7 +314,7 @@ function EditCodeDatasetEvaluatorSlideoverContent({
   if (!currentVersion || !currentVersion.sourceCode) {
     return (
       <Flex flex={1} alignItems="center" justifyContent="center">
-        <Empty message="This code evaluator has no current version yet." />
+        <Empty message="该代码评测器尚无当前版本。" />
       </Flex>
     );
   }

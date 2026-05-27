@@ -30,7 +30,7 @@ export function SettingsDataPage() {
   const data = usePreloadedQuery(settingsDataPageLoaderGql, loaderData);
   return (
     <Card
-      title="Retention Policies"
+      title="保留策略"
       extra={
         <CanManageRetentionPolicy>
           <DialogTrigger>
@@ -46,7 +46,7 @@ export function SettingsDataPage() {
                   {({ close }) => (
                     <DialogContent>
                       <DialogHeader>
-                        <DialogTitle>New Retention Policy</DialogTitle>
+                        <DialogTitle>新建保留策略</DialogTitle>
                         <DialogTitleExtra>
                           <DialogCloseButton slot="close" />
                         </DialogTitleExtra>

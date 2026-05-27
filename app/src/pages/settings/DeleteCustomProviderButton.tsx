@@ -90,7 +90,7 @@ function DeleteProviderDialogContent({
           banner
           dismissable
           onDismissClick={() => setError(null)}
-          title="Failed to delete provider"
+          title="删除提供商失败"
         >
           {error}
         </Alert>
@@ -145,7 +145,7 @@ export function DeleteCustomProviderButton({
       <Button
         variant="danger"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-        aria-label="Delete provider"
+        aria-label="删除提供商"
         size="S"
       />
       <ModalOverlay>
@@ -153,7 +153,7 @@ export function DeleteCustomProviderButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Provider</DialogTitle>
+                <DialogTitle>删除提供商</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

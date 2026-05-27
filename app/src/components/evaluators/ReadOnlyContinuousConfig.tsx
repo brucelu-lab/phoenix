@@ -61,7 +61,7 @@ export const ReadOnlyContinuousConfig = ({
       <Flex direction="column" gap="size-200">
         <Flex alignItems="center" justifyContent="space-between" gap="size-200">
           <TextField isDisabled value={name}>
-            <Label>Name</Label>
+            <Label>名称</Label>
             <Input />
           </TextField>
           <OptimizationDirectionField isReadOnly={isReadOnly} />
@@ -69,11 +69,11 @@ export const ReadOnlyContinuousConfig = ({
         {hasBounds && (
           <Flex direction="row" gap="size-200" alignItems="end">
             <NumberField isDisabled value={lowerBound ?? undefined}>
-              <Label>Lower bound</Label>
+              <Label>下界</Label>
               <Input placeholder={hasLowerBound ? undefined : "unbounded"} />
             </NumberField>
             <NumberField isDisabled value={upperBound ?? undefined}>
-              <Label>Upper bound</Label>
+              <Label>上界</Label>
               <Input placeholder={hasUpperBound ? undefined : "unbounded"} />
             </NumberField>
           </Flex>

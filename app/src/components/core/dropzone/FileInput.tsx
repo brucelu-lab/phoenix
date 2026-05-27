@@ -71,7 +71,7 @@ export function FileInput({
           {file && onClear && (
             <IconButton
               size="S"
-              aria-label="Clear file"
+              aria-label="清除文件"
               onPress={onClear}
               isDisabled={isDisabled}
             >
@@ -80,7 +80,7 @@ export function FileInput({
           )}
           <IconButton
             size="S"
-            aria-label="Browse files"
+            aria-label="浏览文件"
             onPress={handleBrowse}
             isDisabled={isDisabled}
           >

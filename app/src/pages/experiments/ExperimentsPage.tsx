@@ -52,7 +52,7 @@ export function ExperimentsPage() {
         <Panel minSize="20%" maxSize="30%" defaultSize="25%">
           <Flex direction="column" height="100%">
             <View paddingX="size-200" paddingY="size-100">
-              <Heading level={2}>Experiments Analysis</Heading>
+              <Heading level={2}>实验分析</Heading>
             </View>
             <View flex="1 1 auto" overflow="hidden">
               <ExperimentsChart datasetId={datasetId} />
@@ -89,7 +89,7 @@ function ErrorBoundaryFallback() {
         direction="column"
       >
         <View width="400px">
-          <Heading>Sorry about that!</Heading>
+          <Heading>抱歉！</Heading>
           <Text>
             There&apos;s a known issue in one of our dependencies that causes
             intermittent errors. We will resolve it as soon as there is an

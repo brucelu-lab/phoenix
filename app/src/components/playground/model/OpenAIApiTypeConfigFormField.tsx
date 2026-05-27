@@ -52,7 +52,7 @@ export function OpenAIApiTypeConfigFormField({
   if (displayDefaultOnly) {
     return (
       <Flex direction="column" gap="size-50">
-        <Label>API Type</Label>
+        <Label>API 类型</Label>
         <Text size="S">{getApiTypeLabel(DEFAULT_OPENAI_API_TYPE)}</Text>
       </Flex>
     );
@@ -73,7 +73,7 @@ export function OpenAIApiTypeConfigFormField({
         }
       }}
     >
-      <Label>API Type</Label>
+      <Label>API 类型</Label>
       <Button data-testid="invocation-param-apiType">
         <SelectValue />
         <SelectChevronUpDownIcon />

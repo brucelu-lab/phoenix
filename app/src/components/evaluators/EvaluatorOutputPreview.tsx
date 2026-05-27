@@ -263,7 +263,7 @@ export const EvaluatorOutputPreview = () => {
             marginBottom="size-100"
           >
             {isLoadingEvaluatorPreview && (
-              <Card title="Evaluator Annotation Preview">
+              <Card title="评测器标注预览">
                 <View padding="size-100">
                   <Flex direction="column" gap="size-100">
                     <Skeleton height={144} borderRadius={8} animation="wave" />
@@ -276,7 +276,7 @@ export const EvaluatorOutputPreview = () => {
               <Flex direction="column" gap="size-100" key={i} width="100%">
                 {result.kind === "success" ? (
                   <Card
-                    title="Evaluator Annotation Preview"
+                    title="评测器标注预览"
                     width="100%"
                     extra={
                       <IconButton
@@ -328,7 +328,7 @@ export const EvaluatorOutputPreview = () => {
           {error && (
             <Alert
               variant="danger"
-              title="Error"
+              title="错误"
               dismissable
               onDismissClick={() => setError(null)}
             >

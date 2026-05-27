@@ -17,7 +17,7 @@ export function EditSpanAnnotationsDialog(
   return (
     <Dialog>
       <DialogHeader>
-        <DialogTitle>Annotate</DialogTitle>
+        <DialogTitle>标注</DialogTitle>
         <DialogTitleExtra>
           <DialogCloseButton slot="close" />
         </DialogTitleExtra>

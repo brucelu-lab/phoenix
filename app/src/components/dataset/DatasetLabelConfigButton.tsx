@@ -58,7 +58,7 @@ export function DatasetLabelConfigButton(props: DatasetLabelConfigButtonProps) {
         variant={variant}
         size="M"
         leadingVisual={<Icon svg={<Icons.PriceTagsOutline />} />}
-        aria-label="Configure dataset labels"
+        aria-label="配置数据集标签"
       >
         Label
       </Button>
@@ -222,9 +222,9 @@ function DatasetLabelList({
         <>
           <Autocomplete filter={contains}>
             <MenuHeader>
-              <SearchField aria-label="Search labels" variant="quiet" autoFocus>
+              <SearchField aria-label="搜索标签" variant="quiet" autoFocus>
                 <SearchIcon />
-                <Input placeholder="Search labels..." />
+                <Input placeholder="搜索标签..." />
               </SearchField>
             </MenuHeader>
             <Menu
@@ -233,7 +233,7 @@ function DatasetLabelList({
               selectionMode="multiple"
               selectedKeys={selected}
               onSelectionChange={onSelectionChange}
-              renderEmptyState={() => <MenuEmpty>No labels found</MenuEmpty>}
+              renderEmptyState={() => <MenuEmpty>未找到标签</MenuEmpty>}
             >
               {({ id, name, color }) => (
                 <MenuItem

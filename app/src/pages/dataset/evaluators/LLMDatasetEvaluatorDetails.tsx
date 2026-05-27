@@ -94,7 +94,7 @@ export function LLMDatasetEvaluatorDetails({
           const outputConfig = datasetEvaluator.outputConfigs[0];
           return (
             <Flex direction="column" gap="size-100">
-              <Heading level={2}>Evaluator Annotation</Heading>
+              <Heading level={2}>评测器标注</Heading>
               <div
                 css={css`
                   border-radius: var(--global-rounding-medium);
@@ -140,7 +140,7 @@ export function LLMDatasetEvaluatorDetails({
           );
         })()}
       <Flex direction="column" gap="size-100">
-        <Heading level={2}>Prompt</Heading>
+        <Heading level={2}>提示词</Heading>
         <Flex justifyContent="space-between" alignItems="center">
           {evaluator.prompt?.id && evaluator.prompt.name ? (
             <PromptLink
@@ -193,7 +193,7 @@ function LLMEvaluatorInputMapping({
 
   return (
     <Flex direction="column" gap="size-100">
-      <Heading level={2}>Input Mapping</Heading>
+      <Heading level={2}>输入映射</Heading>
       <div
         css={css`
           border-radius: var(--global-rounding-medium);

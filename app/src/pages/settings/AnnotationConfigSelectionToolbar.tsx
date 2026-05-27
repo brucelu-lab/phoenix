@@ -92,7 +92,7 @@ export const AnnotationConfigSelectionToolbar = ({
                     `}
                   >
                     {({ close }) => (
-                      <Card title="Delete Annotation Config">
+                      <Card title="删除标注配置">
                         <View padding="size-200">
                           <Text>
                             Are you sure you want to delete this annotation

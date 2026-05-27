@@ -37,7 +37,7 @@ function SpanNoteTooltipDetails({ spanId }: { spanId: string }) {
     data.span?.__typename === "Span" ? getNoteEntries(data.span.spanNotes) : [];
 
   if (noteEntries.length === 0) {
-    return <Text color="inherit">No notes</Text>;
+    return <Text color="inherit">无备注</Text>;
   }
 
   return <NoteTooltipContent notes={noteEntries} />;

@@ -33,7 +33,7 @@ function SetupSessionsDialog() {
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Setup Sessions for this Project</DialogTitle>
+          <DialogTitle>为该项目设置会话</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>

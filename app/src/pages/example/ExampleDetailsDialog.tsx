@@ -76,7 +76,7 @@ function ViewModeSelect({
       size="S"
       selectedKey={value}
       onSelectionChange={(key) => onChange(key as ViewMode)}
-      aria-label="View mode"
+      aria-label="视图模式"
     >
       <Button>
         <SelectValue />
@@ -112,13 +112,13 @@ function ExampleDetailsDialogSkeleton() {
           <Flex direction="row" justifyContent="center">
             <View width="900px" padding="size-200">
               <Flex direction="column" gap="size-200">
-                <Card title="Input" {...defaultCardProps}>
+                <Card title="输入" {...defaultCardProps}>
                   <Skeleton height={100} animation="wave" />
                 </Card>
-                <Card title="Output" {...defaultCardProps}>
+                <Card title="输出" {...defaultCardProps}>
                   <Skeleton height={100} animation="wave" />
                 </Card>
-                <Card title="Metadata" {...defaultCardProps}>
+                <Card title="元数据" {...defaultCardProps}>
                   <Skeleton height={60} animation="wave" />
                 </Card>
               </Flex>
@@ -138,7 +138,7 @@ function ExampleDetailsDialogSkeleton() {
             borderBottomWidth="thin"
             flex="none"
           >
-            <Heading level={3}>Experiment Runs</Heading>
+            <Heading level={3}>实验运行</Heading>
           </View>
           <View padding="size-200" flex="1 1 auto">
             <Flex direction="column" gap="size-100">
@@ -247,7 +247,7 @@ function ExampleDetailsDialogContent({
         <Flex direction="row" gap="size-200" alignItems="center">
           <DialogCloseButton />
           <TitleWithID
-            title="Example"
+            title="样本"
             id={data.example.externalId ?? exampleId}
           />
         </Flex>
@@ -291,7 +291,7 @@ function ExampleDetailsDialogContent({
               <View width="900px" padding="size-200">
                 <Flex direction="column" gap="size-200">
                   <Card
-                    title="Input"
+                    title="输入"
                     {...defaultCardProps}
                     extra={
                       <Flex direction="row" gap="size-100" alignItems="center">
@@ -314,7 +314,7 @@ function ExampleDetailsDialogContent({
                     )}
                   </Card>
                   <Card
-                    title="Output"
+                    title="输出"
                     {...defaultCardProps}
                     extra={
                       <Flex direction="row" gap="size-100" alignItems="center">
@@ -337,7 +337,7 @@ function ExampleDetailsDialogContent({
                     )}
                   </Card>
                   <Card
-                    title="Metadata"
+                    title="元数据"
                     {...defaultCardProps}
                     extra={<CopyToClipboardButton text={metadata} />}
                   >
@@ -360,7 +360,7 @@ function ExampleDetailsDialogContent({
               borderBottomWidth="thin"
               flex="none"
             >
-              <Heading level={3}>Experiment Runs</Heading>
+              <Heading level={3}>实验运行</Heading>
             </View>
             <ExampleExperimentRunsTable example={data.example} />
           </Flex>
@@ -379,7 +379,7 @@ function ExampleDetailsHeaderSkeleton({ exampleId }: { exampleId: string }) {
       <DialogHeader>
         <Flex direction="row" gap="size-200" alignItems="center">
           <DialogCloseButton />
-          <TitleWithID title="Example" id={exampleId} />
+          <TitleWithID title="样本" id={exampleId} />
         </Flex>
         <DialogTitleExtra>
           <Skeleton width={60} height={24} animation="wave" />

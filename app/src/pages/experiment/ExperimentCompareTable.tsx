@@ -923,7 +923,7 @@ function ExperimentRunOutputCell({
   if (repeatedRunGroup.runs.length === 0) {
     return (
       <PaddedCell>
-        <Empty message="No Run" />
+        <Empty message="无运行" />
       </PaddedCell>
     );
   }
@@ -947,7 +947,7 @@ function ExperimentRunOutputCell({
         <IconButton
           className="expand-button"
           size="S"
-          aria-label="View example run details"
+          aria-label="查看样本运行详情"
           onPress={() => {
             setSelectedExampleIndex(rowIndex);
           }}
@@ -963,7 +963,7 @@ function ExperimentRunOutputCell({
         <IconButton
           className="trace-button"
           size="S"
-          aria-label="View run trace"
+          aria-label="查看运行追踪"
           onPress={() => {
             setDialog(
               <TraceDetailsDialog
@@ -1001,7 +1001,7 @@ function ExperimentRunOutputCell({
         />
       ) : (
         <PaddedCell>
-          <Empty message="Missing Repetition" />
+          <Empty message="缺失重复" />
         </PaddedCell>
       )}
     </Flex>

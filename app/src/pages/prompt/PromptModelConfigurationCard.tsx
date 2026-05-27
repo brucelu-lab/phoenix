@@ -32,7 +32,7 @@ export function PromptModelConfigurationCard({
     promptVersionFragment
   );
   return (
-    <Card title="Model Configuration" collapsible>
+    <Card title="模型配置" collapsible>
       <DisclosureGroup
         defaultExpandedKeys={[
           "llm",
@@ -43,7 +43,7 @@ export function PromptModelConfigurationCard({
       >
         <PromptLLM promptVersion={promptVersion} />
         <Disclosure id="invocation-parameters">
-          <DisclosureTrigger>Invocation Parameters</DisclosureTrigger>
+          <DisclosureTrigger>调用参数</DisclosureTrigger>
           <DisclosurePanel>
             <PromptInvocationParameters promptVersion={promptVersion} />
           </DisclosurePanel>

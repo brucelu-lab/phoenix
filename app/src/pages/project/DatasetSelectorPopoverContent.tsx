@@ -99,20 +99,20 @@ function DatasetsList(props: {
           Add to Dataset
         </MenuHeaderTitle>
         <SearchField
-          aria-label="Search datasets"
+          aria-label="搜索数据集"
           variant="quiet"
           autoFocus
           onChange={onSearchChange}
         >
           <SearchIcon />
-          <Input placeholder="Search datasets..." />
+          <Input placeholder="搜索数据集..." />
         </SearchField>
       </MenuHeader>
       <Menu
         aria-label="datasets"
         items={items}
         selectionMode="single"
-        renderEmptyState={() => <MenuEmpty>No datasets found</MenuEmpty>}
+        renderEmptyState={() => <MenuEmpty>未找到数据集</MenuEmpty>}
         onSelectionChange={(selection) => {
           if (typeof selection === "object") {
             const selectedDatasetIds = Array.from(selection);

@@ -73,7 +73,7 @@ export function UserRoleChangeDialog({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Confirm role change</DialogTitle>
+          <DialogTitle>确认角色变更</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton onPress={onClose} slot="close" />
           </DialogTitleExtra>

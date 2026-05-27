@@ -133,7 +133,7 @@ export function ModelParametersConfigButton(
       <Button
         variant="default"
         size="S"
-        aria-label="Configure model parameters"
+        aria-label="配置模型参数"
         leadingVisual={<Icon svg={<Icons.OptionsOutline />} />}
       />
       <Popover
@@ -183,7 +183,7 @@ export function ModelParametersConfigButton(
             )}
             {showEnvVarInfo && canConfigureAzureFields && (
               <EnvVarRoutingInfo
-                label="Endpoint"
+                label="端点"
                 envVarName="AZURE_OPENAI_ENDPOINT"
               />
             )}
@@ -195,7 +195,7 @@ export function ModelParametersConfigButton(
               />
             )}
             {showEnvVarInfo && canConfigureRegion && (
-              <EnvVarRoutingInfo label="Region" envVarName="AWS_REGION" />
+              <EnvVarRoutingInfo label="区域" envVarName="AWS_REGION" />
             )}
 
             <Suspense>

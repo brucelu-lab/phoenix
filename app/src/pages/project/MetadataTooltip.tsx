@@ -55,7 +55,7 @@ export function MetadataTooltip({
         <Flex direction="row" wrap="nowrap" gap="size-100">
           <Flex flexBasis="40%">
             <Flex direction="column" gap="size-100" width="100%">
-              <Text weight="heavy">Metadata</Text>
+              <Text weight="heavy">元数据</Text>
               <ul
                 css={css`
                   display: flex;
@@ -106,7 +106,7 @@ export function MetadataTooltip({
             borderStartWidth="thin"
           >
             <Flex direction="column" gap="size-100" width="100%">
-              <Text weight="heavy">Filters</Text>
+              <Text weight="heavy">筛选</Text>
               <ul
                 css={css`
                   display: flex;

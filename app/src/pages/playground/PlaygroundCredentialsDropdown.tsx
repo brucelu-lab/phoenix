@@ -84,7 +84,7 @@ export function PlaygroundCredentialsDropdown() {
                     <ToggleButtonGroup
                       selectedKeys={[credentialView]}
                       size="S"
-                      aria-label="Credential Source"
+                      aria-label="凭据来源"
                       onSelectionChange={(v) => {
                         if (v.size === 0) {
                           return;
@@ -95,10 +95,10 @@ export function PlaygroundCredentialsDropdown() {
                         }
                       }}
                     >
-                      <ToggleButton aria-label="Local" id="local">
+                      <ToggleButton aria-label="本地" id="local">
                         Local
                       </ToggleButton>
-                      <ToggleButton aria-label="Server" id="server">
+                      <ToggleButton aria-label="服务器" id="server">
                         Server
                       </ToggleButton>
                     </ToggleButtonGroup>

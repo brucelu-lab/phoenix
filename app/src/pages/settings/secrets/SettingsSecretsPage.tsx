@@ -138,14 +138,14 @@ function SettingsSecretsPageContent({
     <Flex direction="column" gap="size-200">
       <Flex gap="size-200" alignItems="center" justifyContent="space-between">
         <DebouncedSearch
-          aria-label="Search secrets"
-          placeholder="Search secrets"
+          aria-label="搜索密钥"
+          placeholder="搜索密钥"
           onChange={setSearch}
           defaultValue={search}
         />
         {authenticationEnabled ? (
           <Select
-            aria-label="Secret owner filter"
+            aria-label="密钥所有者筛选"
             value={ownerFilter}
             onChange={(value) => {
               startTransition(() => {

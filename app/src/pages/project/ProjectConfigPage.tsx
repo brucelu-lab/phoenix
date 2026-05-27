@@ -115,7 +115,7 @@ const nameFieldCSS = css`
 const ReadOnlyNameField = ({ name }: { name: string }) => (
   <Flex direction="row" gap="size-100" alignItems="end" width="100%">
     <TextField value={name} isReadOnly css={nameFieldCSS}>
-      <Label>Project Name</Label>
+      <Label>项目名称</Label>
       <Input />
     </TextField>
     <CopyToClipboardButton text={name} size="M" />
@@ -193,7 +193,7 @@ const ProjectConfigCard = ({
 
   if (isEditing) {
     return (
-      <Card title="Project Settings">
+      <Card title="项目设置">
         {error && (
           <View padding="size-200" paddingBottom="size-0">
             <Alert variant="danger" banner>
@@ -227,7 +227,7 @@ const ProjectConfigCard = ({
 
   return (
     <Card
-      title="Project Settings"
+      title="项目设置"
       extra={
         <Button
           variant="default"
@@ -262,7 +262,7 @@ const ProjectConfigCard = ({
               <ReadOnlyNameField name={data.name} />
               {data.description && (
                 <TextField value={data.description} isReadOnly>
-                  <Label>Description</Label>
+                  <Label>描述</Label>
                   <Input />
                 </TextField>
               )}
@@ -273,9 +273,9 @@ const ProjectConfigCard = ({
                     setDefaultTab(key);
                   }
                 }}
-                placeholder="Select a default tab"
+                placeholder="选择默认标签"
               >
-                <Label>Default Project Tab</Label>
+                <Label>默认项目标签</Label>
                 <Button>
                   <SelectValue />
                   <SelectChevronUpDownIcon />

@@ -75,7 +75,7 @@ export function DatasetActionMenu(props: DatasetActionMenuProps) {
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.Edit2Outline />} />
-                <Text>Edit</Text>
+                <Text>编辑</Text>
               </Flex>
             </MenuItem>
             <SubmenuTrigger>
@@ -87,7 +87,7 @@ export function DatasetActionMenu(props: DatasetActionMenuProps) {
                   alignItems={"center"}
                 >
                   <Icon svg={<Icons.PriceTagsOutline />} />
-                  <Text>Label</Text>
+                  <Text>标签</Text>
                 </Flex>
               </MenuItem>
               <Popover
@@ -120,7 +120,7 @@ export function DatasetActionMenu(props: DatasetActionMenuProps) {
                 alignItems={"center"}
               >
                 <Icon svg={<Icons.TrashOutline />} />
-                <Text>Delete</Text>
+                <Text>删除</Text>
               </Flex>
             </MenuItem>
           </Menu>

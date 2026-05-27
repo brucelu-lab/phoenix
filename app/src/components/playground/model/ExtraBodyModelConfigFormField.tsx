@@ -79,8 +79,8 @@ export function ExtraBodyModelConfigFormField({
 
   return (
     <JSONObjectModelConfigFormField
-      label="Extra Body"
-      description="Additional provider-specific options."
+      label="附加 Body"
+      description="其他提供商特定选项。"
       placeholder={`{"provider_specific_option": true}`}
       jsonSchema={EXTRA_BODY_JSON_SCHEMA}
       value={

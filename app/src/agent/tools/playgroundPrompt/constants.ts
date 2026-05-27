@@ -10,4 +10,4 @@ export const CLONE_PROMPT_INSTANCE_TOOL_NAME =
   PLAYGROUND_PROMPT_TOOL_NAMES.cloneInstance;
 
 export const EDIT_PROMPT_NAVIGATION_CANCEL_ERROR =
-  "The playground was closed before this edit could be reviewed, so it was discarded.";
+  "实验台在审阅本次编辑前已关闭，因此本次编辑已被丢弃。";

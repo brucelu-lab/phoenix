@@ -98,7 +98,7 @@ export function UserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Email</Label>
+                  <Label>邮箱</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>
@@ -128,7 +128,7 @@ export function UserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Username</Label>
+                  <Label>用户名</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>
@@ -163,7 +163,7 @@ export function UserForm({
                     value={value || ""}
                     autoComplete="new-password"
                   >
-                    <Label>Password</Label>
+                    <Label>密码</Label>
                     <Input />
                     {error ? (
                       <FieldError>{error?.message}</FieldError>
@@ -201,12 +201,12 @@ export function UserForm({
                     value={value || ""}
                     autoComplete="new-password"
                   >
-                    <Label>Confirm Password</Label>
+                    <Label>确认密码</Label>
                     <Input />
                     {error ? (
                       <FieldError>{error?.message}</FieldError>
                     ) : (
-                      <Text slot="description">Confirm the new password</Text>
+                      <Text slot="description">确认新密码</Text>
                     )}
                   </TextField>
                 )}

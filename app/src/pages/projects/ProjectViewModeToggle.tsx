@@ -38,7 +38,7 @@ export const ProjectViewModeToggle = () => {
       <TooltipTrigger delay={100}>
         <ToggleButton
           id="grid"
-          aria-label="Grid view"
+          aria-label="网格视图"
           leadingVisual={<Icon svg={<Icons.Grid />} />}
         />
         <Tooltip offset={10}>
@@ -48,14 +48,14 @@ export const ProjectViewModeToggle = () => {
             borderWidth="thin"
             borderRadius="small"
           >
-            <Text>View projects in a grid</Text>
+            <Text>以网格查看项目</Text>
           </View>
         </Tooltip>
       </TooltipTrigger>
       <TooltipTrigger delay={100}>
         <ToggleButton
           id="table"
-          aria-label="Table view"
+          aria-label="表格视图"
           leadingVisual={<Icon svg={<Icons.ListOutline />} />}
         />
         <Tooltip offset={10}>
@@ -65,7 +65,7 @@ export const ProjectViewModeToggle = () => {
             borderWidth="thin"
             borderRadius="small"
           >
-            <Text>View projects in a table</Text>
+            <Text>以表格查看项目</Text>
           </View>
         </Tooltip>
       </TooltipTrigger>

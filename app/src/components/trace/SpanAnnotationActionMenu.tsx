@@ -130,7 +130,7 @@ export function SpanAnnotationActionMenu(props: SpanAnnotationActionMenuProps) {
                     alignItems="center"
                   >
                     <Icon svg={<Icons.TrashOutline />} />
-                    <Text>Delete</Text>
+                    <Text>删除</Text>
                   </Flex>
                 </ListBoxItem>
               </ListBox>
@@ -147,7 +147,7 @@ export function SpanAnnotationActionMenu(props: SpanAnnotationActionMenuProps) {
               {({ close }) => (
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle>Delete Annotation</DialogTitle>
+                    <DialogTitle>删除标注</DialogTitle>
                   </DialogHeader>
                   <View padding="size-200">
                     <Text color="danger">
@@ -163,7 +163,7 @@ export function SpanAnnotationActionMenu(props: SpanAnnotationActionMenuProps) {
                   >
                     <Flex direction="row" justifyContent="end" gap="size-200">
                       <StopPropagation>
-                        <Button onPress={close}>Cancel</Button>
+                        <Button onPress={close}>取消</Button>
                       </StopPropagation>
                       <Button
                         variant="danger"

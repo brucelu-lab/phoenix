@@ -40,7 +40,7 @@ export function EditDatasetDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Edit Dataset</DialogTitle>
+              <DialogTitle>编辑数据集</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton />
               </DialogTitleExtra>

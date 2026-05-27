@@ -48,7 +48,7 @@ export function CopyActionMenu({ items }: CopyActionMenuProps) {
       <Button
         size="S"
         variant="quiet"
-        aria-label="Copy"
+        aria-label="复制"
         leadingVisual={
           <Icon
             svgKey={iconKey}

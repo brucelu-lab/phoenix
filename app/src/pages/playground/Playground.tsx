@@ -126,7 +126,7 @@ export function Playground(
       <div css={playgroundWrapCSS}>
         <View borderBottomColor="default" borderBottomWidth="thin">
           <PageHeader
-            title="Playground"
+            title="实验台"
             extra={
               <Flex direction="row" gap="size-100" alignItems="center">
                 <PlaygroundCredentialsDropdown />
@@ -491,7 +491,7 @@ function PlaygroundContent() {
       ) : (
         <ConfirmNavigationDialog
           blocker={blocker}
-          message="You have unsaved changes. Are you sure you want to leave?"
+          message="你有未保存的更改，确定要离开吗？"
         />
       )}
     </Fragment>

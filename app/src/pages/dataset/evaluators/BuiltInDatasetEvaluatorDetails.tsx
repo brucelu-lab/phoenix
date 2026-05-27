@@ -222,7 +222,7 @@ export function BuiltInDatasetEvaluatorDetails({
 
   return (
     <Flex direction="column" gap="size-200">
-      <Section title="Input Mapping">
+      <Section title="输入映射">
         <DetailsComponent inputMapping={inputMapping} />
       </Section>
       <OutputConfigsSection configs={outputConfigs} />

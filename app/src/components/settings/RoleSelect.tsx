@@ -64,7 +64,7 @@ export function RoleSelect({
       className="role-select"
       size={size}
       value={role ?? undefined}
-      aria-label="User Role"
+      aria-label="用户角色"
       isInvalid={isInvalid}
       onChange={(key) => {
         if (isUserRole(key)) {
@@ -73,7 +73,7 @@ export function RoleSelect({
       }}
       {...selectProps}
     >
-      {includeLabel && <Label>Role</Label>}
+      {includeLabel && <Label>角色</Label>}
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />

@@ -19,7 +19,7 @@ export function getFirstUserMessageText(messages: UIMessage[]): string | null {
   return textContent || null;
 }
 
-export const EMPTY_SESSION_DISPLAY_NAME = "New chat";
+export const EMPTY_SESSION_DISPLAY_NAME = "新对话";
 
 /**
  * Derives the display name for a session using a cascading strategy:

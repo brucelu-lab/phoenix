@@ -76,7 +76,7 @@ export function ViewerProfileCard() {
   }
   return (
     <Card
-      title="Profile"
+      title="个人资料"
       extra={
         viewer.authMethod === "LOCAL" && (
           <LinkButton size="S" to="/reset-password">
@@ -106,7 +106,7 @@ export function ViewerProfileCard() {
             <Flex direction="column" gap="size-100">
               {viewer.email && (
                 <TextField value={viewer.email} isReadOnly size="S">
-                  <Label>Email</Label>
+                  <Label>邮箱</Label>
                   <Input />
                 </TextField>
               )}
@@ -129,7 +129,7 @@ export function ViewerProfileCard() {
                     defaultValue={value}
                     size="S"
                   >
-                    <Label>Username</Label>
+                    <Label>用户名</Label>
                     <Input />
                     {error ? (
                       <FieldError>{error.message}</FieldError>

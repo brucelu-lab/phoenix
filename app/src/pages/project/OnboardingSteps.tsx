@@ -79,10 +79,10 @@ export function DocsOnlyOnboardingView({
             Follow the documentation to set up tracing for this integration.
           </Text>
           <Flex direction="row" alignItems="center" gap="size-100">
-            <ExternalLink href={docsHref}>Documentation</ExternalLink>
+            <ExternalLink href={docsHref}>文档</ExternalLink>
             {githubHref && <Separator orientation="vertical" />}
             {githubHref && (
-              <ExternalLink href={githubHref}>Github</ExternalLink>
+              <ExternalLink href={githubHref}>GitHub</ExternalLink>
             )}
           </Flex>
         </div>
@@ -164,10 +164,10 @@ export function OnboardingSteps({
                 marginStart="auto"
               >
                 {githubHref && (
-                  <ExternalLink href={githubHref}>Github</ExternalLink>
+                  <ExternalLink href={githubHref}>GitHub</ExternalLink>
                 )}
                 {githubHref && docsHref && <Separator orientation="vertical" />}
-                {docsHref && <ExternalLink href={docsHref}>Docs</ExternalLink>}
+                {docsHref && <ExternalLink href={docsHref}>文档</ExternalLink>}
               </Flex>
             )}
           </Flex>

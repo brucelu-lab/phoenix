@@ -46,7 +46,7 @@ export function EditBuiltInDatasetEvaluatorSlideover({
   return (
     <ModalOverlay {...props}>
       <Modal variant="slideover" size="fullscreen">
-        <Dialog aria-label="Edit built-in evaluator on dataset">
+        <Dialog aria-label="编辑数据集上的内置评测器">
           {({ close }) => (
             <Suspense
               fallback={

@@ -80,7 +80,7 @@ export function DeleteSandboxConfigButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Sandbox Config</DialogTitle>
+                <DialogTitle>删除沙箱配置</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

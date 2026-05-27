@@ -26,7 +26,7 @@ function resolveTooltip(tooltip: PromptInputButtonTooltip) {
  *
  * @example
  * ```tsx
- * <PromptInputButton tooltip="Attach files" aria-label="Attach files">
+ * <PromptInputButton tooltip="附加文件" aria-label="附加文件">
  *   <Icon svg={<Icons.PlusOutline />} />
  * </PromptInputButton>
  *

@@ -109,8 +109,8 @@ export const RegexEvaluatorForm = () => {
         />
         <SwitchableEvaluatorInput
           fieldName="text"
-          label="Text"
-          description="The text to search."
+          label="文本"
+          description="用于搜索的文本。"
           defaultMode={textDefaultMode}
           control={control}
           setValue={setValue}
@@ -138,7 +138,7 @@ export const RegexEvaluatorForm = () => {
                     : false
               )}
             >
-              <Label>Full match</Label>
+              <Label>完全匹配</Label>
               <Text slot="description">
                 If true, pattern must match entire text; if false, searches for
                 pattern anywhere.

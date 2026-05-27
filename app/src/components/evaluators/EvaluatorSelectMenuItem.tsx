@@ -70,7 +70,7 @@ export function EvaluatorSelectMenuItem({
         ) : undefined
       }
       trailingContent={
-        <IconButton size="S" aria-label="Edit evaluator" onPress={onEdit}>
+        <IconButton size="S" aria-label="编辑评测器" onPress={onEdit}>
           <Icon svg={<Icons.EditOutline />} />
         </IconButton>
       }

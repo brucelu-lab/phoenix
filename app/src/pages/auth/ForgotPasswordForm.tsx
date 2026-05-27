@@ -82,7 +82,7 @@ export function ForgotPasswordForm({
               onBlur={onBlur}
               value={value}
             >
-              <Label>Email</Label>
+              <Label>邮箱</Label>
               <Input placeholder="your email address" />
               <Text slot="description">
                 Enter the email address associated with your account.

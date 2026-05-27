@@ -213,7 +213,7 @@ export function ColumnAssigner({
                 Auto
               </Button>
               <RichTooltip placement="bottom end">
-                <RichTooltipTitle>Auto-Assignment Rules</RichTooltipTitle>
+                <RichTooltipTitle>自动分配规则</RichTooltipTitle>
                 <RichTooltipDescription>
                   <ul css={tooltipListCSS}>
                     <li>
@@ -254,11 +254,11 @@ export function ColumnAssigner({
                 onChange={onCollapseKeysChange}
                 labelPlacement="end"
               >
-                <Text size="S">Collapse top-level keys</Text>
+                <Text size="S">折叠顶层键</Text>
               </Switch>
             </Pressable>
             <RichTooltip placement="bottom start">
-              <RichTooltipTitle>Collapse Top-Level Keys</RichTooltipTitle>
+              <RichTooltipTitle>折叠顶层键</RichTooltipTitle>
               <RichTooltipDescription>
                 When enabled, nested object keys are promoted to become
                 top-level keys. This helps avoid paths like{" "}
@@ -272,7 +272,7 @@ export function ColumnAssigner({
               <IconButton
                 size="S"
                 color="warning"
-                aria-label="Collapse conflicts detected"
+                aria-label="检测到折叠冲突"
               >
                 <Icon svg={<Icons.AlertTriangleOutline />} />
               </IconButton>

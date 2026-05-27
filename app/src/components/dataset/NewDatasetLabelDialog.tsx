@@ -26,7 +26,7 @@ export function NewDatasetLabelDialog(props: NewDatasetLabelDialogProps) {
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>New Dataset Label</DialogTitle>
+            <DialogTitle>新建数据集标签</DialogTitle>
             <DialogCloseButton />
           </DialogHeader>
           {error ? (

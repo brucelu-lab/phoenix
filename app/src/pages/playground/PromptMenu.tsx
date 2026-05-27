@@ -287,16 +287,16 @@ export function PromptSelector({
       <MenuContainer placement="bottom start" minHeight={0}>
         <Autocomplete filter={contains}>
           <MenuHeader>
-            <SearchField aria-label="Search prompts" variant="quiet" autoFocus>
+            <SearchField aria-label="搜索提示词" variant="quiet" autoFocus>
               <SearchIcon />
-              <Input placeholder="Search prompts" />
+              <Input placeholder="搜索提示词" />
             </SearchField>
           </MenuHeader>
           <Menu
             selectionMode="single"
             selectedKeys={selectedPrompt ? [selectedPrompt.id] : []}
             items={promptItems}
-            renderEmptyState={() => <MenuEmpty>No prompts found</MenuEmpty>}
+            renderEmptyState={() => <MenuEmpty>未找到提示词</MenuEmpty>}
             onAction={(key) => {
               onSelectPrompt(String(key));
             }}
@@ -356,7 +356,7 @@ export function PromptVersionSelector({
   // Determine what to show on the button
   const buttonContent = useMemo(() => {
     if (!prompt) {
-      return <Text color="text-700">Version</Text>;
+      return <Text color="text-700">版本</Text>;
     }
     if (selectedTagName) {
       return (
@@ -373,7 +373,7 @@ export function PromptVersionSelector({
         />
       );
     }
-    return <Text color="text-700">Version</Text>;
+    return <Text color="text-700">版本</Text>;
   }, [prompt, selectedTagName, selectedVersionInfo]);
 
   // Determine which tab should be default
@@ -396,7 +396,7 @@ export function PromptVersionSelector({
       <MenuContainer placement="bottom start" minHeight={0}>
         <Tabs defaultSelectedKey={defaultTab}>
           <TabList>
-            <Tab id="versions">Versions</Tab>
+            <Tab id="versions">版本</Tab>
             <Tab id="tags" isDisabled={tagItems.length === 0}>
               {tagItems.length === 0 ? "No tags" : "Tags"}
             </Tab>
@@ -405,18 +405,18 @@ export function PromptVersionSelector({
             <Autocomplete filter={contains}>
               <MenuHeader>
                 <SearchField
-                  aria-label="Search versions"
+                  aria-label="搜索版本"
                   variant="quiet"
                   autoFocus
                 >
                   <SearchIcon />
-                  <Input placeholder="Search versions" />
+                  <Input placeholder="搜索版本" />
                 </SearchField>
               </MenuHeader>
               <Menu
                 items={versionItems}
                 renderEmptyState={() => (
-                  <MenuEmpty>No versions found</MenuEmpty>
+                  <MenuEmpty>未找到版本</MenuEmpty>
                 )}
                 selectionMode="single"
                 selectedKeys={
@@ -466,14 +466,14 @@ export function PromptVersionSelector({
           <LazyTabPanel id="tags">
             <Autocomplete filter={contains}>
               <MenuHeader>
-                <SearchField aria-label="Search tags" variant="quiet" autoFocus>
+                <SearchField aria-label="搜索标签" variant="quiet" autoFocus>
                   <SearchIcon />
-                  <Input placeholder="Search tags" />
+                  <Input placeholder="搜索标签" />
                 </SearchField>
               </MenuHeader>
               <Menu
                 items={tagItems}
-                renderEmptyState={() => <MenuEmpty>No tags found</MenuEmpty>}
+                renderEmptyState={() => <MenuEmpty>未找到标签</MenuEmpty>}
                 selectionMode="single"
                 selectedKeys={selectedTagName ? [selectedTagName] : []}
                 onAction={(key) => {

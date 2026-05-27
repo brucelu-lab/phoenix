@@ -272,7 +272,7 @@ export function ModelsTable({
             <Flex justifyContent="end" alignItems="center" gap="size-100">
               <span>{inputCost}</span>
               <TooltipTrigger delay={0}>
-                <IconButton size="S" aria-label="Input cost details">
+                <IconButton size="S" aria-label="输入成本详情">
                   <Icon svg={<Icons.MoreHorizontalOutline />} />
                 </IconButton>
                 <RichTooltip>
@@ -319,7 +319,7 @@ export function ModelsTable({
             <Flex justifyContent="end" alignItems="center" gap="size-100">
               <span>{outputCost}</span>
               <TooltipTrigger delay={0}>
-                <IconButton size="S" aria-label="Output cost details">
+                <IconButton size="S" aria-label="输出成本详情">
                   <Icon svg={<Icons.MoreHorizontalOutline />} />
                 </IconButton>
                 <RichTooltip>
@@ -463,7 +463,7 @@ export function ModelsTable({
   if (isEmpty) {
     return (
       <Flex width="100%" justifyContent="center" alignItems="center">
-        <p>No models found</p>
+        <p>未找到模型</p>
       </Flex>
     );
   }

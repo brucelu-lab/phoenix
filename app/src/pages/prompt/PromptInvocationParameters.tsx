@@ -89,7 +89,7 @@ export function PromptInvocationParameters({
     return (
       <View padding="size-200">
         <Flex justifyContent="center" alignItems="center">
-          <Text color="text-300">No parameters saved for this prompt</Text>
+          <Text color="text-300">该提示词未保存参数</Text>
         </Flex>
       </View>
     );

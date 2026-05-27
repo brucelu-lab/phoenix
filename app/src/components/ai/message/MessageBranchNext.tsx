@@ -20,7 +20,7 @@ export function MessageBranchNext({
     <Button
       ref={ref}
       css={messageActionCSS}
-      aria-label="Next version"
+      aria-label="下一版本"
       isDisabled={activeBranch >= branchCount - 1}
       onPress={() => setActiveBranch(activeBranch + 1)}
       {...restProps}

@@ -48,7 +48,7 @@ export function DeletePromptVersionTagButton({
   return (
     <DialogTrigger isOpen={isOpen} onOpenChange={setIsOpen}>
       <Button
-        aria-label="Delete tag"
+        aria-label="删除标签"
         size="S"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
       />
@@ -56,7 +56,7 @@ export function DeletePromptVersionTagButton({
         <Modal size="S">
           <Dialog>
             <DialogHeader>
-              <DialogTitle>Delete Tag</DialogTitle>
+              <DialogTitle>删除标签</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton />
               </DialogTitleExtra>

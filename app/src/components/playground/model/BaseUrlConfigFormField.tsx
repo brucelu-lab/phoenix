@@ -46,7 +46,7 @@ export function BaseUrlConfigFormField({
       defaultValue={instance.model.baseUrl ?? ""}
       onChange={debouncedUpdateBaseUrl}
     >
-      <Label>Base URL</Label>
+      <Label>基础 URL</Label>
       <Input placeholder="e.x. https://my-llm.com/v1" />
     </TextField>
   );

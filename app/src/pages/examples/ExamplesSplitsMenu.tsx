@@ -94,9 +94,9 @@ const SplitFilterMenu = ({
   return (
     <Autocomplete filter={contains}>
       <MenuHeader>
-        <SearchField aria-label="Search" variant="quiet" autoFocus size="L">
+        <SearchField aria-label="搜索" variant="quiet" autoFocus size="L">
           <SearchIcon />
-          <Input placeholder="Search splits" />
+          <Input placeholder="搜索切分" />
         </SearchField>
       </MenuHeader>
       <SplitMenuFilterContent
@@ -124,7 +124,7 @@ const SplitMenuFilterContent = ({
     <Menu
       items={splits}
       selectionMode="multiple"
-      renderEmptyState={() => <MenuEmpty>No splits found</MenuEmpty>}
+      renderEmptyState={() => <MenuEmpty>未找到切分</MenuEmpty>}
       selectedKeys={selectedSplitIds}
       onSelectionChange={(keys) => {
         if (keys === "all") {

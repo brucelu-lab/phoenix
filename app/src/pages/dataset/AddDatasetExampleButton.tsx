@@ -111,7 +111,7 @@ export function AddDatasetExampleButton(props: AddDatasetExampleButtonProps) {
         <Button
           leadingVisual={<Icon svg={<Icons.PlusOutline />} />}
           size="M"
-          aria-label="Add Dataset Example"
+          aria-label="添加数据集样本"
           variant="primary"
         >
           Examples
@@ -132,13 +132,13 @@ export function AddDatasetExampleButton(props: AddDatasetExampleButtonProps) {
             <MenuItem id={ExamplesAction.UPDATE_FROM_FILE}>
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.FileOutline />} />
-                <Text>Update Dataset From File</Text>
+                <Text>从文件更新数据集</Text>
               </Flex>
             </MenuItem>
             <MenuItem id={ExamplesAction.ADD_MANUALLY}>
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.EditOutline />} />
-                <Text>Add Example Manually</Text>
+                <Text>手动添加样本</Text>
               </Flex>
             </MenuItem>
           </Menu>
@@ -149,7 +149,7 @@ export function AddDatasetExampleButton(props: AddDatasetExampleButtonProps) {
           <Modal variant="slideover" size="fullscreen">
             <Dialog css={dialogCSS}>
               <DialogHeader>
-                <DialogTitle>Update Dataset From File</DialogTitle>
+                <DialogTitle>从文件更新数据集</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>
@@ -173,7 +173,7 @@ export function AddDatasetExampleButton(props: AddDatasetExampleButtonProps) {
               {({ close }) => (
                 <>
                   <DialogHeader>
-                    <DialogTitle>Add Example Manually</DialogTitle>
+                    <DialogTitle>手动添加样本</DialogTitle>
                     <DialogTitleExtra>
                       <DialogCloseButton slot="close" />
                     </DialogTitleExtra>

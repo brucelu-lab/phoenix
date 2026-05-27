@@ -59,7 +59,7 @@ export function CreateAPIKeyDialog(props: {
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Create an API Key</DialogTitle>
+            <DialogTitle>创建 API 密钥</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton slot="close" />
             </DialogTitleExtra>
@@ -83,7 +83,7 @@ export function CreateAPIKeyDialog(props: {
                     value={value.toString()}
                     size="S"
                   >
-                    <Label>Name</Label>
+                    <Label>名称</Label>
                     <Input />
                     {error?.message ? (
                       <FieldError>{error.message}</FieldError>
@@ -107,7 +107,7 @@ export function CreateAPIKeyDialog(props: {
                     value={value?.toString()}
                     size="S"
                   >
-                    <Label>Description</Label>
+                    <Label>描述</Label>
                     <TextArea />
                     {error?.message ? (
                       <FieldError>{error.message}</FieldError>
@@ -150,7 +150,7 @@ export function CreateAPIKeyDialog(props: {
                       }
                     `}
                   >
-                    <Label>Expires At</Label>
+                    <Label>过期时间</Label>
                     <DateInput>
                       {(segment) => <DateSegment segment={segment} />}
                     </DateInput>

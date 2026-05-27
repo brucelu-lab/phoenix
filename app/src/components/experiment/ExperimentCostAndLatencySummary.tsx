@@ -105,7 +105,7 @@ export function ExperimentCostAndLatencySummary({
             AVG
           </Text>
         </TriggerWrap>
-        <Tooltip>Averages computed over all runs in the experiment</Tooltip>
+        <Tooltip>在该实验所有运行上计算的平均值</Tooltip>
       </TooltipTrigger>
       {averageRunLatencyMs != null && (
         <LatencyText size="S" latencyMs={averageRunLatencyMs} />

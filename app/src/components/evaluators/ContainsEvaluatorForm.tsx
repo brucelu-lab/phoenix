@@ -80,8 +80,8 @@ export const ContainsEvaluatorForm = () => {
       <Flex direction="column" gap="size-100">
         <SwitchableEvaluatorInput
           fieldName="text"
-          label="Text"
-          description="The text to search for the words in."
+          label="文本"
+          description="用于搜索单词的文本。"
           defaultMode={textDefaultMode}
           control={control}
           setValue={setValue}
@@ -94,7 +94,7 @@ export const ContainsEvaluatorForm = () => {
         />
         <SwitchableEvaluatorInput
           fieldName="words"
-          label="Words"
+          label="单词"
           description="A comma separated list of words to search for in the text."
           defaultMode={wordsDefaultMode}
           control={control}
@@ -121,7 +121,7 @@ export const ContainsEvaluatorForm = () => {
                     : false
               )}
             >
-              <Label>Case sensitive</Label>
+              <Label>区分大小写</Label>
               <Text slot="description">
                 Whether to match the words case sensitive.
               </Text>
@@ -145,7 +145,7 @@ export const ContainsEvaluatorForm = () => {
                     : false
               )}
             >
-              <Label>Require all</Label>
+              <Label>全部必须</Label>
               <Text slot="description">
                 Whether to require all words in the list to be present in the
                 text. If false, any word in the list can be present in the text.

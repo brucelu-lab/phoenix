@@ -443,7 +443,7 @@ export const GlobalEvaluatorsEmptyState = ({
             <div css={evaluatorTypeCardCSS}>
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.Robot />} />
-                <Text weight="heavy">LLM Evaluators</Text>
+                <Text weight="heavy">LLM 评测器</Text>
               </Flex>
               <Text size="S" color="text-700">
                 Use AI to assess correctness, relevance, and tone
@@ -452,7 +452,7 @@ export const GlobalEvaluatorsEmptyState = ({
             <div css={evaluatorTypeCardCSS}>
               <Flex direction="row" gap="size-100" alignItems="center">
                 <Icon svg={<Icons.Code />} />
-                <Text weight="heavy">Code Evaluators</Text>
+                <Text weight="heavy">代码评测器</Text>
               </Flex>
               <Text size="S" color="text-700">
                 Deterministic checks like exact_match, contains, and regex

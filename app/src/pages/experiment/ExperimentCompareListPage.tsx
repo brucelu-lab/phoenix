@@ -525,7 +525,7 @@ export function ExperimentCompareListPage({
             <TooltipTrigger>
               <IconButton
                 size="S"
-                aria-label="View experiment run details"
+                aria-label="查看实验运行详情"
                 onPress={() => {
                   setSelectedExampleIndex(row.index);
                 }}

@@ -81,7 +81,7 @@ export function DocsToolDetails({ part }: { part: ToolInvocationPart }) {
       ) : null}
       {part.state === "output-error" ? (
         <>
-          <ToolPartLabel variant="danger">Error</ToolPartLabel>
+          <ToolPartLabel variant="danger">错误</ToolPartLabel>
           <ToolPartCodeBlock>{part.errorText ?? ""}</ToolPartCodeBlock>
         </>
       ) : null}

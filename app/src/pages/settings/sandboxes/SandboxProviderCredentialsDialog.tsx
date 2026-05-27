@@ -368,7 +368,7 @@ function CredentialFormField({
             ) : (
               <span css={credentialDescriptionCSS} />
             )}
-            <span css={credentialEnvVarCSS} title="Environment variable name">
+            <span css={credentialEnvVarCSS} title="环境变量名称">
               {spec.key}
             </span>
           </div>

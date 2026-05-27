@@ -233,7 +233,7 @@ function NewAnnotationButton(props: NewAnnotationButtonProps) {
           isDisabled={disabled}
           size="S"
           leadingVisual={<Icon svg={<Icons.PlusOutline />} />}
-          aria-label="Add Annotation"
+          aria-label="添加标注"
         >
           Annotation
         </Button>
@@ -686,7 +686,7 @@ function SpanAnnotationsList(props: {
           justifyContent="center"
           height="100%"
         >
-          <Empty message="No annotation configurations for this project." />
+          <Empty message="该项目无标注配置。" />
         </Flex>
       )}
       {!!annotationConfigsLength && (

@@ -94,7 +94,7 @@ function IntegrationLink({
           target="_blank"
           rel="noreferrer"
           className="integration__github-link"
-          aria-label="GitHub link"
+          aria-label="GitHub 链接"
         >
           <GitHubSVG />
         </a>

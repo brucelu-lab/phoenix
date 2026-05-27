@@ -45,7 +45,7 @@ export function EndpointConfigFormField({
       defaultValue={instance.model.endpoint ?? ""}
       onChange={debouncedUpdateEndpoint}
     >
-      <Label>Endpoint</Label>
+      <Label>端点</Label>
       <Input placeholder="e.x. https://my.openai.azure.com" />
     </TextField>
   );

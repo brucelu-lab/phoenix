@@ -57,7 +57,7 @@ export function ExperimentInputCell({
           <TooltipTrigger>
             <IconButton
               size="S"
-              aria-label="View example details"
+              aria-label="查看样本详情"
               onPress={onExpand}
             >
               <Icon svg={<Icons.ExpandOutline />} />

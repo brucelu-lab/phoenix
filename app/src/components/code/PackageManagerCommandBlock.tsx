@@ -100,7 +100,7 @@ export function PackageManagerCommandBlock({
     >
       <div className="package-manager-command__header">
         <ToggleButtonGroup
-          aria-label="Package manager"
+          aria-label="包管理器"
           selectedKeys={[selectedPackageManager]}
           disallowEmptySelection
           size="S"

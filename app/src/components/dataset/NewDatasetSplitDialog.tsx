@@ -27,10 +27,10 @@ export function NewDatasetSplitDialog(props: NewDatasetSplitDialogProps) {
 
   return (
     <Modal size="S">
-      <Dialog aria-label="Create dataset split">
+      <Dialog aria-label="创建数据集切分">
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Create Dataset Split</DialogTitle>
+            <DialogTitle>创建数据集切分</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton />
             </DialogTitleExtra>

@@ -25,10 +25,10 @@ export const EvaluatorsFilterBar = ({
         gap="size-100"
       >
         <DebouncedSearch
-          aria-label="Search evaluators by name"
+          aria-label="按名称搜索评测器"
           onChange={setFilter}
           defaultValue={filter}
-          placeholder="Search evaluators by name"
+          placeholder="按名称搜索评测器"
         />
         {!!extraActions && (
           <Flex direction="row" alignItems="center" gap="size-100" flex="none">

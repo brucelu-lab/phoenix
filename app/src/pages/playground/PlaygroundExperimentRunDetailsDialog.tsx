@@ -81,7 +81,7 @@ export function PlaygroundExperimentRunDetailsDialog({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <TitleWithID title="Experiment Run" id={exampleId || ""} />
+          <TitleWithID title="实验运行" id={exampleId || ""} />
           <DialogTitleExtra>
             <DialogCloseButton />
           </DialogTitleExtra>
@@ -92,7 +92,7 @@ export function PlaygroundExperimentRunDetailsDialog({
               <Flex direction="row" gap="size-200" flex="1 1 auto">
                 <View width="50%">
                   <Card
-                    title="Input"
+                    title="输入"
                     {...defaultCardProps}
                     extra={
                       <CopyToClipboardButton text={JSON.stringify(input)} />
@@ -105,7 +105,7 @@ export function PlaygroundExperimentRunDetailsDialog({
                 </View>
                 <View width="50%">
                   <Card
-                    title="Reference Output"
+                    title="参考输出"
                     {...defaultCardProps}
                     extra={
                       <CopyToClipboardButton
@@ -135,7 +135,7 @@ export function PlaygroundExperimentRunDetailsDialog({
                 borderBottomWidth="thin"
                 flex="none"
               >
-                <Heading level={2}>Experiment Run Output</Heading>
+                <Heading level={2}>实验运行输出</Heading>
               </View>
               <div
                 css={css`

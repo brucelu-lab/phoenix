@@ -306,7 +306,7 @@ export function SpanDetails({
                   isDisabled={span.spanKind !== "llm"}
                   to={`/playground/spans/${span.id}`}
                   size="S"
-                  aria-label="Prompt Playground"
+                  aria-label="提示词实验台"
                 >
                   {isCondensedView ? null : "Playground"}
                 </LinkButton>
@@ -349,11 +349,11 @@ export function SpanDetails({
           </View>
           <Tabs>
             <TabList>
-              <Tab id="info">Info</Tab>
+              <Tab id="info">信息</Tab>
               <Tab id="annotations">
                 Annotations <Counter>{span.spanAnnotations.length}</Counter>
               </Tab>
-              <Tab id="attributes">Attributes</Tab>
+              <Tab id="attributes">属性</Tab>
               <Tab id="events">
                 Events{" "}
                 <Counter variant={hasExceptions ? "danger" : "default"}>
@@ -381,7 +381,7 @@ export function SpanDetails({
                 overflow="auto"
               >
                 <Card
-                  title="All Attributes"
+                  title="全部属性"
                   {...defaultCardProps}
                   titleExtra={attributesContextualHelp}
                 >
@@ -497,7 +497,7 @@ function SpanInfo({ span }: { span: Span }) {
 
   const statusDescription = useMemo(() => {
     return span.statusMessage ? (
-      <Alert variant="danger" title="Status Description">
+      <Alert variant="danger" title="状态描述">
         {span.statusMessage}
       </Alert>
     ) : null;
@@ -509,10 +509,10 @@ function SpanInfo({ span }: { span: Span }) {
       <View padding="size-200">
         <Flex direction="column" gap="size-200">
           {statusDescription}
-          <Alert variant="warning" title="Un-parsable attributes">
+          <Alert variant="warning" title="无法解析的属性">
             {`Failed to parse span attributes. ${parseError instanceof Error ? parseError.message : ""}`}
           </Alert>
-          <Card {...defaultCardProps} title="Attributes">
+          <Card {...defaultCardProps} title="属性">
             <View padding="size-100">{attributes}</View>
           </Card>
         </Flex>
@@ -558,7 +558,7 @@ function SpanInfo({ span }: { span: Span }) {
         {statusDescription}
         {content}
         {attributesObject?.metadata ? (
-          <Card {...defaultCardProps} title="Metadata">
+          <Card {...defaultCardProps} title="元数据">
             <ReadonlyJSONBlock>
               {JSON.stringify(attributesObject.metadata)}
             </ReadonlyJSONBlock>
@@ -714,15 +714,15 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
       <Card collapsible titleSeparator={false} title={modelNameTitleEl}>
         <Tabs>
           <TabList>
-            {hasInputMessages && <Tab id="input-messages">Input Messages</Tab>}
-            {hasLLMToolSchemas && <Tab id="tools">Tools</Tab>}
-            {hasInput && <Tab id="input">Input</Tab>}
+            {hasInputMessages && <Tab id="input-messages">输入消息</Tab>}
+            {hasLLMToolSchemas && <Tab id="tools">工具</Tab>}
+            {hasInput && <Tab id="input">输入</Tab>}
             {hasPromptTemplateObject && (
-              <Tab id="prompt-template">Prompt Template</Tab>
+              <Tab id="prompt-template">提示词模板</Tab>
             )}
-            {hasPrompts && <Tab id="prompts">Prompts</Tab>}
+            {hasPrompts && <Tab id="prompts">提示词</Tab>}
             {hasInvocationParams && (
-              <Tab id="invocation-params">Invocation Params</Tab>
+              <Tab id="invocation-params">调用参数</Tab>
             )}
           </TabList>
 
@@ -744,7 +744,7 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
                 <MarkdownDisplayProvider>
                   <Card
                     {...defaultCardProps}
-                    title="LLM Input"
+                    title="LLM 输入"
                     extra={
                       <Flex direction="row" gap="size-100">
                         <ConnectedMarkdownModeSelect />
@@ -770,7 +770,7 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
                       arrowPosition="start"
                       justifyContent="space-between"
                     >
-                      <Text>Prompt Template</Text>
+                      <Text>提示词模板</Text>
                       <CopyToClipboardButton
                         text={promptTemplateObject.template}
                       />
@@ -786,7 +786,7 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
                       arrowPosition="start"
                       justifyContent="space-between"
                     >
-                      <Text>Template Variables</Text>
+                      <Text>模板变量</Text>
                       <CopyToClipboardButton
                         text={JSON.stringify(promptTemplateObject.variables)}
                       />
@@ -823,13 +823,13 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
         </Tabs>
       </Card>
       {hasOutput || hasOutputMessages ? (
-        <Card {...defaultCardProps} title="Output" titleSeparator={false}>
+        <Card {...defaultCardProps} title="输出" titleSeparator={false}>
           <Tabs>
             <TabList>
               {hasOutputMessages && (
-                <Tab id="output-messages">Output Messages</Tab>
+                <Tab id="output-messages">输出消息</Tab>
               )}
-              {hasOutput && <Tab id="output">Output</Tab>}
+              {hasOutput && <Tab id="output">输出</Tab>}
             </TabList>
 
             {hasOutputMessages && (
@@ -843,7 +843,7 @@ function LLMSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
                   <MarkdownDisplayProvider>
                     <Card
                       {...defaultCardProps}
-                      title="LLM Output"
+                      title="LLM 输出"
                       extra={
                         <Flex direction="row" gap="size-100">
                           <ConnectedMarkdownModeSelect />
@@ -910,7 +910,7 @@ function RetrieverSpanInfo(props: {
       {hasInput ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Input"
+            title="输入"
             {...defaultCardProps}
             extra={
               <Flex direction="row" gap="size-100" alignItems="center">
@@ -929,7 +929,7 @@ function RetrieverSpanInfo(props: {
       {hasDocuments ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Documents"
+            title="文档"
             {...defaultCardProps}
             extra={<ConnectedMarkdownModeSelect />}
           >
@@ -1043,7 +1043,7 @@ function RerankerSpanInfo(props: {
     <Flex direction="column" gap="size-200">
       <MarkdownDisplayProvider>
         {query && (
-          <Card title="Query" {...defaultCardProps}>
+          <Card title="查询" {...defaultCardProps}>
             <View padding="size-200">
               <ConnectedMarkdownBlock>{query}</ConnectedMarkdownBlock>
             </View>
@@ -1161,7 +1161,7 @@ function EmbeddingSpanInfo(props: {
                         {...defaultCardProps}
                         backgroundColor="purple-100"
                         borderColor="purple-300"
-                        title="Embedded Text"
+                        title="嵌入文本"
                       >
                         <ConnectedMarkdownBlock>
                           {embedding[EmbeddingAttributePostfixes.text] || ""}
@@ -1204,7 +1204,7 @@ function ToolSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
       {hasInput ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Input"
+            title="输入"
             {...defaultCardProps}
             extra={
               <Flex direction="row" gap="size-100" alignItems="center">
@@ -1220,7 +1220,7 @@ function ToolSpanInfo(props: { span: Span; spanAttributes: AttributeObject }) {
       {hasOutput ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Output"
+            title="输出"
             {...defaultCardProps}
             backgroundColor="green-100"
             borderColor="green-300"
@@ -1449,7 +1449,7 @@ function LLMMessage({ message }: { message: AttributeMessage }) {
             {hasFunctionCall ? (
               <Disclosure id="function-call">
                 <DisclosureTrigger>
-                  <Text>Function Call</Text>
+                  <Text>函数调用</Text>
                 </DisclosureTrigger>
                 <DisclosurePanel>
                   <pre
@@ -1495,7 +1495,7 @@ function LLMToolSchema({
   const titleEl = (
     <Flex direction="row" gap="size-100" alignItems="center">
       <SpanKindIcon spanKind="tool" />
-      <Text weight="heavy">Tool</Text>
+      <Text weight="heavy">工具</Text>
     </Flex>
   );
 
@@ -1664,7 +1664,7 @@ function SpanIO({ span }: { span: Span }) {
       {input && input.value != null ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Input"
+            title="输入"
             {...defaultCardProps}
             extra={
               <Flex direction="row" gap="size-100" alignItems="center">
@@ -1680,7 +1680,7 @@ function SpanIO({ span }: { span: Span }) {
       {output && output.value != null ? (
         <MarkdownDisplayProvider>
           <Card
-            title="Output"
+            title="输出"
             {...defaultCardProps}
             backgroundColor="green-100"
             borderColor="green-300"
@@ -1697,7 +1697,7 @@ function SpanIO({ span }: { span: Span }) {
       ) : null}
       {isMissingIO ? (
         <Card
-          title="All Attributes"
+          title="全部属性"
           titleExtra={attributesContextualHelp}
           {...defaultCardProps}
         >

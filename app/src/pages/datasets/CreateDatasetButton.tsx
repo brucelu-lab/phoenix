@@ -115,7 +115,7 @@ export function CreateDatasetButton({
         size="M"
         leadingVisual={<Icon svg={<Icons.DatabaseOutline />} />}
         onPress={() => setIsOpen(true)}
-        aria-label="Create a new dataset"
+        aria-label="新建数据集"
       >
         New Dataset
       </Button>
@@ -123,7 +123,7 @@ export function CreateDatasetButton({
         <Modal variant="slideover" size="fullscreen">
           <Dialog css={dialogCSS}>
             <DialogHeader>
-              <DialogTitle>Create Dataset</DialogTitle>
+              <DialogTitle>创建数据集</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton slot="close" />
               </DialogTitleExtra>
@@ -137,8 +137,8 @@ export function CreateDatasetButton({
             >
               <Tabs>
                 <TabList>
-                  <Tab id="fromFile">From file</Tab>
-                  <Tab id="fromScratch">From scratch</Tab>
+                  <Tab id="fromFile">从文件</Tab>
+                  <Tab id="fromScratch">从零开始</Tab>
                 </TabList>
                 <TabPanel
                   id="fromFile"

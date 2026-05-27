@@ -102,7 +102,7 @@ export function DashboardsEmptyPage() {
   }
   return (
     <Flex height="100%" alignItems="center" justifyContent="center">
-      <Empty message="No project selected" />
+      <Empty message="未选择项目" />
     </Flex>
   );
 }

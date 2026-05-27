@@ -216,8 +216,8 @@ export function AssistantMessageActions({
       <MessageActions>
         {canAnnotate ? (
           <MessageAction
-            label="Thumbs up"
-            tooltip="Mark this response as helpful"
+            label="赞"
+            tooltip="标记该响应为有用"
             isDisabled={isSubmittingFeedback}
             onPress={() => {
               void handleFeedback("positive");
@@ -231,8 +231,8 @@ export function AssistantMessageActions({
         ) : null}
         {canAnnotate ? (
           <MessageAction
-            label="Thumbs down"
-            tooltip="Mark this response as unhelpful"
+            label="踩"
+            tooltip="标记该响应为无用"
             isDisabled={isSubmittingFeedback}
             onPress={() => {
               void handleFeedback("negative");
@@ -246,8 +246,8 @@ export function AssistantMessageActions({
         ) : null}
         {hasMessageText ? (
           <MessageAction
-            label="Copy"
-            tooltip="Copy this response"
+            label="复制"
+            tooltip="复制该响应"
             onPress={handleCopy}
           >
             <Icon svg={<Icons.DuplicateOutline />} />
@@ -255,8 +255,8 @@ export function AssistantMessageActions({
         ) : null}
         {canOpenTrace ? (
           <MessageAction
-            label="Trace"
-            tooltip="Open the trace for this response"
+            label="追踪"
+            tooltip="打开该响应的追踪"
             onPress={handleOpenTrace}
           >
             <Icon svg={<Icons.Trace />} />

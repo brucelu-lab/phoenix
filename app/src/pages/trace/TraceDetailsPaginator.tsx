@@ -68,7 +68,7 @@ export const TraceDetailsPaginator = ({
             size="S"
             id="next"
             leadingVisual={<Icon svg={<Icons.ArrowDownwardOutline />} />}
-            aria-label="Next trace"
+            aria-label="下一追踪"
             isDisabled={!hasNext}
             onPress={() => {
               startTransition(() => {
@@ -79,7 +79,7 @@ export const TraceDetailsPaginator = ({
           <Tooltip offset={4}>
             <TooltipArrow />
             <Flex direction="row" gap="size-100" alignItems="center">
-              <span>Next trace</span>
+              <span>下一追踪</span>
               <KeyboardToken>{NEXT_TRACE_HOTKEY}</KeyboardToken>
             </Flex>
           </Tooltip>
@@ -89,7 +89,7 @@ export const TraceDetailsPaginator = ({
             size="S"
             id="previous"
             leadingVisual={<Icon svg={<Icons.ArrowUpwardOutline />} />}
-            aria-label="Previous trace"
+            aria-label="上一追踪"
             isDisabled={!hasPrevious}
             onPress={() => {
               startTransition(() => {
@@ -100,7 +100,7 @@ export const TraceDetailsPaginator = ({
           <Tooltip offset={4}>
             <TooltipArrow />
             <Flex direction="row" gap="size-100" alignItems="center">
-              <span>Previous trace</span>
+              <span>上一追踪</span>
               <KeyboardToken>{PREVIOUS_TRACE_HOTKEY}</KeyboardToken>
             </Flex>
           </Tooltip>

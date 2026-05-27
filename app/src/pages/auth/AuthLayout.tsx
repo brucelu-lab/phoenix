@@ -52,7 +52,7 @@ export function AuthLayout({ children }: PropsWithChildren) {
           }
         `}
       >
-        <a href="https://arize.com/docs/phoenix">Documentation</a>|
+        <a href="https://arize.com/docs/phoenix">文档</a>|
         <a href="https://join.slack.com/t/arize-ai/shared_invite/zt-3r07iavnk-ammtATWSlF0pSrd1DsMW7g">
           Community
         </a>

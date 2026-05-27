@@ -106,7 +106,7 @@ export function LoginForm(props: LoginFormProps) {
                     }
                   }}
                 >
-                  <Label>Email</Label>
+                  <Label>邮箱</Label>
                   <Input placeholder="your email address" />
                 </TextField>
               )}
@@ -135,7 +135,7 @@ export function LoginForm(props: LoginFormProps) {
                     value={value}
                     autoComplete="current-password"
                   >
-                    <Label>Password</Label>
+                    <Label>密码</Label>
                     <Input placeholder="your password" />
                   </TextField>
                 )}

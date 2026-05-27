@@ -144,9 +144,9 @@ export function SavePromptForm({
           }}
           render={({ field: { onBlur, onChange }, fieldState }) => (
             <PromptComboBox
-              label="Prompt"
-              description="The prompt to update, or prompt name to create"
-              placeholder="Select or enter new prompt name"
+              label="提示词"
+              description="要更新的提示词，或要创建的提示词名称"
+              placeholder="选择或输入新提示词名称"
               isRequired
               onBlur={onBlur}
               defaultInputValue={promptInputValue}
@@ -349,7 +349,7 @@ function NewTagInlineForm({
     <Flex direction="row" gap="size-100" alignItems="start">
       <TextField
         size="S"
-        aria-label="New tag name"
+        aria-label="新标签名称"
         value={inputValue}
         onChange={setInputValue}
         isInvalid={!!error}
@@ -363,7 +363,7 @@ function NewTagInlineForm({
           }
         }}
       >
-        <Input placeholder="New tag name" />
+        <Input placeholder="新标签名称" />
         {error ? <FieldError>{error}</FieldError> : null}
       </TextField>
       <Button

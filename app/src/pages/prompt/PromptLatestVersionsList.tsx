@@ -61,7 +61,7 @@ export function PromptLatestVersionsList(props: {
         })}
       </ul>
       <Flex direction="row" justifyContent="end">
-        <Link to="versions">View all versions</Link>
+        <Link to="versions">查看全部版本</Link>
       </Flex>
     </div>
   );

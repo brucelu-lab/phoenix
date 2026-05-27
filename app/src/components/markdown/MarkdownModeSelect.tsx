@@ -34,7 +34,7 @@ export function MarkdownModeSelect({
 }) {
   return (
     <Select
-      aria-label="Markdown Mode"
+      aria-label="Markdown 模式"
       value={mode}
       css={css`
         button {

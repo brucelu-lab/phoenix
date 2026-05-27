@@ -38,7 +38,7 @@ export function SandboxProvidersCard({
 }) {
   return (
     <Card
-      title="Sandbox Providers"
+      title="沙箱提供商列表"
       titleExtra={
         <ContextualHelp variant="info">
           Shared provider settings and whether each sandbox runtime can be
@@ -49,9 +49,9 @@ export function SandboxProvidersCard({
       <table css={sandboxesTableCSS}>
         <thead>
           <tr>
-            <th>Provider</th>
-            <th>Languages</th>
-            <th>Status</th>
+            <th>提供商</th>
+            <th>语言</th>
+            <th>状态</th>
             <th />
           </tr>
         </thead>

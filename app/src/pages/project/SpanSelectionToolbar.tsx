@@ -161,11 +161,11 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
         </Alert>
       )}
       <Toolbar>
-        <Group aria-label="Span selection">
+        <Group aria-label="跨度选择">
           <IconButton
             size="M"
             onPress={onClearSelection}
-            aria-label="Clear selection"
+            aria-label="清除选择"
           >
             <Icon svg={<Icons.CloseOutline />} />
           </IconButton>
@@ -173,7 +173,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
             <Text>{`${selectedSpans.length} span${isPlural ? "s" : ""} selected`}</Text>
           </View>
         </Group>
-        <Group aria-label="Span selection actions">
+        <Group aria-label="跨度选择操作">
           <DialogTrigger
             isOpen={isDatasetPopoverOpen}
             onOpenChange={(isOpen) => {
@@ -234,7 +234,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
                 <Dialog>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>New Dataset</DialogTitle>
+                      <DialogTitle>新建数据集</DialogTitle>
                       <DialogTitleExtra>
                         <Button
                           variant="default"
@@ -270,7 +270,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
           </DialogTrigger>
           <Button
             size="M"
-            aria-label="Delete Traces"
+            aria-label="删除追踪"
             isDisabled={isDeletingTraces}
             onPress={onDeletePress}
             variant="danger"
@@ -286,7 +286,7 @@ export function SpanSelectionToolbar(props: SpanSelectionToolbarProps) {
                 <Dialog>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Delete Traces</DialogTitle>
+                      <DialogTitle>删除追踪</DialogTitle>
                     </DialogHeader>
                     <View padding="size-200">
                       <Text color="danger">

@@ -166,7 +166,7 @@ export function ExpandableContent({
           className="expand-button button--reset"
           css={expandButtonCSS}
           onClick={() => setExpanded(true)}
-          aria-label="Show more"
+          aria-label="展示更多"
           aria-expanded={false}
         >
           <span>expand</span>
@@ -178,7 +178,7 @@ export function ExpandableContent({
           className="expand-button button--reset"
           css={[expandButtonCSS, collapseButtonCSS]}
           onClick={() => setExpanded(false)}
-          aria-label="Show less"
+          aria-label="收起"
           aria-expanded={true}
         >
           <span>collapse</span>

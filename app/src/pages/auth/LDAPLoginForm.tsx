@@ -105,7 +105,7 @@ export function LDAPLoginForm(props: LDAPLoginFormProps) {
                     }
                   }}
                 >
-                  <Label>LDAP Username</Label>
+                  <Label>LDAP 用户名</Label>
                   <Input placeholder="your LDAP username" />
                 </TextField>
               )}
@@ -122,7 +122,7 @@ export function LDAPLoginForm(props: LDAPLoginFormProps) {
                   value={value}
                   autoComplete="current-password"
                 >
-                  <Label>LDAP Password</Label>
+                  <Label>LDAP 密码</Label>
                   <Input placeholder="your password" />
                 </TextField>
               )}

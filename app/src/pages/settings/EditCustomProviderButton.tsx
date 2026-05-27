@@ -231,7 +231,7 @@ function EditCustomProviderDialogContent({
   }, [shouldShowConfirmation, onClose]);
 
   if (!providerData) {
-    return <Alert variant="danger">Provider not found</Alert>;
+    return <Alert variant="danger">未找到提供商</Alert>;
   }
 
   // Check if config has a parse error (corrupted/invalid config)
@@ -316,7 +316,7 @@ export function EditCustomProviderButton({
       <Button
         variant="default"
         leadingVisual={<Icon svg={<Icons.EditOutline />} />}
-        aria-label="Edit provider"
+        aria-label="编辑提供商"
         onPress={handleOpen}
         size="S"
       />

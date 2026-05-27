@@ -60,7 +60,7 @@ export const MenuTrigger = AriaMenuTrigger;
  * @see https://react-spectrum.adobe.com/react-aria/Menu.html
  * @example
  * <MenuTrigger>
- *   <Button>Open Menu</Button>
+ *   <Button>打开菜单</Button>
  *   <MenuContainer>
  *     <Menu>
  *       <MenuItem>Item 1</MenuItem>
@@ -245,7 +245,7 @@ const menuContainerCss = css`
  * @see https://react-spectrum.adobe.com/react-aria/MenuContainer.html
  * @example
  * <MenuTrigger>
- *   <Button>Open Menu</Button>
+ *   <Button>打开菜单</Button>
  *   <MenuContainer>
  *     <Menu>
  *       <MenuItem>Item 1</MenuItem>
@@ -319,10 +319,10 @@ export const MenuSectionTitle = ({
  * @see https://react-spectrum.adobe.com/react-aria/MenuHeader.html
  * @example
  * <MenuTrigger>
- *   <Button>Open Menu</Button>
+ *   <Button>打开菜单</Button>
  *   <MenuContainer>
  *     <MenuHeader>
- *       <MenuHeaderTitle>Menu Header</MenuHeaderTitle>
+ *       <MenuHeaderTitle>菜单头</MenuHeaderTitle>
  *     </MenuHeader>
  *     <Menu>
  *       <MenuItem>Item 1</MenuItem>
@@ -419,7 +419,7 @@ export const MenuHeaderTitle = ({
  * @see https://react-spectrum.adobe.com/react-aria/MenuFooter.html
  * @example
  * <MenuTrigger>
- *   <Button>Open Menu</Button>
+ *   <Button>打开菜单</Button>
  *   <MenuContainer>
  *     <Menu>
  *       <MenuItem>Item 1</MenuItem>
@@ -427,7 +427,7 @@ export const MenuHeaderTitle = ({
  *       <MenuItem>Item 3</MenuItem>
  *     </Menu>
  *     <MenuFooter>
- *       <Button>Clear</Button>
+ *       <Button>清空</Button>
  *     </MenuFooter>
  *   </MenuContainer>
  * </MenuTrigger>
@@ -453,7 +453,7 @@ export const MenuFooter = ({ children }: PropsWithChildren) => {
  * A component to render a consistent empty state message inside a Menu.
  * Use this with the `renderEmptyState` prop on Menu or ListBox components.
  * @example
- * <Menu renderEmptyState={() => <MenuEmpty>No items found</MenuEmpty>}>
+ * <Menu renderEmptyState={() => <MenuEmpty>未找到项目</MenuEmpty>}>
  *   ...
  * </Menu>
  */
@@ -476,7 +476,7 @@ export const MenuEmpty = ({ children }: PropsWithChildren) => {
  *   <Button>{
  *     selectedItems.length > 0
  *     ? selectedItems.join(", ")
- *     : <MenuTriggerPlaceholder>Select items</MenuTriggerPlaceholder>
+ *     : <MenuTriggerPlaceholder>选择项目</MenuTriggerPlaceholder>
  *   }</Button>
  * </MenuTrigger>
  */

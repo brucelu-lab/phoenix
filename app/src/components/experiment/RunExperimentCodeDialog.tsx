@@ -139,14 +139,14 @@ function RunExperimentPythonExample({
   return (
     <View overflow="auto">
       <View paddingBottom="size-100">
-        <Text>Install the Phoenix Client</Text>
+        <Text>安装 Phoenix 客户端</Text>
       </View>
       <PackageManagerCommandBlock
         language="Python"
         packages={["arize-phoenix-client"]}
       />
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Point to a running instance of Phoenix</Text>
+        <Text>指向运行中的 Phoenix 实例</Text>
       </View>
       <CodeWrap>
         <PythonBlockWithCopy value={getSetBaseUrlPython({ isAuthEnabled })} />
@@ -157,37 +157,37 @@ function RunExperimentPythonExample({
             fallback={
               <Text>
                 Your personal API keys can be created and managed on your{" "}
-                <ExternalLink href="/profile">Profile</ExternalLink>
+                <ExternalLink href="/profile">个人资料</ExternalLink>
               </Text>
             }
           >
             <Text>
               System API keys can be created and managed in{" "}
-              <ExternalLink href="/settings/general">Settings</ExternalLink>
+              <ExternalLink href="/settings/general">设置</ExternalLink>
             </Text>
           </IsAdmin>
         </View>
       </IsAuthenticated>
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Pull down this dataset</Text>
+        <Text>下拉该数据集</Text>
       </View>
       <CodeWrap>
         <PythonBlockWithCopy value={getDatasetPythonCode()} />
       </CodeWrap>
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Define your task</Text>
+        <Text>定义你的任务</Text>
       </View>
       <CodeWrap>
         <PythonBlockWithCopy value={TASK_PYTHON} />
       </CodeWrap>
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Define evaluators</Text>
+        <Text>定义评测器</Text>
       </View>
       <CodeWrap>
         <PythonBlockWithCopy value={EVALUATOR_PYTHON} />
       </CodeWrap>
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Run an experiment</Text>
+        <Text>运行实验</Text>
       </View>
       <CodeWrap>
         <PythonBlockWithCopy value={RUN_EXPERIMENT_PYTHON} />
@@ -202,14 +202,14 @@ function RunExperimentTypeScriptExample({
   return (
     <View overflow="auto">
       <View paddingBottom="size-100">
-        <Text>Install Phoenix Client</Text>
+        <Text>安装 Phoenix 客户端</Text>
       </View>
       <PackageManagerCommandBlock
         language="TypeScript"
         packages={["@arizeai/phoenix-client"]}
       />
       <View paddingTop="size-100" paddingBottom="size-100">
-        <Text>Run an experiment</Text>
+        <Text>运行实验</Text>
       </View>
       <CodeWrap>
         <TypeScriptBlockWithCopy
@@ -250,7 +250,7 @@ export function RunExperimentCodeDialogContent({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Run Experiment</DialogTitle>
+          <DialogTitle>运行实验</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>

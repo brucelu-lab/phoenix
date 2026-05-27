@@ -111,7 +111,7 @@ export function SecretMutationForm({
                     onBlur={onBlur}
                     value={value}
                   >
-                    <Label>Key</Label>
+                    <Label>键</Label>
                     <Input
                       ref={keyInputRef}
                       placeholder="e.g. OPENAI_API_KEY"
@@ -145,9 +145,9 @@ export function SecretMutationForm({
               fieldState: { error },
             }) => (
               <RedactedCredentialField
-                label="Value"
-                placeholder="Enter a secret value"
-                description="This value is write-only and will not be shown again after it is saved."
+                label="值"
+                placeholder="输入密钥值"
+                description="该值只写一次，保存后将不再显示。"
                 name={name}
                 value={value}
                 onChange={onChange}

@@ -222,7 +222,7 @@ function MessageEditor({
         paddingBottom="size-200"
       >
         <div css={fieldBaseCSS}>
-          <Label>Tool Calls</Label>
+          <Label>工具调用</Label>
           <CodeWrap style={{ width: "100%" }}>
             <ChatMessageToolCallsEditor
               playgroundInstanceId={playgroundInstanceId}
@@ -250,10 +250,10 @@ function MessageEditor({
           <TextField
             value={message.toolCallId}
             onChange={(val) => updateMessage({ toolCallId: val })}
-            aria-label="Tool Call ID"
+            aria-label="工具调用 ID"
             size="S"
           >
-            <Input placeholder="Tool Call ID" />
+            <Input placeholder="工具调用 ID" />
           </TextField>
         </View>
         <JSONEditor
@@ -269,19 +269,19 @@ function MessageEditor({
   return (
     <TemplateEditorWrap>
       {showValidation && sectionValidation?.errors.length ? (
-        <Alert variant="danger" banner title="Invalid mustache sections">
+        <Alert variant="danger" banner title="无效的 Mustache 段">
           {sectionValidation.errors.join(", ")}
         </Alert>
       ) : null}
       {showValidation && sectionValidation?.warnings.length ? (
-        <Alert variant="warning" banner title="Unclosed mustache sections">
+        <Alert variant="warning" banner title="未闭合的 Mustache 段">
           {sectionValidation.warnings.join(", ")}
         </Alert>
       ) : null}
       <TemplateEditor
         height="100%"
         defaultValue={message.content || ""}
-        aria-label="Message content"
+        aria-label="消息内容"
         templateFormat={templateFormat}
         onChange={onChange}
         onBlur={onBlur}
@@ -464,7 +464,7 @@ function SortableMessageItem({
               }
             />
             <Button
-              aria-label="Delete message"
+              aria-label="删除消息"
               leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
               size="S"
               onPress={() => {

@@ -49,7 +49,7 @@ function NotFoundContent() {
   return (
     <>
       <Flex direction="column" width="100%" alignItems="center">
-        <h1>Server disconnected</h1>
+        <h1>服务器已断开</h1>
       </Flex>
       <p>
         We are unable to reach the Phoenix server. Please ensure that Phoenix is
@@ -63,7 +63,7 @@ function ConnectionTimeoutContent() {
   return (
     <>
       <Flex direction="column" width="100%" alignItems="center">
-        <h1>Connection timed out</h1>
+        <h1>连接超时</h1>
       </Flex>
       <p>
         The connection to the Phoenix server timed out before a response was
@@ -77,9 +77,9 @@ function ConnectionTimeoutContent() {
           padding-left: var(--global-dimension-static-size-300);
         `}
       >
-        <li>Increase your load balancer or proxy timeout settings</li>
-        <li>Check if the Phoenix server is overloaded or slow to respond</li>
-        <li>Verify network connectivity between components</li>
+        <li>增加负载均衡器或代理超时设置</li>
+        <li>检查 Phoenix 服务器是否过载或响应缓慢</li>
+        <li>验证组件间网络连通性</li>
       </ul>
       <div
         css={css`
@@ -108,7 +108,7 @@ function ErrorContent({ error }: { error: unknown }) {
   return (
     <>
       <Flex direction="column" width="100%" alignItems="center">
-        <h1>Something went wrong</h1>
+        <h1>出错了</h1>
       </Flex>
       <p>
         We strive to do our very best but 🐛 bugs happen. It would mean a lot to

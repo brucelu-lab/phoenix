@@ -15,7 +15,7 @@ export function ForgotPasswordPage() {
       justifyContent="center"
       gap="size-100"
     >
-      <Heading level={1}>Check your email</Heading>
+      <Heading level={1}>请检查邮箱</Heading>
       <p>
         {`Thanks! If an account with that email address exists, we sent you a link to reset your password.`}
       </p>
@@ -28,7 +28,7 @@ export function ForgotPasswordPage() {
         justifyContent="center"
         gap="size-100"
       >
-        <Heading level={1}>Forgot Password</Heading>
+        <Heading level={1}>忘记密码</Heading>
         <p>
           {`Enter the email address associated with your account and we'll send you
         a link to reset your password.`}
@@ -57,7 +57,7 @@ export function ForgotPasswordPage() {
           justifyContent="center"
           gap="size-200"
         >
-          <Link to="/login">Back to Login</Link>
+          <Link to="/login">返回登录</Link>
         </Flex>
       </div>
     </AuthLayout>

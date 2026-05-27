@@ -78,7 +78,7 @@ export function ReplaceSecretButton({
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Replace Secret</DialogTitle>
+                <DialogTitle>替换密钥</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>
@@ -94,7 +94,7 @@ export function ReplaceSecretButton({
                 </Alert>
               )}
               <SecretMutationForm
-                title="Enter a new value to replace the stored secret."
+                title="输入新值以替换已存储的密钥。"
                 fixedKey={secretKey}
                 defaultKey={secretKey}
                 submitLabel={isCommitting ? "Saving..." : "Save Secret"}

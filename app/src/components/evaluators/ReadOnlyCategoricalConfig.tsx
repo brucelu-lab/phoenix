@@ -53,15 +53,15 @@ export const ReadOnlyCategoricalConfig = ({
       <Flex direction="column" gap="size-200">
         <Flex alignItems="center" justifyContent="space-between" gap="size-200">
           <TextField isDisabled value={name}>
-            <Label>Name</Label>
+            <Label>名称</Label>
             <Input placeholder="e.g. correctness" />
           </TextField>
           <OptimizationDirectionField isReadOnly={isReadOnly} />
         </Flex>
         <Flex direction="column" gap="size-100">
           <GridRow>
-            <Text>Choice</Text>
-            <Text>Score</Text>
+            <Text>选项</Text>
+            <Text>评分</Text>
           </GridRow>
           {values.map((value, index) => (
             <GridRow key={index}>

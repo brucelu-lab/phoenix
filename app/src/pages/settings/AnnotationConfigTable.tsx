@@ -296,7 +296,7 @@ export const AnnotationConfigTable = ({
           ))}
         </thead>
         {isEmpty ? (
-          <TableEmpty message="No Annotation Configs" />
+          <TableEmpty message="无标注配置" />
         ) : (
           <tbody>
             {rows.map((row) => (

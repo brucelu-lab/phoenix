@@ -67,7 +67,7 @@ export function AgentConsentGate() {
             ? "Review how your PXI session traces are saved and shared before you continue."
             : "Review how your PXI session traces are saved before you continue."}
         </li>
-        <li>You can change these settings later from Agent Settings.</li>
+        <li>你可以稍后在智能体设置中修改这些选项。</li>
       </ul>
       <div css={consentSectionCSS}>
         <Text elementType="h4" size="M" weight="heavy">

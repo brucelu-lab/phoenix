@@ -215,7 +215,7 @@ export const UpsertPromptFromTemplateDialog = ({
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Create Prompt from Template</DialogTitle>
+            <DialogTitle>从模板创建提示词</DialogTitle>
             <DialogTitleExtra>
               <DialogCloseButton />
             </DialogTitleExtra>

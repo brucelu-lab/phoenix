@@ -37,7 +37,7 @@ export function ExperimentCompareDetailsDialog({
   openTraceDialog: (traceId: string, projectId: string, title: string) => void;
 }) {
   return (
-    <Dialog aria-label="Example Details">
+    <Dialog aria-label="样本详情">
       <DialogContent>
         <DialogHeader>
           <Flex gap="size-150">
@@ -46,7 +46,7 @@ export function ExperimentCompareDetailsDialog({
               exampleIds={exampleIds}
               onExampleChange={onExampleChange}
             />
-            <TitleWithID title="Example" id={selectedExampleId} />
+            <TitleWithID title="样本" id={selectedExampleId} />
           </Flex>
           <DialogTitleExtra>
             <LinkButton

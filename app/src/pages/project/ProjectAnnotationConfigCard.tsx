@@ -48,7 +48,7 @@ export const ProjectAnnotationConfigCard = (
   props: ProjectAnnotationConfigCardProps
 ) => {
   return (
-    <Card title="Project Annotations">
+    <Card title="项目标注">
       <Alert variant="info" banner>
         Annotation Configs are configured globally and can be associated with
         multiple projects. Select the annotation configs you want to use for
@@ -64,7 +64,7 @@ export const ProjectAnnotationConfigCard = (
         borderColor="default"
       >
         <Flex direction="row" justifyContent="end">
-          <Link to="/settings/annotations">Configure Annotation Configs</Link>
+          <Link to="/settings/annotations">配置标注规则</Link>
         </Flex>
       </View>
     </Card>
@@ -340,7 +340,7 @@ const ProjectAnnotationConfigCardContent = (
   if (allAnnotationConfigs.edges.length === 0) {
     return (
       <View paddingY="size-400">
-        <Empty message="No annotation configurations available." />
+        <Empty message="无可用标注配置。" />
       </View>
     );
   }

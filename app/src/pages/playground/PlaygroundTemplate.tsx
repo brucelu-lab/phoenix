@@ -181,7 +181,7 @@ function DeleteButton(props: PlaygroundInstanceProps) {
     <TooltipTrigger>
       <Button
         size="S"
-        aria-label="Delete this instance of the playground"
+        aria-label="删除该实验台实例"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
         onPress={() => {
           deleteInstance(props.playgroundInstanceId);
@@ -213,7 +213,7 @@ function SaveButton({ instanceId, dirty }: SaveButtonProps) {
         variant={dirty ? "primary" : undefined}
         size="S"
         leadingVisual={<Icon svg={<Icons.SaveOutline />} />}
-        aria-label="Save prompt"
+        aria-label="保存提示词"
       >
         Prompt
       </Button>

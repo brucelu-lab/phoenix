@@ -29,7 +29,7 @@ export function ProjectFilterConfigButton() {
     <DialogTrigger>
       <Button
         size="M"
-        aria-label="Filter Configuration"
+        aria-label="筛选配置"
         leadingVisual={<Icon svg={<Icons.OptionsOutline />} />}
       />
       <Popover>

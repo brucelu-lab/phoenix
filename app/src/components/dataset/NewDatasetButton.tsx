@@ -36,7 +36,7 @@ export function NewDatasetButton({
         variant="primary"
         size="M"
         leadingVisual={<Icon svg={<Icons.PlusCircleOutline />} />}
-        aria-label="Create a new dataset"
+        aria-label="新建数据集"
         onPress={() => {
           setError(null);
           setIsOpen(true);
@@ -48,7 +48,7 @@ export function NewDatasetButton({
           border: none;
         `}
       >
-        <Card title="Create New Dataset" borderColor="default">
+        <Card title="新建数据集" borderColor="default">
           <View width="500px">
             {error ? <Alert variant="danger">{error}</Alert> : null}
             <CreateDatasetForm

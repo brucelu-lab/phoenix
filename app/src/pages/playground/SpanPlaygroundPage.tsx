@@ -66,7 +66,7 @@ function SpanPlaygroundBanners({
       {showBackBanner && (
         <Alert
           variant="info"
-          title="LLM Span Replay"
+          title="LLM 跨度回放"
           banner
           dismissable
           onDismissClick={() => {

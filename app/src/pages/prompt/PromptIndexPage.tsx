@@ -68,7 +68,7 @@ export function PromptIndexPageContent({
             maxWidth={900}
           >
             <PromptChatMessagesCard
-              title="Prompt Template"
+              title="提示词模板"
               promptVersion={latestVersion}
             />
             <PromptModelConfigurationCard promptVersion={latestVersion} />
@@ -118,7 +118,7 @@ function PromptIndexPageAside({
           justifyContent="space-between"
           alignItems="center"
         >
-          <Heading level={3}>Description</Heading>
+          <Heading level={3}>描述</Heading>
           <EditPromptButton prompt={data} />
         </Flex>
         {/* TODO: Add a markdown view here */}
@@ -131,7 +131,7 @@ function PromptIndexPageAside({
             justifyContent="space-between"
             alignItems="center"
           >
-            <Heading level={3}>Labels</Heading>
+            <Heading level={3}>标签</Heading>
             <PromptLabelConfigButton promptId={data.id} />
           </Flex>
           <PromptLabels prompt={data} />
@@ -142,7 +142,7 @@ function PromptIndexPageAside({
             justifyContent="space-between"
             alignItems="center"
           >
-            <Heading level={3}>Metadata</Heading>
+            <Heading level={3}>元数据</Heading>
             <EditPromptButton prompt={data} />
           </Flex>
           <JSONBlock
@@ -152,7 +152,7 @@ function PromptIndexPageAside({
           />
         </section>
         <section>
-          <Heading level={3}>Latest Versions</Heading>
+          <Heading level={3}>最新版本</Heading>
           <PromptLatestVersionsList prompt={data} />
         </section>
       </View>

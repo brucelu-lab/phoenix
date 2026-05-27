@@ -77,7 +77,7 @@ export const EditLLMEvaluatorDialogContent = ({
         {showValidationError && (
           <Alert
             variant="danger"
-            title="Please fix the highlighted errors before submitting."
+            title="请修正高亮错误后再提交。"
           />
         )}
         {error && (

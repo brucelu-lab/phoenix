@@ -69,7 +69,7 @@ export interface MessageActionsProps
  *
  * @example
  * ```tsx
- * tooltip="Copy to clipboard"
+ * tooltip="复制到剪贴板"
  * tooltip={{ content: "Regenerate", position: "bottom" }}
  * ```
  */

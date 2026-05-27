@@ -183,7 +183,7 @@ function OpenAIFields({
   isSubmitting: boolean;
 }) {
   return (
-    <ProviderSection title="OpenAI Configuration">
+    <ProviderSection title="OpenAI 配置">
       <Controller
         name="openai_api_type"
         control={control}
@@ -198,7 +198,7 @@ function OpenAIFields({
             }}
             isDisabled={isSubmitting}
           >
-            <Label>API Type</Label>
+            <Label>API 类型</Label>
             <Button>
               <SelectValue />
               <SelectChevronUpDownIcon />
@@ -224,7 +224,7 @@ function OpenAIFields({
           fieldState: { error },
         }) => (
           <RedactedCredentialField
-            label="API Key"
+            label="API 密钥"
             placeholder="sk-..."
             isRequired
             isDisabled={isSubmitting}
@@ -241,7 +241,7 @@ function OpenAIFields({
         control={control}
         render={({ field, fieldState: { invalid, error } }) => (
           <TextField isInvalid={invalid} {...field} isDisabled={isSubmitting}>
-            <Label>Base URL</Label>
+            <Label>基础 URL</Label>
             <Input placeholder="https://api.openai.com/v1" />
             {error ? (
               <FieldError>{error.message}</FieldError>
@@ -264,7 +264,7 @@ function OpenAIFields({
               isDisabled={isSubmitting}
               css={flexFieldCSS}
             >
-              <Label>Organization</Label>
+              <Label>组织</Label>
               <Input />
               {error && <FieldError>{error.message}</FieldError>}
             </TextField>
@@ -280,7 +280,7 @@ function OpenAIFields({
               isDisabled={isSubmitting}
               css={flexFieldCSS}
             >
-              <Label>Project</Label>
+              <Label>项目</Label>
               <Input />
               {error && <FieldError>{error.message}</FieldError>}
             </TextField>
@@ -325,7 +325,7 @@ function AzureOpenAIFields({
     useWatch({ control, name: "azure_auth_method" }) || "api_key";
 
   return (
-    <ProviderSection title="Azure OpenAI Configuration">
+    <ProviderSection title="Azure OpenAI 配置">
       <Controller
         name="openai_api_type"
         control={control}
@@ -340,7 +340,7 @@ function AzureOpenAIFields({
             }}
             isDisabled={isSubmitting}
           >
-            <Label>API Type</Label>
+            <Label>API 类型</Label>
             <Button>
               <SelectValue />
               <SelectChevronUpDownIcon />
@@ -368,7 +368,7 @@ function AzureOpenAIFields({
             {...field}
             isDisabled={isSubmitting}
           >
-            <Label>Endpoint</Label>
+            <Label>端点</Label>
             <Input placeholder="https://your-resource.openai.azure.com/" />
             {error && <FieldError>{error.message}</FieldError>}
           </TextField>
@@ -390,7 +390,7 @@ function AzureOpenAIFields({
             isDisabled={isSubmitting}
             isRequired
           >
-            <Label>Authentication Method</Label>
+            <Label>认证方式</Label>
             <Button>
               <SelectValue />
               <SelectChevronUpDownIcon />
@@ -424,7 +424,7 @@ function AzureOpenAIFields({
             fieldState: { error },
           }) => (
             <RedactedCredentialField
-              label="API Key"
+              label="API 密钥"
               isRequired
               isDisabled={isSubmitting}
               name={name}
@@ -501,7 +501,7 @@ function AzureOpenAIFields({
                 {...field}
                 isDisabled={isSubmitting}
               >
-                <Label>Scope</Label>
+                <Label>范围</Label>
                 <Input placeholder="https://cognitiveservices.azure.com/.default" />
                 {error ? (
                   <FieldError>{error.message}</FieldError>
@@ -550,7 +550,7 @@ function AnthropicFields({
   isSubmitting: boolean;
 }) {
   return (
-    <ProviderSection title="Anthropic Configuration">
+    <ProviderSection title="Anthropic 配置">
       <Controller
         name="anthropic_api_key"
         control={control}
@@ -560,7 +560,7 @@ function AnthropicFields({
           fieldState: { error },
         }) => (
           <RedactedCredentialField
-            label="API Key"
+            label="API 密钥"
             placeholder="sk-ant-..."
             isRequired
             isDisabled={isSubmitting}
@@ -577,7 +577,7 @@ function AnthropicFields({
         control={control}
         render={({ field, fieldState: { invalid, error } }) => (
           <TextField isInvalid={invalid} {...field} isDisabled={isSubmitting}>
-            <Label>Base URL</Label>
+            <Label>基础 URL</Label>
             <Input placeholder="https://api.anthropic.com" />
             {error && <FieldError>{error.message}</FieldError>}
           </TextField>
@@ -621,7 +621,7 @@ function AWSFields({
     useWatch({ control, name: "aws_auth_method" }) || DEFAULT_AWS_AUTH_METHOD;
 
   return (
-    <ProviderSection title="AWS Bedrock Configuration">
+    <ProviderSection title="AWS Bedrock 配置">
       <Controller
         name="aws_region"
         control={control}
@@ -633,7 +633,7 @@ function AWSFields({
             {...field}
             isDisabled={isSubmitting}
           >
-            <Label>Region</Label>
+            <Label>区域</Label>
             <Input placeholder="us-east-1" />
             {error && <FieldError>{error.message}</FieldError>}
           </TextField>
@@ -655,7 +655,7 @@ function AWSFields({
             isDisabled={isSubmitting}
             isRequired
           >
-            <Label>Authentication Method</Label>
+            <Label>认证方式</Label>
             <Button>
               <SelectValue />
               <SelectChevronUpDownIcon />
@@ -689,7 +689,7 @@ function AWSFields({
               fieldState: { error },
             }) => (
               <RedactedCredentialField
-                label="Access Key ID"
+                label="访问密钥 ID"
                 isRequired
                 isDisabled={isSubmitting}
                 name={name}
@@ -709,7 +709,7 @@ function AWSFields({
               fieldState: { error },
             }) => (
               <RedactedCredentialField
-                label="Secret Access Key"
+                label="私密访问密钥"
                 isRequired
                 isDisabled={isSubmitting}
                 name={name}
@@ -728,7 +728,7 @@ function AWSFields({
               fieldState: { error },
             }) => (
               <RedactedCredentialField
-                label="Session Token"
+                label="会话 Token"
                 isDisabled={isSubmitting}
                 name={name}
                 value={value}
@@ -745,7 +745,7 @@ function AWSFields({
         control={control}
         render={({ field, fieldState: { invalid, error } }) => (
           <TextField isInvalid={invalid} {...field} isDisabled={isSubmitting}>
-            <Label>Endpoint URL</Label>
+            <Label>端点 URL</Label>
             <Input placeholder="https://vpce-xxx.bedrock-runtime.us-east-1.vpce.amazonaws.com" />
             {error ? (
               <FieldError>{error.message}</FieldError>
@@ -769,7 +769,7 @@ function GoogleFields({
   isSubmitting: boolean;
 }) {
   return (
-    <ProviderSection title="Google GenAI Configuration">
+    <ProviderSection title="Google GenAI 配置">
       <Controller
         name="google_api_key"
         control={control}
@@ -779,7 +779,7 @@ function GoogleFields({
           fieldState: { error },
         }) => (
           <RedactedCredentialField
-            label="API Key"
+            label="API 密钥"
             placeholder="AIza..."
             isRequired
             isDisabled={isSubmitting}
@@ -796,7 +796,7 @@ function GoogleFields({
         control={control}
         render={({ field, fieldState: { invalid, error } }) => (
           <TextField isInvalid={invalid} {...field} isDisabled={isSubmitting}>
-            <Label>Base URL</Label>
+            <Label>基础 URL</Label>
             <Input />
             {error ? (
               <FieldError>{error.message}</FieldError>
@@ -1012,8 +1012,8 @@ export const ProviderForm = ({
               {...field}
               isDisabled={isSubmitting}
             >
-              <Label>Provider Name</Label>
-              <Input placeholder="My Custom Provider" />
+              <Label>提供商名称</Label>
+              <Input placeholder="我的自定义提供商" />
               {error ? (
                 <FieldError>{error.message}</FieldError>
               ) : (
@@ -1030,8 +1030,8 @@ export const ProviderForm = ({
           control={control}
           render={({ field }) => (
             <TextField {...field} isDisabled={isSubmitting}>
-              <Label>Description</Label>
-              <TextArea placeholder="Optional description for this provider" />
+              <Label>描述</Label>
+              <TextArea placeholder="该提供商的可选描述" />
             </TextField>
           )}
         />
@@ -1055,7 +1055,7 @@ export const ProviderForm = ({
                 isDisabled={isSubmitting}
                 css={flexFieldCSS}
               >
-                <Label>Provider String</Label>
+                <Label>提供商字符串</Label>
                 <Input placeholder="e.g., openai, azure, my-custom-provider" />
                 {error && <FieldError>{error.message}</FieldError>}
               </TextField>
@@ -1394,7 +1394,7 @@ function TestConnectionButton({
         padding="size-200"
       >
         <Flex direction="row" gap="size-200" alignItems="center">
-          <Text weight="heavy">Test Credentials</Text>
+          <Text weight="heavy">测试凭据</Text>
           <Button
             variant="default"
             size="S"
@@ -1409,9 +1409,9 @@ function TestConnectionButton({
                 <ProgressCircle
                   isIndeterminate
                   size="S"
-                  aria-label="Testing credentials"
+                  aria-label="测试凭据中"
                 />
-                <span>Testing</span>
+                <span>测试中</span>
               </Flex>
             ) : (
               "Test"

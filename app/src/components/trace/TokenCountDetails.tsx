@@ -123,16 +123,16 @@ export function TokenCountDetails({
         <TokenCountRow label={label} count={total} isTotal={true} />
       )}
 
-      {prompt != null && <TokenCountRow label="Prompt" count={prompt} />}
+      {prompt != null && <TokenCountRow label="提示词" count={prompt} />}
 
       {completion != null && (
-        <TokenCountRow label="Completion" count={completion} />
+        <TokenCountRow label="补全" count={completion} />
       )}
 
       {/* Prompt details sub-section */}
       {hasPromptDetails && (
         <>
-          <SectionHeader>Prompt Details</SectionHeader>
+          <SectionHeader>提示词详情</SectionHeader>
           {promptDetails &&
             Object.entries(promptDetails).map(([key, value]) => {
               if (value != null && value > 0) {
@@ -153,7 +153,7 @@ export function TokenCountDetails({
       {/* Completion details sub-section */}
       {hasCompletionDetails && (
         <>
-          <SectionHeader>Completion Details</SectionHeader>
+          <SectionHeader>补全详情</SectionHeader>
           {completionDetails &&
             Object.entries(completionDetails).map(([key, value]) => {
               if (value != null && value > 0) {

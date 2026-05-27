@@ -10,9 +10,9 @@ import {
   EDIT_PROMPT_TOOL_NAME,
 } from "@phoenix/agent/tools/playgroundPrompt";
 
-export const USER_INTERRUPT_ERROR = "The user has interrupted this tool call.";
+export const USER_INTERRUPT_ERROR = "用户已中断本次工具调用。";
 export const SYSTEM_INTERRUPT_ERROR =
-  "This tool call has been interrupted by unexpected system conditions.";
+  "本次工具调用因系统异常已被中断。";
 
 /**
  * Gate AI SDK's automatic tool-result continuation.

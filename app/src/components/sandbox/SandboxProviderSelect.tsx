@@ -136,7 +136,7 @@ export function SandboxProviderSelect({
       selectedKey={selectedKey}
       isDisabled={isDisabled}
       isInvalid={isInvalid}
-      placeholder="Select a sandbox provider"
+      placeholder="选择沙箱提供商"
       onSelectionChange={(key) => {
         if (typeof key === "string") {
           onChange?.(key);
@@ -144,7 +144,7 @@ export function SandboxProviderSelect({
       }}
       onBlur={onBlur}
     >
-      <Label>Sandbox Provider</Label>
+      <Label>沙箱提供商</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />
@@ -175,7 +175,7 @@ export function SandboxProviderSelect({
 export function SandboxProviderSelectFallback() {
   return (
     <Select size="M" isDisabled placeholder="Loading…">
-      <Label>Sandbox Provider</Label>
+      <Label>沙箱提供商</Label>
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />

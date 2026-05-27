@@ -57,8 +57,8 @@ export function CustomHeadersModelConfigFormField({
 
   return (
     <JSONObjectModelConfigFormField
-      label="Custom Headers"
-      description="Custom HTTP headers to send with requests to the LLM provider"
+      label="自定义请求头"
+      description="向 LLM 提供商请求时附带的自定义 HTTP 请求头"
       placeholder={`{"X-Custom-Header": "custom-value"}`}
       jsonSchema={HEADERS_SCHEMA}
       value={instance.model.customHeaders ?? undefined}

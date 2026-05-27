@@ -39,7 +39,7 @@ export function LoggedOutPage() {
       </View>
       {showBacktoLogin && (
         <View paddingY="size-100">
-          <LinkButton to="/login">Back to login</LinkButton>
+          <LinkButton to="/login">返回登录</LinkButton>
         </View>
       )}
       {hasOAuth2Idps && (

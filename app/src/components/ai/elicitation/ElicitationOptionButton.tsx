@@ -85,7 +85,7 @@ export function ElicitationOptionButton({
               if (!selected) onToggle();
               onTextChange?.(e.target.value);
             }}
-            aria-label="Type your own answer"
+            aria-label="输入你自己的答案"
           />
         </div>
       ) : (

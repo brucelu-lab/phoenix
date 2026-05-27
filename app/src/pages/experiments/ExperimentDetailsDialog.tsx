@@ -493,13 +493,13 @@ function ExperimentDetailsDialogContent({
     return (
       <>
         <DialogHeader>
-          <Heading level={2}>Experiment Not Found</Heading>
+          <Heading level={2}>未找到实验</Heading>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>
         </DialogHeader>
         <View padding="size-200">
-          <Text>The experiment could not be found.</Text>
+          <Text>未找到该实验。</Text>
         </View>
       </>
     );
@@ -558,16 +558,16 @@ function ExperimentDetailsDialogContent({
                   </View>
                 )}
                 {experiment.createdAt && (
-                  <DetailRow label="Created">
+                  <DetailRow label="已创建">
                     {fullTimeFormatter(new Date(experiment.createdAt))}
                   </DetailRow>
                 )}
                 {experiment.updatedAt && (
-                  <DetailRow label="Updated">
+                  <DetailRow label="已更新">
                     {fullTimeFormatter(new Date(experiment.updatedAt))}
                   </DetailRow>
                 )}
-                <DetailRow label="User">
+                <DetailRow label="用户">
                   <Flex direction="row" gap="size-50" alignItems="center">
                     <UserPicture
                       name={experiment.user?.username}
@@ -577,30 +577,30 @@ function ExperimentDetailsDialogContent({
                     {experiment.user?.username ?? "system"}
                   </Flex>
                 </DetailRow>
-                <DetailRow label="Runs">
+                <DetailRow label="运行">
                   {intFormatter(experiment.runCount)} /{" "}
                   {intFormatter(experiment.expectedRunCount)}
                 </DetailRow>
-                <DetailRow label="Repetitions">
+                <DetailRow label="重复次数">
                   {intFormatter(experiment.repetitions)}
                 </DetailRow>
                 {experiment.errorRate != null && (
-                  <DetailRow label="Error Rate">
+                  <DetailRow label="错误率">
                     {formatPercent(experiment.errorRate * 100)}
                   </DetailRow>
                 )}
                 {experiment.averageRunLatencyMs != null && (
-                  <DetailRow label="Avg Latency">
+                  <DetailRow label="平均延迟">
                     <LatencyText latencyMs={experiment.averageRunLatencyMs} />
                   </DetailRow>
                 )}
                 {experiment.costSummary?.total?.cost != null && (
-                  <DetailRow label="Total Cost">
+                  <DetailRow label="总成本">
                     {formatCost(experiment.costSummary.total.cost)}
                   </DetailRow>
                 )}
                 {experiment.costSummary?.total?.tokens != null && (
-                  <DetailRow label="Total Tokens">
+                  <DetailRow label="总 Token 数">
                     {intFormatter(experiment.costSummary.total.tokens)}
                   </DetailRow>
                 )}
@@ -628,28 +628,28 @@ function ExperimentDetailsDialogContent({
               </DisclosureTrigger>
               <DisclosurePanel>
                 <View padding="size-200">
-                  <DetailRow label="Model Provider">
+                  <DetailRow label="模型提供商">
                     {taskConfig.prompt.modelProvider}
                   </DetailRow>
-                  <DetailRow label="Model Name">
+                  <DetailRow label="模型名称">
                     {taskConfig.prompt.modelName}
                   </DetailRow>
-                  <DetailRow label="Template Type">
+                  <DetailRow label="模板类型">
                     {taskConfig.prompt.templateType}
                   </DetailRow>
-                  <DetailRow label="Template Format">
+                  <DetailRow label="模板格式">
                     {taskConfig.prompt.templateFormat}
                   </DetailRow>
-                  <DetailRow label="Stream Output">
+                  <DetailRow label="流式输出">
                     {taskConfig.streamModelOutput ? "Yes" : "No"}
                   </DetailRow>
                   {job?.maxConcurrency != null && (
-                    <DetailRow label="Max Concurrency">
+                    <DetailRow label="最大并发数">
                       {intFormatter(job.maxConcurrency)}
                     </DetailRow>
                   )}
                   {taskConfig.connection?.__typename && (
-                    <DetailRow label="Connection">
+                    <DetailRow label="连接">
                       {taskConfig.connection.__typename.replace(
                         "ConnectionConfig",
                         ""

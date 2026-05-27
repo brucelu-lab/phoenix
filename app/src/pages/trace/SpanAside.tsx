@@ -110,7 +110,7 @@ export function SpanAside(props: SpanAsideProps) {
         resizable
         title={
           <Flex direction={"row"} gap="size-100" alignItems={"center"}>
-            <span>Edit Annotations</span>
+            <span>编辑标注</span>
             <KeyboardToken>{EDIT_ANNOTATION_HOTKEY}</KeyboardToken>
           </Flex>
         }
@@ -131,7 +131,7 @@ export function SpanAside(props: SpanAsideProps) {
         resizable
         title={
           <Flex direction={"row"} gap="size-100" alignItems={"center"}>
-            <span>Notes</span>
+            <span>备注</span>
             <KeyboardToken>{NOTE_HOTKEY}</KeyboardToken>
           </Flex>
         }
@@ -191,7 +191,7 @@ function SpanAsideAnnotationList(props: {
       ref={annotationListPanelRef}
       title={
         <Flex direction={"row"} gap="size-100" alignItems={"center"}>
-          <span>Annotation Summary</span>
+          <span>标注摘要</span>
           <KeyboardToken>{SPAN_ANNOTATION_LIST_HOTKEY}</KeyboardToken>
         </Flex>
       }

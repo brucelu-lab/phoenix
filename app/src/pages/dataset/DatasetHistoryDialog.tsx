@@ -42,7 +42,7 @@ export function DatasetHistoryDialog(props: DatasetHistoryDialogProps) {
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Dataset History</DialogTitle>
+              <DialogTitle>数据集历史</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton slot="close" />
               </DialogTitleExtra>

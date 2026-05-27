@@ -410,7 +410,7 @@ function TableDownloadButton({
 
   return (
     <ActionIconButton
-      label="Download table as CSV"
+      label="以 CSV 下载表格"
       icon={<Icons.DownloadOutline />}
       onPress={onPress}
     />
@@ -421,7 +421,7 @@ function TableFullscreenButton({ children }: PropsWithChildren) {
   return (
     <DialogTrigger>
       <IconButton
-        aria-label="View table fullscreen"
+        aria-label="全屏查看表格"
         color="text-500"
         css={actionButtonCSS}
         size="S"
@@ -433,7 +433,7 @@ function TableFullscreenButton({ children }: PropsWithChildren) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Table</DialogTitle>
+                <DialogTitle>表格</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>

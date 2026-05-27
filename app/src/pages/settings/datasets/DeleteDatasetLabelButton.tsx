@@ -50,7 +50,7 @@ export function DeleteDatasetLabelButton(props: DeleteDatasetLabelButtonProps) {
       <Button
         size="S"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-        aria-label="Delete Dataset Label"
+        aria-label="删除数据集标签"
         isDisabled={isDeleting}
       />
       <ModalOverlay>
@@ -58,7 +58,7 @@ export function DeleteDatasetLabelButton(props: DeleteDatasetLabelButtonProps) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Dataset Label</DialogTitle>
+                <DialogTitle>删除数据集标签</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>

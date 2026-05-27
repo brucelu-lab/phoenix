@@ -379,7 +379,7 @@ export function SpanFilterConditionField(props: SpanFilterConditionFieldProps) {
           {errorMessage !== "" ? (
             <Text color="danger">{errorMessage}</Text>
           ) : (
-            <Text color="success">Valid Expression</Text>
+            <Text color="success">有效表达式</Text>
           )}
         </Tooltip>
       </TooltipTrigger>
@@ -492,7 +492,7 @@ function FilterConditionSnippet(props: {
           />
         </div>
         <Button
-          aria-label="Add to filter condition"
+          aria-label="加入筛选条件"
           variant="default"
           onPress={() => onAddFilterConditionSnippet(snippet)}
           leadingVisual={<Icon svg={<Icons.PlusCircleOutline />} />}

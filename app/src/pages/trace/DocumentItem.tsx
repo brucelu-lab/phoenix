@@ -78,7 +78,7 @@ export function DocumentItem({
                 borderColor={borderColor}
                 borderBottomWidth="thin"
               >
-                <Heading level={4}>Document Metadata</Heading>
+                <Heading level={4}>文档元数据</Heading>
               </View>
               <ReadonlyJSONBlock basicSetup={{ lineNumbers: false }}>
                 {JSON.stringify(metadata)}

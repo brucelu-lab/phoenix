@@ -288,11 +288,11 @@ export const EditCodeEvaluatorDialogContent = ({
         {showValidationError && (
           <Alert
             variant="danger"
-            title="Please fix the highlighted errors before submitting."
+            title="请修正高亮错误后再提交。"
           />
         )}
         {localValidationError && (
-          <Alert variant="danger" title="Invalid code evaluator configuration">
+          <Alert variant="danger" title="代码评测器配置无效">
             {localValidationError}
           </Alert>
         )}
@@ -502,25 +502,25 @@ const SandboxConfigSummary = ({
   }
   return (
     <List size="M">
-      <SandboxConfigRow label="Name" value={selectedSandboxConfig.name} />
+      <SandboxConfigRow label="名称" value={selectedSandboxConfig.name} />
       {selectedSandboxConfig.timeout != null ? (
         <SandboxConfigRow
-          label="Timeout"
+          label="超时"
           value={`${selectedSandboxConfig.timeout} seconds`}
         />
       ) : null}
       <SandboxConfigRow
-        label="Environment variables"
+        label="环境变量"
         value={getSandboxEnvVarsLabel(selectedSandboxConfig.config)}
       />
       <SandboxConfigRow
-        label="Internet access"
+        label="互联网访问"
         value={getSandboxInternetAccessConfigLabel(
           selectedSandboxConfig.config
         )}
       />
       <SandboxConfigRow
-        label="Dependencies"
+        label="依赖"
         value={getSandboxDependenciesConfigLabel(selectedSandboxConfig.config)}
       />
     </List>
@@ -610,7 +610,7 @@ const CodeEditor = ({
   );
 
   const descriptionText =
-    "Define an evaluate function that returns a score or label.";
+    "定义一个返回分数或标签的评测函数。";
 
   return (
     <Flex direction="column" gap="size-100">
@@ -685,7 +685,7 @@ const CodeEditor = ({
               onChange={setShowTypes}
               labelPlacement="start"
             >
-              <Text size="S">Show types</Text>
+              <Text size="S">显示类型</Text>
             </Switch>
           ) : null}
         </Flex>
@@ -858,7 +858,7 @@ const OutputConfigSection = () => {
   return (
     <Flex direction="column" gap="size-200">
       <Flex direction="row" gap="size-200" alignItems="start">
-        <OptimizationDirectionField description="Whether higher or lower scores are better." />
+        <OptimizationDirectionField description="评分越高越好还是越低越好。" />
         <NumberField
           value={threshold ?? undefined}
           onChange={(value) =>

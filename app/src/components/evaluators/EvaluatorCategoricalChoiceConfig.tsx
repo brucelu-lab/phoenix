@@ -116,7 +116,7 @@ export const EvaluatorCategoricalChoiceConfig = () => {
       <Flex direction="column" gap="size-200">
         <Flex alignItems="center" justifyContent="space-between" gap="size-200">
           <TextField isDisabled value={outputConfigName}>
-            <Label>Name</Label>
+            <Label>名称</Label>
             <Input placeholder="e.g. correctness" />
           </TextField>
           <Controller
@@ -126,13 +126,13 @@ export const EvaluatorCategoricalChoiceConfig = () => {
               <Select
                 value={field.value}
                 onChange={field.onChange}
-                aria-label="Optimization direction"
+                aria-label="优化方向"
                 data-testid="optimization-direction-picker"
                 css={css`
                   width: 100%;
                 `}
               >
-                <Label>Optimization direction</Label>
+                <Label>优化方向</Label>
                 <Button>
                   <SelectValue />
                   <SelectChevronUpDownIcon />
@@ -152,8 +152,8 @@ export const EvaluatorCategoricalChoiceConfig = () => {
         </Flex>
         <Flex direction="column" gap="size-100">
           <GridRow>
-            <Text>Choice</Text>
-            <Text>Score</Text>
+            <Text>选项</Text>
+            <Text>评分</Text>
           </GridRow>
           {/* render choices. you must have at least 2 choices, you cannot delete if there are only two remaining */}
           {fields.map((item, index) => (
@@ -215,7 +215,7 @@ export const EvaluatorCategoricalChoiceConfig = () => {
                   <Button
                     type="button"
                     leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-                    aria-label="Remove choice"
+                    aria-label="移除选项"
                     onPress={() => {
                       if (fields.length === 2) {
                         return;
@@ -237,7 +237,7 @@ export const EvaluatorCategoricalChoiceConfig = () => {
               name="includeExplanation"
               render={({ field }) => (
                 <Switch isSelected={field.value} onChange={field.onChange}>
-                  <Text>Include explanation</Text>
+                  <Text>包含说明</Text>
                 </Switch>
               )}
             />
@@ -249,7 +249,7 @@ export const EvaluatorCategoricalChoiceConfig = () => {
                 width: fit-content;
               `}
               leadingVisual={<Icon svg={<Icons.PlusOutline />} />}
-              aria-label="Add choice"
+              aria-label="添加选项"
               onPress={() => {
                 append({ label: "", score: undefined });
               }}

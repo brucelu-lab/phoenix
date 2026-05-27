@@ -110,7 +110,7 @@ export const ProjectRetentionPolicyCard = ({
   };
 
   return (
-    <Card title="Data Retention">
+    <Card title="数据保留">
       {error && <Alert variant="danger">{error}</Alert>}
       <View paddingX="size-200" paddingY="size-100">
         <Flex direction="row" gap="size-400" alignItems="center">
@@ -144,7 +144,7 @@ export const ProjectRetentionPolicyCard = ({
         borderColor="default"
       >
         <Flex direction="row" justifyContent="end">
-          <Link to="/settings/data">Configure Retention Policies</Link>
+          <Link to="/settings/data">配置保留策略</Link>
         </Flex>
       </View>
     </Card>

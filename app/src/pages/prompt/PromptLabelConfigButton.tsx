@@ -59,7 +59,7 @@ export function PromptLabelConfigButton(props: PromptLabelConfigButtonProps) {
           variant="quiet"
           size="S"
           leadingVisual={<Icon svg={<Icons.SettingsOutline />} />}
-          aria-label="Edit prompt labels"
+          aria-label="编辑提示词标签"
         />
         <Popover>
           <PopoverArrow />
@@ -248,9 +248,9 @@ function PromptLabelList({
           >
             Assign labels to this prompt
           </MenuHeaderTitle>
-          <SearchField aria-label="Search labels" variant="quiet" autoFocus>
+          <SearchField aria-label="搜索标签" variant="quiet" autoFocus>
             <SearchIcon />
-            <Input placeholder="Search labels..." />
+            <Input placeholder="搜索标签..." />
           </SearchField>
         </MenuHeader>
         <Menu
@@ -259,7 +259,7 @@ function PromptLabelList({
           selectionMode="multiple"
           selectedKeys={selected}
           onSelectionChange={onSelectionChange}
-          renderEmptyState={() => <MenuEmpty>No labels found</MenuEmpty>}
+          renderEmptyState={() => <MenuEmpty>未找到标签</MenuEmpty>}
         >
           {({ id, name, color }) => (
             <MenuItem

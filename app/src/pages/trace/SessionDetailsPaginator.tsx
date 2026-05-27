@@ -68,7 +68,7 @@ export const SessionDetailsPaginator = ({
             size="S"
             id="next"
             leadingVisual={<Icon svg={<Icons.ArrowDownwardOutline />} />}
-            aria-label="Next session"
+            aria-label="下一会话"
             isDisabled={!hasNext}
             onPress={() => {
               startTransition(() => {
@@ -79,7 +79,7 @@ export const SessionDetailsPaginator = ({
           <Tooltip offset={4}>
             <TooltipArrow />
             <Flex direction="row" gap="size-100" alignItems="center">
-              <span>Next session</span>
+              <span>下一会话</span>
               <KeyboardToken>{NEXT_SESSION_HOTKEY}</KeyboardToken>
             </Flex>
           </Tooltip>
@@ -89,7 +89,7 @@ export const SessionDetailsPaginator = ({
             size="S"
             id="previous"
             leadingVisual={<Icon svg={<Icons.ArrowUpwardOutline />} />}
-            aria-label="Previous session"
+            aria-label="上一会话"
             isDisabled={!hasPrevious}
             onPress={() => {
               startTransition(() => {
@@ -100,7 +100,7 @@ export const SessionDetailsPaginator = ({
           <Tooltip offset={4}>
             <TooltipArrow />
             <Flex direction="row" gap="size-100" alignItems="center">
-              <span>Previous session</span>
+              <span>上一会话</span>
               <KeyboardToken>{PREVIOUS_SESSION_HOTKEY}</KeyboardToken>
             </Flex>
           </Tooltip>

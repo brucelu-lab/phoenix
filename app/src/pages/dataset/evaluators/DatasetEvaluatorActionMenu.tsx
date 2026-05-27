@@ -44,7 +44,7 @@ export function DatasetEvaluatorActionMenu({
         <Button
           size="S"
           variant="quiet"
-          aria-label="Evaluator actions"
+          aria-label="评测器操作"
           leadingVisual={<Icon svg={<Icons.MoreHorizontalOutline />} />}
         />
         <Popover placement="bottom right">
@@ -68,7 +68,7 @@ export function DatasetEvaluatorActionMenu({
                 alignItems="center"
               >
                 <Icon svg={<Icons.Edit2Outline />} />
-                <Text>Edit</Text>
+                <Text>编辑</Text>
               </Flex>
             </MenuItem>
             <MenuItem id={DatasetEvaluatorAction.DELETE}>
@@ -79,7 +79,7 @@ export function DatasetEvaluatorActionMenu({
                 alignItems="center"
               >
                 <Icon svg={<Icons.TrashOutline />} />
-                <Text>Delete</Text>
+                <Text>删除</Text>
               </Flex>
             </MenuItem>
           </Menu>

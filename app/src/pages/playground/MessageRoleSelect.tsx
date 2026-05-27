@@ -46,7 +46,7 @@ export function MessageRoleSelect({
       value={role}
       css={!includeLabel ? hiddenLabelCSS : undefined}
       data-testid="messages-role-picker"
-      aria-label="Role for the chat message"
+      aria-label="聊天消息角色"
       size="S"
       onChange={(e) => {
         if (!isChatMessageRole(e)) {
@@ -55,7 +55,7 @@ export function MessageRoleSelect({
         onChange(e);
       }}
     >
-      {includeLabel && <Label>Role</Label>}
+      {includeLabel && <Label>角色</Label>}
       <Button>
         <SelectValue />
         <SelectChevronUpDownIcon />
@@ -67,10 +67,10 @@ export function MessageRoleSelect({
         containerPadding={8}
       >
         <ListBox>
-          <SelectItem id="system">System</SelectItem>
-          <SelectItem id="user">User</SelectItem>
+          <SelectItem id="system">系统</SelectItem>
+          <SelectItem id="user">用户</SelectItem>
           <SelectItem id="ai">AI</SelectItem>
-          <SelectItem id="tool">Tool</SelectItem>
+          <SelectItem id="tool">工具</SelectItem>
         </ListBox>
       </Popover>
     </Select>

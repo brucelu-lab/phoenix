@@ -18,7 +18,7 @@ export function DatasetDownloadMenu({ datasetId }: { datasetId: string }) {
       />
       <Popover>
         <Menu
-          aria-label="Dataset download"
+          aria-label="下载数据集"
           onAction={(action) => {
             switch (action) {
               case "csv":
@@ -50,10 +50,10 @@ export function DatasetDownloadMenu({ datasetId }: { datasetId: string }) {
             }
           }}
         >
-          <MenuItem id="csv">Download CSV</MenuItem>
-          <MenuItem id="jsonl">Download JSONL</MenuItem>
-          <MenuItem id="openai-ft">Download OpenAI Fine-Tuning JSONL</MenuItem>
-          <MenuItem id="openai-evals">Download OpenAI Evals JSONL</MenuItem>
+          <MenuItem id="csv">下载 CSV</MenuItem>
+          <MenuItem id="jsonl">下载 JSONL</MenuItem>
+          <MenuItem id="openai-ft">下载 OpenAI 微调 JSONL</MenuItem>
+          <MenuItem id="openai-evals">下载 OpenAI Evals JSONL</MenuItem>
         </Menu>
       </Popover>
     </MenuTrigger>

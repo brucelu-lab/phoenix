@@ -101,7 +101,7 @@ export function OAuthUserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Email</Label>
+                  <Label>邮箱</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>
@@ -131,7 +131,7 @@ export function OAuthUserForm({
                   onBlur={onBlur}
                   value={value}
                 >
-                  <Label>Username</Label>
+                  <Label>用户名</Label>
                   <Input />
                   {error ? (
                     <FieldError>{error?.message}</FieldError>

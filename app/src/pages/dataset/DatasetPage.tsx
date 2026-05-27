@@ -219,7 +219,7 @@ function DatasetPageContent({
           <Tab id="evaluators">
             Evaluators <Counter>{dataset.evaluatorCount}</Counter>
           </Tab>
-          <Tab id="versions">Versions</Tab>
+          <Tab id="versions">版本</Tab>
         </TabList>
         <LazyTabPanel id="experiments">
           <Suspense>

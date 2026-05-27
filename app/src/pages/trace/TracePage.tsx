@@ -57,7 +57,7 @@ export function TracePage() {
                 <DialogCloseButton close={close} />
                 <TraceDetailsPaginator currentId={paginationSubjectId} />
                 <DialogTitle>
-                  <TitleWithID title="Trace" id={traceId as string} />
+                  <TitleWithID title="追踪" id={traceId as string} />
                 </DialogTitle>
               </Flex>
               <DialogTitleExtra>

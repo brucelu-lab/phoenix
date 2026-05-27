@@ -66,7 +66,7 @@ export function PlaygroundExperimentSettingsButton({
     <DialogTrigger>
       <Button
         size="S"
-        aria-label="Experiment Settings"
+        aria-label="实验设置"
         leadingVisual={<Icon svg={<Icons.OptionsOutline />} />}
         isDisabled={isDisabled}
       />
@@ -76,8 +76,8 @@ export function PlaygroundExperimentSettingsButton({
           <View padding="size-200">
             <Flex direction="column" gap="size-200">
               <ComboBox
-                label="Template variables path"
-                description="Path prefix for template variables"
+                label="模板变量路径"
+                description="模板变量的路径前缀"
                 size="M"
                 placeholder="the root of the example"
                 selectedKey={templateVariablesPath ?? ""}
@@ -117,8 +117,8 @@ export function PlaygroundExperimentSettingsButton({
                   setAppendedMessagesPath({ path: value || null, datasetId });
                 }}
               >
-                <Label>Appended dataset messages path</Label>
-                <Input placeholder="Disabled" />
+                <Label>追加的数据集消息路径</Label>
+                <Input placeholder="已禁用" />
                 <Text slot="description">
                   Path to messages from the dataset to append to prompts
                 </Text>
@@ -136,7 +136,7 @@ export function PlaygroundExperimentSettingsButton({
                   }
                 }}
               >
-                <Label>Max concurrency</Label>
+                <Label>最大并发数</Label>
                 <Input type="number" />
                 <Text slot="description">
                   Maximum number of tasks/evals that will be run concurrently.

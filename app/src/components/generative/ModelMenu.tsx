@@ -338,7 +338,7 @@ export function ModelMenu({
             <Text>{value.modelName}</Text>
           </Flex>
         ) : (
-          <Text color="text-700">Select a model</Text>
+          <Text color="text-700">选择模型</Text>
         )}
         {variant !== "quiet" && <SelectChevronUpDownIcon />}
       </Button>
@@ -346,7 +346,7 @@ export function ModelMenu({
         <Autocomplete filter={isSearching ? searchFilter : undefined}>
           <MenuHeader>
             <SearchField
-              aria-label="Search models"
+              aria-label="搜索模型"
               variant="quiet"
               size="L"
               autoFocus
@@ -354,7 +354,7 @@ export function ModelMenu({
               onChange={setSearchValue}
             >
               <SearchIcon />
-              <Input placeholder="Search models..." />
+              <Input placeholder="搜索模型..." />
             </SearchField>
           </MenuHeader>
           {isSearching ? (
@@ -542,7 +542,7 @@ function ModelsByProviderMenu({
         </>
       ) : (
         <MenuItem id="no-results" textValue="No results" isDisabled>
-          <Text color="text-700">No models found</Text>
+          <Text color="text-700">未找到模型</Text>
         </MenuItem>
       )}
     </Menu>
@@ -707,14 +707,14 @@ function ProviderModelsSubmenu({
       <Autocomplete filter={customFilter}>
         <MenuHeader>
           <SearchField
-            aria-label="Search models"
+            aria-label="搜索模型"
             variant="quiet"
             autoFocus
             value={searchValue}
             onChange={setSearchValue}
           >
             <SearchIcon />
-            <Input placeholder="Search or enter model name" />
+            <Input placeholder="搜索或输入模型名称" />
           </SearchField>
         </MenuHeader>
         <Menu

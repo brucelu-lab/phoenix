@@ -114,7 +114,7 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
       {({ close }) => (
         <DialogContent>
           <DialogHeader>
-            <TitleWithID title="Edit Example" id={exampleId} />
+            <TitleWithID title="编辑样本" id={exampleId} />
             <DialogTitleExtra>
               <Button
                 variant="primary"
@@ -171,7 +171,7 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Input"
+                        title="输入"
                         subTitle="The input to the LLM, retriever, program, etc."
                         {...defaultCardProps}
                       >
@@ -196,7 +196,7 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Output"
+                        title="输出"
                         subTitle="The output of the LLM or program to be used as an expected output"
                         {...defaultCardProps}
                         backgroundColor="green-200"
@@ -223,7 +223,7 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
                       fieldState: { invalid, error },
                     }) => (
                       <Card
-                        title="Metadata"
+                        title="元数据"
                         subTitle="All data from the span to use during experimentation or evaluation"
                         {...defaultCardProps}
                       >
@@ -253,7 +253,7 @@ export function EditExampleDialog(props: EditExampleDialogProps) {
                         onBlur={onBlur}
                         isInvalid={invalid}
                       >
-                        <Label>Revision Description</Label>
+                        <Label>修订描述</Label>
                         <TextArea />
                         {error ? (
                           <FieldError>{error?.message}</FieldError>

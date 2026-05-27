@@ -33,7 +33,7 @@ export function TemplateFormatRadioGroup({
       <ToggleButtonGroup
         size={size}
         defaultSelectedKeys={[templateFormat]}
-        aria-label="Template Format"
+        aria-label="模板格式"
         onSelectionChange={(v) => {
           if (v.size === 0) {
             return;
@@ -51,7 +51,7 @@ export function TemplateFormatRadioGroup({
           F-String
         </ToggleButton>
         {showNoneOption && (
-          <ToggleButton aria-label="None" id={TemplateFormats.NONE}>
+          <ToggleButton aria-label="无" id={TemplateFormats.NONE}>
             None
           </ToggleButton>
         )}

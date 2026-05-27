@@ -44,11 +44,11 @@ export interface PromptInputContextValue {
  * ```tsx
  * <PromptInput onSubmit={(text) => send(text)} status="ready">
  *   <PromptInputBody>
- *     <PromptInputTextarea placeholder="Ask a question..." />
+ *     <PromptInputTextarea placeholder="提问..." />
  *   </PromptInputBody>
  *   <PromptInputFooter>
  *     <PromptInputTools>
- *       <PromptInputButton tooltip="Attach" aria-label="Attach">
+ *       <PromptInputButton tooltip="附加" aria-label="附加">
  *         <Icon svg={<Icons.PlusOutline />} />
  *       </PromptInputButton>
  *     </PromptInputTools>
@@ -225,7 +225,7 @@ export interface PromptInputSubmitProps {
  *
  * @example
  * ```tsx
- * tooltip="Attach files"
+ * tooltip="附加文件"
  * tooltip={{ content: "Search the web", shortcut: "⌘K" }}
  * tooltip={{ content: "Voice input", shortcut: "⌘M", position: "bottom" }}
  * ```
@@ -251,7 +251,7 @@ export type PromptInputButtonTooltip =
  *
  * @example
  * ```tsx
- * <PromptInputButton tooltip="Attach files" aria-label="Attach files">
+ * <PromptInputButton tooltip="附加文件" aria-label="附加文件">
  *   <Icon svg={<Icons.PlusOutline />} />
  * </PromptInputButton>
  *

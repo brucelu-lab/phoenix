@@ -56,8 +56,8 @@ export function PromptComboBox({
       menuTrigger="focus"
       stopPropagation
       defaultItems={items}
-      placeholder="Select a prompt..."
-      renderEmptyState={() => <div>No prompts found</div>}
+      placeholder="选择提示词..."
+      renderEmptyState={() => <div>未找到提示词</div>}
       onSelectionChange={(key) => {
         if (typeof key !== "string" && key != null) {
           return;

@@ -15,7 +15,7 @@ export function CodeLanguageRadioGroup({
     <ToggleButtonGroup
       size={size}
       selectedKeys={[language]}
-      aria-label="Code Language"
+      aria-label="代码语言"
       onSelectionChange={(v) => {
         if (v.size === 0) {
           return;

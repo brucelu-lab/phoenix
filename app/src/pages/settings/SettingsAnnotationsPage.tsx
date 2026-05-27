@@ -157,7 +157,7 @@ const SettingsAnnotations = ({
 
   return (
     <Card
-      title="Annotation Configs"
+      title="标注配置"
       extra={
         <DialogTrigger>
           <Button size="S">

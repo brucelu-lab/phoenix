@@ -8,7 +8,7 @@ import type { DropOverlayProps } from "./types";
  * @example
  * ```tsx
  * <DropZone onDrop={handleDrop}>
- *   <DropOverlay>Drop file here</DropOverlay>
+ *   <DropOverlay>拖拽文件到此处</DropOverlay>
  *   <Form>...</Form>
  * </DropZone>
  * ```

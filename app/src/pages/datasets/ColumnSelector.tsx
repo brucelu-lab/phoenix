@@ -43,7 +43,7 @@ export function ColumnSelector(props: {
   return (
     <Select
       isDisabled={noColumns || isDisabled}
-      placeholder="Select a column"
+      placeholder="选择列"
       value={selectedColumn ?? NONE_KEY}
       onChange={(key) => {
         onChange(key === NONE_KEY ? null : (key as string));

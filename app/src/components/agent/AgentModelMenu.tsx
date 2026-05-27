@@ -157,13 +157,13 @@ function CustomProviderModelsSubmenu({
       <Autocomplete filter={contains}>
         <MenuHeader>
           <SearchField
-            aria-label="Search models"
+            aria-label="搜索模型"
             variant="quiet"
             size="L"
             autoFocus
           >
             <SearchIcon />
-            <Input placeholder="Search models..." />
+            <Input placeholder="搜索模型..." />
           </SearchField>
         </MenuHeader>
         <Menu items={items}>
@@ -277,7 +277,7 @@ export function AgentModelMenu({
             <Text>{value.modelName}</Text>
           </Flex>
         ) : (
-          <Text color="text-700">Select a model</Text>
+          <Text color="text-700">选择模型</Text>
         )}
         {variant !== "quiet" && <SelectChevronUpDownIcon />}
       </Button>
@@ -303,13 +303,13 @@ export function AgentModelMenu({
               textValue="No curated models"
               isDisabled
             >
-              <Text color="text-700">No curated models available</Text>
+              <Text color="text-700">无精选模型</Text>
             </MenuItem>
           )}
 
           {customProviders.length > 0 && (
             <MenuSection>
-              <MenuSectionTitle title="Custom Providers" />
+              <MenuSectionTitle title="自定义提供商" />
               {customProviders.map((customProvider) => {
                 const providerKey = SDK_TO_PROVIDER_KEY[customProvider.sdk];
                 return (

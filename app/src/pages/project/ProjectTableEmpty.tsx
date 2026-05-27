@@ -32,7 +32,7 @@ function SetupProjectDialog({ projectName }: { projectName: string }) {
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Send Traces to this Project</DialogTitle>
+          <DialogTitle>向该项目发送追踪</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton slot="close" />
           </DialogTitleExtra>

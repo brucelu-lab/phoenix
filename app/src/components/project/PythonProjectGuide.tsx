@@ -126,13 +126,13 @@ export function PythonProjectGuide(props: PythonProjectGuideProps) {
             fallback={
               <Text>
                 Personal API keys can be created and managed on your{" "}
-                <ExternalLink href="/profile">Profile</ExternalLink>
+                <ExternalLink href="/profile">个人资料</ExternalLink>
               </Text>
             }
           >
             <Text>
               System API keys can be created and managed in{" "}
-              <ExternalLink href="/settings/general">Settings</ExternalLink>
+              <ExternalLink href="/settings/general">设置</ExternalLink>
             </Text>
           </IsAdmin>
         </View>
@@ -178,8 +178,8 @@ export function PythonProjectGuide(props: PythonProjectGuideProps) {
       <View borderColor="default" borderWidth="thin" borderRadius="medium">
         <Tabs>
           <TabList>
-            <Tab id="instrumentation">Instrumentation</Tab>
-            <Tab id="openai-example">OpenAI Example</Tab>
+            <Tab id="instrumentation">埋点</Tab>
+            <Tab id="openai-example">OpenAI 示例</Tab>
           </TabList>
           <TabPanel id="instrumentation">
             <View padding="size-200">

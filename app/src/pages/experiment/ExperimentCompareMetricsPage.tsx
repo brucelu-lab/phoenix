@@ -426,11 +426,11 @@ export function ExperimentCompareMetricsPage({
       >
         <Flex direction="row" gap="size-250">
           {annotationMetrics.length > 0 && (
-            <MetricsColumn title="Evaluations" metrics={annotationMetrics} />
+            <MetricsColumn title="评测" metrics={annotationMetrics} />
           )}
-          <MetricsColumn title="Cost" metrics={costMetrics} />
-          <MetricsColumn title="Performance" metrics={performanceMetrics} />
-          <MetricsColumn title="Token Counts" metrics={tokenCountMetrics} />
+          <MetricsColumn title="成本" metrics={costMetrics} />
+          <MetricsColumn title="性能" metrics={performanceMetrics} />
+          <MetricsColumn title="Token 数量" metrics={tokenCountMetrics} />
         </Flex>
       </div>
     </div>

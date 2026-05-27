@@ -336,7 +336,7 @@ function TraceRowList({
       onScroll={onScroll}
     >
       {traces.length === 0 ? (
-        <Empty message="No traces in this session" />
+        <Empty message="该会话无追踪" />
       ) : (
         <>
           {traces.map((trace, index) => (
@@ -598,7 +598,7 @@ function SpanDetailsPanel({
         height="100%"
         data-testid="session-span-details-empty"
       >
-        <Empty message="Expand a trace and select a span to view its details" />
+        <Empty message="展开追踪并选择跨度查看详情" />
       </Flex>
     );
   }

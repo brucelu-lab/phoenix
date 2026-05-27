@@ -48,7 +48,7 @@ export function DeletePromptLabelButton(props: DeletePromptLabelButtonProps) {
       <Button
         size="S"
         leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
-        aria-label="Delete Prompt Label"
+        aria-label="删除提示词标签"
         isDisabled={isDeleting}
       />
       <ModalOverlay>
@@ -56,7 +56,7 @@ export function DeletePromptLabelButton(props: DeletePromptLabelButtonProps) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete Prompt Label</DialogTitle>
+                <DialogTitle>删除提示词标签</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton />
                 </DialogTitleExtra>

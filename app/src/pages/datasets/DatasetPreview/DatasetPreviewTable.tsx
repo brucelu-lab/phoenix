@@ -310,7 +310,7 @@ export function DatasetPreviewTable({
         ? [
             columnHelper.accessor("exampleId", {
               id: "exampleId",
-              header: () => <>Example ID</>,
+              header: () => <>样本 ID</>,
               cell: ({ getValue }) => {
                 const value = getValue();
                 return (
@@ -354,7 +354,7 @@ export function DatasetPreviewTable({
         ? [
             columnHelper.display({
               id: "splits",
-              header: () => <>Splits</>,
+              header: () => <>切分</>,
               cell: ({ row }) => {
                 const splits = row.original.splits;
                 if (splits.length === 0) {

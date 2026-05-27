@@ -50,7 +50,7 @@ export function ConfirmNavigationDialog({
         <Dialog>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Confirm Navigation</DialogTitle>
+              <DialogTitle>确认离开</DialogTitle>
               <DialogTitleExtra>
                 <DialogCloseButton close={() => blocker.reset?.()} />
               </DialogTitleExtra>

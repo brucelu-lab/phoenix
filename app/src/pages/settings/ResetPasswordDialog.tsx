@@ -88,7 +88,7 @@ export function ResetPasswordDialog({
     <Dialog>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Reset Password</DialogTitle>
+          <DialogTitle>重置密码</DialogTitle>
           <DialogTitleExtra>
             <DialogCloseButton onPress={onClose} slot="close" />
           </DialogTitleExtra>
@@ -121,8 +121,8 @@ export function ResetPasswordDialog({
                     id="new-password"
                     autoComplete="new-password"
                   >
-                    <Label>New Password</Label>
-                    <Input placeholder="New password" />
+                    <Label>新密码</Label>
+                    <Input placeholder="新密码" />
                     {error?.message ? (
                       <FieldError>{error.message}</FieldError>
                     ) : (
@@ -159,8 +159,8 @@ export function ResetPasswordDialog({
                     value={value.toString()}
                     type="password"
                   >
-                    <Label>Confirm Password</Label>
-                    <Input placeholder="Repeat new password" />
+                    <Label>确认密码</Label>
+                    <Input placeholder="重复输入新密码" />
                     {error?.message ? (
                       <FieldError>{error.message}</FieldError>
                     ) : (

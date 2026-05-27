@@ -51,7 +51,7 @@ export function NewSecretButton({ connectionId }: { connectionId: string }) {
           <Dialog>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Create Secret</DialogTitle>
+                <DialogTitle>创建密钥</DialogTitle>
                 <DialogTitleExtra>
                   <DialogCloseButton slot="close" />
                 </DialogTitleExtra>

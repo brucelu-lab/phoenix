@@ -173,7 +173,7 @@ export function ExampleExperimentRunsTable({
                       <View paddingTop="size-100">
                         <div css={annotationTooltipExtraCSS}>
                           <Icon svg={<Icons.InfoOutline />} />
-                          <span>Click to view evaluator trace</span>
+                          <span>点击查看评测器追踪</span>
                         </div>
                       </View>
                     )

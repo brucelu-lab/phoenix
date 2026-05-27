@@ -154,7 +154,7 @@ export function PlaygroundTool({
         <Flex direction="row" gap="size-100">
           <CopyToClipboardButton text={toolDefinitionString} />
           <Button
-            aria-label="Delete tool"
+            aria-label="删除工具"
             leadingVisual={<Icon svg={<Icons.TrashOutline />} />}
             size="S"
             onPress={deleteTool}

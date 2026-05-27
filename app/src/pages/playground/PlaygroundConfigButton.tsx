@@ -42,7 +42,7 @@ export function PlaygroundConfigButton() {
     <DialogTrigger>
       <Button
         size="S"
-        aria-label="Playground Settings"
+        aria-label="实验台设置"
         leadingVisual={<Icon svg={<Icons.OptionsOutline />} />}
         isDisabled={isRunning}
       />
@@ -61,7 +61,7 @@ export function PlaygroundConfigButton() {
               <Flex direction="column" gap="size-200">
                 <Slider
                   defaultValue={1}
-                  label="Repetitions"
+                  label="重复次数"
                   minValue={1}
                   maxValue={30}
                   value={repetitions}
@@ -83,7 +83,7 @@ export function PlaygroundConfigButton() {
                     }}
                     isDisabled={isRunning}
                   >
-                    <Text size="M">Streaming</Text>
+                    <Text size="M">流式输出中</Text>
                   </Switch>
                 </Flex>
                 <Text color="text-700" size="XS">
@@ -91,9 +91,9 @@ export function PlaygroundConfigButton() {
                   generated in real time.
                 </Text>
                 <ComboBox
-                  aria-label="AWS Bedrock Model Prefix"
-                  label="AWS Bedrock Model Prefix"
-                  description="Cross-region inference prefix for AWS Bedrock models"
+                  aria-label="AWS Bedrock 模型前缀"
+                  label="AWS Bedrock 模型前缀"
+                  description="AWS Bedrock 模型的跨区域推理前缀"
                   selectedKey={awsBedrockModelPrefix}
                   onSelectionChange={(value) => {
                     if (value != null) {
