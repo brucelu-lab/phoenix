@@ -66,12 +66,11 @@ RUN uv pip install dist/*.whl --no-deps
 # executes user code in the sandbox. Uses python (already present in
 # the uv builder image) instead of curl/wget so we don't add an apt-get
 # install layer.
-RUN mkdir -p /wasm \
-  && python -c "import hashlib, sys, urllib.request; \
-url = 'https://ghproxy.com/https://github.com/vmware-labs/webassembly-language-runtimes/releases/download/python%2F3.12.0%2B20231211-040d5a6/python-3.12.0.wasm'; \
+COPY ./wasm/python-3.12.0.wasm /wasm/python-3.12.0.wasm
+# Verify SHA-256 to guard against tampering (offline check, no network)
+RUN python -c "import hashlib, sys; \
 dest = '/wasm/python-3.12.0.wasm'; \
 expected = 'e5dc5a398b07b54ea8fdb503bf68fb583d533f10ec3f930963e02b9505f7a763'; \
-urllib.request.urlretrieve(url, dest); \
 actual = hashlib.sha256(open(dest, 'rb').read()).hexdigest(); \
 (actual == expected) or sys.exit(f'SHA-256 mismatch for {dest}: expected {expected}, got {actual}')"
 
