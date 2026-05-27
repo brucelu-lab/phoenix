@@ -68,7 +68,7 @@ RUN uv pip install dist/*.whl --no-deps
 # install layer.
 RUN mkdir -p /wasm \
   && python -c "import hashlib, sys, urllib.request; \
-url = 'https://github.com/vmware-labs/webassembly-language-runtimes/releases/download/python%2F3.12.0%2B20231211-040d5a6/python-3.12.0.wasm'; \
+url = 'https://ghproxy.com/https://github.com/vmware-labs/webassembly-language-runtimes/releases/download/python%2F3.12.0%2B20231211-040d5a6/python-3.12.0.wasm'; \
 dest = '/wasm/python-3.12.0.wasm'; \
 expected = 'e5dc5a398b07b54ea8fdb503bf68fb583d533f10ec3f930963e02b9505f7a763'; \
 urllib.request.urlretrieve(url, dest); \
