@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.8.0](https://github.com/Arize-ai/phoenix/compare/arize-phoenix-client-v2.7.0...arize-phoenix-client-v2.8.0) (2026-05-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Sandboxing and Code Evaluators ([#13290](https://github.com/Arize-ai/phoenix/issues/13290))
+
+### Features
+
+* **agents:** Enable provider native web search / fetch when available ([#13333](https://github.com/Arize-ai/phoenix/issues/13333)) ([41eb4fc](https://github.com/Arize-ai/phoenix/commit/41eb4fcb0721107bf22f19ff5c7121a5e7620f67))
+* **agents:** stamp tool execution environment on tool-call provider metadata ([#13277](https://github.com/Arize-ai/phoenix/issues/13277)) ([ef421e5](https://github.com/Arize-ai/phoenix/commit/ef421e5af20289214b9e77b30d4c45709e0b3da6))
+* Sandboxing and Code Evaluators ([#13290](https://github.com/Arize-ai/phoenix/issues/13290)) ([e294d93](https://github.com/Arize-ai/phoenix/commit/e294d939fb6c5fbbcca0c3460334dd08f1b3b43e))
+
+
+### Miscellaneous Chores
+
+* release arize-phoenix-client 2.8.0 ([#13390](https://github.com/Arize-ai/phoenix/issues/13390)) ([eff1c2a](https://github.com/Arize-ai/phoenix/commit/eff1c2af08e35f5b3f3f2f9f83039fcdbb3e4bb9))
+
 ## [2.7.0](https://github.com/Arize-ai/phoenix/compare/arize-phoenix-client-v2.6.0...arize-phoenix-client-v2.7.0) (2026-05-15)
 
 
