@@ -50,6 +50,8 @@ function contextLabel(context: AgentContext): string {
         : "Code Evaluator: new";
     case "dataset":
       return `Dataset: ${truncateId(context.datasetNodeId)}`;
+    case "dataset_evaluators":
+      return `Dataset Evaluators: ${truncateId(context.datasetNodeId)}`;
   }
 }
 

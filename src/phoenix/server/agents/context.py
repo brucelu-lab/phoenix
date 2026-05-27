@@ -112,6 +112,20 @@ class DatasetContext(_ChatContextBase):
     dataset_version_node_id: str | None = Field(default=None, alias="datasetVersionNodeId")
 
 
+class DatasetEvaluatorsContext(_ChatContextBase):
+    """Dataset evaluators tab mounted in the current browser route.
+
+    Carries the dataset relay node id and, when known, the active version
+    node id. Advertised by ``DatasetEvaluatorsPage`` so the agent knows the
+    surface that can mount the create-code-evaluator slideover is currently
+    visible — gating the ``create_code_evaluator`` tool to this page.
+    """
+
+    type: Literal["dataset_evaluators"]
+    dataset_node_id: str = Field(alias="datasetNodeId")
+    dataset_version_node_id: str | None = Field(default=None, alias="datasetVersionNodeId")
+
+
 class GraphQLContext(_ChatContextBase):
     """GraphQL runtime state."""
 
@@ -136,6 +150,7 @@ class ChatContext(
             | PlaygroundContext
             | CodeEvaluatorContext
             | DatasetContext
+            | DatasetEvaluatorsContext
             | GraphQLContext
             | WebAccessContext,
             Field(discriminator="type"),
@@ -154,6 +169,7 @@ class ResolvedContexts:
     playground: PlaygroundContext | None = None
     code_evaluator: CodeEvaluatorContext | None = None
     dataset: DatasetContext | None = None
+    dataset_evaluators: DatasetEvaluatorsContext | None = None
     graphql: GraphQLContext | None = None
     web_access: WebAccessContext | None = None
 
@@ -170,6 +186,8 @@ def resolve_contexts(contexts: list[ChatContext]) -> ResolvedContexts:
             resolved.code_evaluator = context_value
         elif isinstance(context_value, DatasetContext):
             resolved.dataset = context_value
+        elif isinstance(context_value, DatasetEvaluatorsContext):
+            resolved.dataset_evaluators = context_value
         elif isinstance(context_value, ProjectContext):
             resolved.project = context_value
         elif isinstance(context_value, TraceContext):
